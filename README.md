@@ -87,4 +87,13 @@ cybersecurity-notes/
 
 ---
 
+## Tomorrow's Tasks
+- [ ] Install VirtualBox
+- [ ] Download Ubuntu Desktop ISO
+- [ ] Create Ubuntu VM
+- [ ] Install Ubuntu
+- [ ] Learn first Linux commands
+- [ ] Take screenshots
+- [ ] Document everything
+
 > "The expert in anything was once a beginner." – Helen Hayes
