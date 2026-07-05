@@ -1,99 +1,190 @@
-# 🛡️ Cybersecurity Notes & Learning Journey
+# Cybersecurity Notes
 
-Welcome to my cybersecurity learning repository. This repository documents my progress as I prepare for my CSIT program and build foundational skills in IT and cybersecurity.
+A personal knowledge base documenting my journey into cybersecurity, Linux, networking, and hands-on labs.
 
 ---
 
-## 🎯 Goals
+# About
 
-- Build a strong foundation in Linux, networking, and cybersecurity
+This repository serves as my central location for:
+
+- Study notes
+- Hands-on projects
+- TryHackMe labs
+- Linux learning
+- Networking concepts
+- Troubleshooting documentation
+- Cybersecurity resources
+
+The goal is to build both technical skills and a professional portfolio while preparing for a career in cybersecurity and information technology.
+
+---
+
+# Goals
+
+- Learn Linux fundamentals
+- Learn networking concepts
+- Build virtual labs
+- Document projects and troubleshooting
 - Complete TryHackMe learning paths
-- Create and document hands-on projects and labs
-- Develop practical IT and cybersecurity skills
-- Build a portfolio that showcases my learning journey
+- Prepare for cybersecurity certifications
+- Develop strong documentation habits
 
 ---
 
-## 📚 Current Learning Areas
-
-- Linux Fundamentals
-- Networking Fundamentals
-- Operating Systems
-- Cybersecurity Fundamentals
-- Python Basics (coming soon)
-- Home Lab Projects (coming soon)
-
----
-
-## 📂 Repository Structure
+# Repository Structure
 
 ```text
 cybersecurity-notes/
 ├── Linux/
 ├── Networking/
 ├── Projects/
-│   └── Ubuntu-VM-Setup/
 ├── Resources/
 ├── Screenshots/
-├── TryHackMe/
-└── README.md
+└── TryHackMe/
 ```
 
 ---
 
-## 🧠 Current Projects
+# Current Projects
 
-- [ ] Ubuntu Virtual Machine Setup
-- [ ] Linux Fundamentals Lab
-- [ ] Networking Basics Lab
-- [ ] Wireshark Traffic Analysis
-- [ ] Nmap Scanning Lab
+## Ubuntu VM Setup
+
+Built my first Linux virtual machine using:
+
+- Oracle VirtualBox
+- Ubuntu Desktop ISO
+- Xubuntu 26.04
+
+### Project Highlights
+
+- Installed Oracle VirtualBox
+- Downloaded Ubuntu and Xubuntu ISOs
+- Created a Linux virtual machine
+- Configured VM hardware
+- Troubleshot display issues
+- Used Safe Graphics Mode
+- Installed Xubuntu successfully
+- Documented the entire process
 
 ---
 
-## 🏆 Certifications & Courses
+# Learning Areas
 
-### In Progress
-- TryHackMe: Pre Security
-- TryHackMe: Introduction to Cyber Security
+## Linux
 
-### Planned
-- Cisco Networking Basics
-- Linux Essentials
-- Python Fundamentals
+- Linux commands
+- File system navigation
+- Bash scripting
+- Package management
+- User permissions
+
+## Networking
+
+- OSI Model
+- TCP/IP
+- Ports and Protocols
+- DNS
+- DHCP
+- Routing and Switching
+
+## Cybersecurity
+
+- TryHackMe learning paths
+- Virtualization
+- Home lab development
+- Security tools and concepts
 
 ---
 
-## 🛠️ Tools I'm Learning
+# TryHackMe Progress
 
-- VirtualBox
+## Completed
+
+- Intro to Cybersecurity
+- Computer Fundamentals
+- Operating Systems
+
+## In Progress
+
+- Linux Fundamentals
+
+## Planned
+
+- Pre Security
+- Complete Beginner
+- Jr Penetration Tester
+- SOC Level 1
+
+---
+
+# Current Progress
+
+- [x] Install VirtualBox
+- [x] Install Ubuntu/Xubuntu
+- [x] Build first Linux virtual machine
+- [x] Document VM installation process
+- [ ] Learn Linux fundamentals
+- [ ] Learn networking fundamentals
+- [ ] Build cybersecurity home lab
+- [ ] Complete additional TryHackMe paths
+- [ ] Learn scripting and automation
+
+---
+
+# Future Projects
+
+- Kali Linux Lab
+- Windows Server Lab
+- Active Directory Lab
+- Vulnerability Scanning Lab
+- Home SOC
+- SIEM Lab
+- Network Monitoring Lab
+
+---
+
+# Certifications Goal
+
+- CompTIA A+
+- CompTIA Network+
+- CompTIA Security+
+- CompTIA CySA+
+- CISSP (Long-term)
+
+---
+
+# Technologies Used
+
+- Oracle VirtualBox
 - Ubuntu
-- Kali Linux
-- Wireshark
-- Nmap
-- Git & GitHub
+- Xubuntu
+- Git
+- GitHub
 - Visual Studio Code
+- Windows 11
 
 ---
 
-## 📈 Progress Tracker
+# Repository Statistics
 
-- [x] Repository Created
-- [x] Repository Organized
-- [ ] Ubuntu VM Created
-- [ ] Linux Fundamentals Completed
-- [ ] Networking Fundamentals Completed
-- [ ] First Home Lab Built
+### Projects Completed
+
+- Ubuntu VM Setup
+
+### Current Focus
+
+- Linux Fundamentals
+- Networking Fundamentals
+- Building a Cybersecurity Home Lab
+- Developing Documentation Skills
 
 ---
 
-## Tomorrow's Tasks
-- [ ] Install VirtualBox
-- [ ] Download Ubuntu Desktop ISO
-- [ ] Create Ubuntu VM
-- [ ] Install Ubuntu
-- [ ] Learn first Linux commands
-- [ ] Take screenshots
-- [ ] Document everything
+# Author
 
-> "The expert in anything was once a beginner." – Helen Hayes
+**Ja'Maurian Williams**
+
+Aspiring Cybersecurity Professional | CSIT Student | Lifelong Learner
+
+This repository is continuously updated as I learn new technologies and complete additional projects.
