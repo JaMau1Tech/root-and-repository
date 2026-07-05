@@ -1,253 +1,312 @@
-# Module 2 — Computer Fundamentals
+# Module 2 - Computer Fundamentals
 
-## Module Overview
+## Overview
 
-This module introduced the fundamentals of computer systems, different types of computing devices, and client-server architecture. It included hands-on activities and labs designed to reinforce how computers and web applications function.
-
----
-
-# Section 1 — Inside a Computer System
-
-## Learning Objectives
-
-- Understand the major hardware components of a computer.
-- Learn how the boot process works.
-- Identify the function of each internal component.
-
-### My Notes
-
-A computer system consists of multiple hardware components that work together.
-
-#### Major Components
-
-- **Motherboard (MB)** – Connects all components together and contains CPU sockets, RAM slots, expansion slots, and various ports.
-- **CPU (Central Processing Unit)** – The brain of the computer that executes instructions.
-- **RAM (Random Access Memory)** – Fast, temporary memory used while programs are running.
-- **GPU (Graphics Processing Unit)** – Processes and outputs visual information to displays.
-- **HDD/SSD** – Long-term storage devices used for data retention.
-- **PSU (Power Supply Unit)** – Supplies electrical power to all computer components.
-- **Network Adapter** – Allows the computer to communicate with other computers and networks.
-
-#### Storage Devices
-
-- **HDD (Hard Disk Drive)** uses older technology with moving parts, which can limit performance.
-- **SSD (Solid State Drive)** has no moving parts and uses memory chips, making it significantly faster.
-- Storage devices commonly connect through **SATA cables** or **PCIe slots**.
-
-#### Network Adapters
-
-- Can be wired or wireless.
-- May be embedded into the motherboard or added as an expansion card.
-- Commonly use PCIe expansion slots.
-
-#### Input and Output Devices
-
-Examples include:
-
-- Mouse
-- Keyboard
-- Printers
-- USB devices
-- HDMI
-- DisplayPort
-
-#### Boot Sequence
-
-1. The power button sends a signal to the PSU.
-2. The firmware (UEFI/BIOS) starts.
-3. The system performs a **POST (Power-On Self-Test)**.
-4. The firmware searches for a bootable device.
-5. The bootloader loads the operating system into RAM and transfers control to the operating system.
-
-### Skills Practiced
-
-- Identifying computer hardware components
-- Understanding motherboard architecture
-- Understanding the computer boot process
-- Recognizing storage technologies
-- Understanding system startup procedures
-
-### Lab Evidence
-
-#### Task 2 – Motherboard Components Diagram
-
-![Motherboard Components Diagram](images/inside-computer-task-2-motherboard-components-diagram.png)
-
-#### Task 2 – Component Placement Exercise
-
-![Component Placement Exercise](images/inside-computer-task-2-component-placement-exercise.png)
-
-#### Task 3 – Boot Sequence Practice
-
-![Boot Sequence Practice](images/inside-computer-task-3-boot-sequence-practice.png)
+This module introduced the foundational concepts of how computers, networks, virtualization, and cloud technologies work. Through hands-on labs and exercises, I explored computer hardware, client-server communication, virtual machines, and cloud infrastructure.
 
 ---
 
-# Section 2 — Computer Types
+# Section 1 - Inside a Computer System
 
 ## Learning Objectives
 
-- Identify different types of computing devices.
-- Understand how various computer systems are used.
-- Practice classifying computing devices.
+- Understand the purpose of computer hardware components.
+- Learn how a computer starts during the boot process.
+- Identify the role of each component inside a computer.
 
-### My Notes
+## Key Notes
 
-Computers come in many different forms and are designed for specific tasks and use cases.
+- Motherboard connects all components together.
+- CPU executes instructions and processes data.
+- RAM provides fast temporary memory.
+- HDD and SSD provide long-term storage.
+- PSU supplies power to all components.
+- Network adapters allow communication between devices.
+- GPU processes visual information.
 
-#### Common Computer Types
+### Boot Sequence
 
-- **Smartphone** – A pocket-sized computer optimized for battery life and connectivity.
-- **Tablet** – A touch-based computer with a larger screen.
-- **IoT Device** – A network-connected device designed for a specific purpose.
-- **Embedded Computer** – A computer built into another device to perform a dedicated function.
-- **Laptop** – A portable computer designed for everyday use.
-- **Desktop** – A stationary computer that provides sustained performance and better cooling.
-- **Workstation** – A high-performance computer designed for professional workloads.
-- **Server** – A computer that provides services and resources to multiple users over a network.
+1. Power button pressed.
+2. Firmware (BIOS/UEFI) starts.
+3. POST checks hardware.
+4. System searches for a boot device.
+5. Bootloader loads the operating system.
 
-#### Key Concepts Learned
+---
 
-- Laptops are portable but have thermal limitations.
-- Desktops generally provide better cooling and sustained performance.
-- Servers often use redundancy to improve uptime and reduce single points of failure.
-- Different computer types exist because each one is optimized for a specific purpose.
+# Lab Evidence
 
-### Skills Practiced
+### Motherboard Components Diagram
 
-- Identifying computer types
-- Comparing computing devices
-- Understanding hardware trade-offs
-- Matching hardware to real-world scenarios
+![Motherboard Components](images/inside-computer-task-2-motherboard-components-diagram.png)
 
-### Lab Evidence
+### Component Placement Exercise
 
-#### Task 2 – Computing Device Types
+![Component Placement](images/inside-computer-task-2-component-placement-exercise.png)
 
-![Computing Device Types](images/computer-types-task-2-computing-device-types.png)
+### Boot Sequence Practice
 
-#### Task 3 – Computer Type Comparison
+![Boot Sequence](images/inside-computer-task-3-boot-sequence-practice.png)
 
-![Computer Type Comparison](images/computer-types-task-3-computer-type-comparison.png)
+---
 
-#### Task 4 – Smart Device Identification Lab
+# Section 2 - Computer Types
 
-![Smart Device Identification](images/computer-types-task-4-smart-device-identification-lab.png)
+## Learning Objectives
 
-#### Task 4 – Laptop vs Desktop Cooling Lab
+- Understand different computer types.
+- Learn how devices are designed for specific purposes.
+- Compare laptops, desktops, servers, and embedded devices.
 
-![Laptop vs Desktop Cooling](images/computer-types-task-4-laptop-vs-desktop-cooling-lab.png)
+## Key Notes
 
-#### Task 4 – Server Redundancy Lab
+### Computer Types
+
+- Laptop – Portable everyday computing.
+- Desktop – Better cooling and sustained performance.
+- Workstation – Professional-grade computing.
+- Server – Provides services over a network.
+- Embedded Systems – Designed for one specific purpose.
+- IoT Devices – Connected devices that perform specialized tasks.
+
+---
+
+# Lab Evidence
+
+### Computing Device Types
+
+![Computing Devices](images/computer-types-task-2-computing-device-types.png)
+
+### Computer Type Comparison
+
+![Computer Types](images/computer-types-task-3-computer-type-comparison.png)
+
+### Smart Device Identification Lab
+
+![Smart Device Lab](images/computer-types-task-4-smart-device-identification-lab.png)
+
+### Laptop vs Desktop Cooling Lab
+
+![Laptop vs Desktop](images/computer-types-task-4-laptop-vs-desktop-cooling-lab.png)
+
+### Server Redundancy Lab
 
 ![Server Redundancy](images/computer-types-task-4-server-redundancy-lab.png)
 
-#### Task 4 – Computer Role Matching Lab
+### Computer Role Matching Lab
 
-![Computer Role Matching](images/computer-types-task-4-computer-role-matching-lab.png)
+![Role Matching](images/computer-types-task-4-computer-role-matching-lab.png)
 
 ---
 
-# Section 3 — Client-Server Basics
+# Section 3 - Client-Server Basics
 
 ## Learning Objectives
 
-- Understand client-server architecture.
-- Learn how web applications communicate.
-- Explore HTTP requests and responses.
+- Understand client-server communication.
+- Learn how HTTP requests and responses work.
+- Practice inspecting network traffic.
 
-### My Notes
+## Key Notes
 
-Client-server architecture is a model where a client requests information or services from a server.
+- Client sends requests to a server.
+- Server processes the request and sends a response.
+- Protocols are rules for communication.
+- Ports are specific access points to services.
+- DNS translates domain names into IP addresses.
+- HTTP uses GET requests to retrieve web pages.
 
-#### Key Concepts
+---
 
-- A **Client** is the device making the request.
-- A **Server** provides information or services.
-- A **Request** is sent from the client to the server.
-- A **Response** is sent back from the server to the client.
-- A **Protocol** is a set of rules used for communication.
-- A **Port** is a specific access point used by applications and services.
-- **DNS (Domain Name System)** translates domain names into IP addresses.
+# Lab Evidence
 
-#### HTTP Communication
-
-1. The client sends an HTTP request.
-2. The server processes the request.
-3. The server sends an HTTP response.
-4. The client receives and displays the content.
-
-#### DevTools Lab
-
-Using Firefox Developer Tools, I practiced:
-
-- Viewing HTTP GET requests.
-- Reading the Headers tab.
-- Reading the Response tab.
-- Identifying files requested by a webpage.
-
-### Skills Practiced
-
-- Client-server architecture
-- HTTP communication
-- Web requests and responses
-- Browser Developer Tools
-- Network traffic analysis
-
-### Lab Evidence
-
-#### Task 2 – Client-Server Concepts Diagram
+### Client-Server Concepts
 
 ![Client Server Concepts](images/client-server-task-2-client-server-concepts-diagram.png)
 
-#### Task 3 – HTTP Communication Diagram
+### HTTP Communication
 
 ![HTTP Communication](images/client-server-task-3-http-communication-diagram.png)
 
-#### Task 3 – HTTP GET Request Lab
+### HTTP GET Request Lab
 
-![HTTP GET Request Lab](images/client-server-task-3-http-get-request-lab.png)
+![HTTP GET Request](images/client-server-task-3-http-get-request-lab.png)
 
-#### Task 3 – HTTP Headers Investigation
+### HTTP Headers Investigation
 
-![HTTP Headers Investigation](images/client-server-task-3-http-headers-investigation.png)
+![HTTP Headers](images/client-server-task-3-http-headers-investigation.png)
 
-#### Task 3 – HTTP Response Investigation
+### HTTP Response Investigation
 
-![HTTP Response Investigation](images/client-server-task-3-http-response-investigation.png)
-
----
-
-# Section 4 — Virtualisation Basics
-
-## Learning Objectives
-
-- Understand what virtualization is.
-- Learn how virtual machines work.
-- Explore the benefits and uses of virtualization technology.
-
-### My Notes
-
-> Add your notes here.
-
-### Lab Evidence
-
-*Add screenshots here.*
+![HTTP Response](images/client-server-task-3-http-response-investigation.png)
 
 ---
 
-# Section 5 — Cloud Computing Fundamentals
+# Section 4 - Virtualisation Basics
 
 ## Learning Objectives
 
-- Understand the fundamentals of cloud computing.
-- Learn about different cloud service models.
-- Understand the benefits and challenges of cloud services.
+- Understand virtualization concepts.
+- Learn how hypervisors and virtual machines work.
+- Understand containers and resource management.
 
-### My Notes
+## Key Notes
 
-> Add your notes here.
+### Hypervisors
 
-### Lab Evidence
+- Type 1 runs directly on hardware.
+- Type 2 runs inside an operating system.
 
-*Add screenshots here.*
+### Virtual Machines
+
+- Have their own CPU, RAM, storage, and OS.
+- Operate independently from other VMs.
+
+### Containers
+
+- Lightweight environments.
+- Share the host operating system kernel.
+- Start quickly and use fewer resources.
+
+### Benefits of Virtualization
+
+- Better hardware utilization.
+- Reduced costs.
+- Easier scalability.
+- Safe testing environments.
+
+---
+
+# Lab Evidence
+
+### Hypervisor Use Cases
+
+![Hypervisor Use Cases](images/virtualisation-task-3-hypervisor-use-cases.png)
+
+### VM and Container Architecture
+
+![VM and Container Architecture](images/virtualisation-task-3-vm-container-architecture.png)
+
+### Mail Server Error State
+
+![Mail Server Error](images/virtualisation-task-4-mail-server-error-state.png)
+
+### Creating a Marketing VM
+
+![Create Marketing VM](images/virtualisation-task-4-create-marketing-vm.png)
+
+### Marketing VM Created
+
+![Marketing VM Created](images/virtualisation-task-4-marketing-vm-created.png)
+
+### Host Monitoring Dashboard
+
+![Host Monitoring](images/virtualisation-task-4-host-monitoring-dashboard.png)
+
+---
+
+# Section 5 - Cloud Computing Fundamentals
+
+## Learning Objectives
+
+- Understand cloud computing concepts.
+- Learn cloud deployment and service models.
+- Practice creating and managing cloud resources.
+
+## Key Notes
+
+### Cloud Benefits
+
+- Scalability
+- On-demand resources
+- Pay only for what you use
+- High availability
+- Global accessibility
+- Strong security
+
+### Deployment Models
+
+- Public Cloud
+- Private Cloud
+- Hybrid Cloud
+
+### Service Models
+
+- IaaS – Infrastructure as a Service
+- PaaS – Platform as a Service
+- SaaS – Software as a Service
+
+### Cloud Concepts
+
+- EC2 = Virtual computer/server.
+- Region = Geographic location.
+- Instance Type = Determines performance and cost.
+- Stopping unused resources saves money.
+
+### Major Cloud Providers
+
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud Platform (GCP)
+- IBM Cloud
+- Oracle Cloud
+- Alibaba Cloud
+
+---
+
+# Lab Evidence
+
+### Evolution to the Cloud
+
+![Evolution to the Cloud](images/cloud-task-2-evolution-to-the-cloud.png)
+
+### IaaS vs PaaS vs SaaS
+
+![IaaS vs PaaS vs SaaS](images/cloud-task-2-iaas-paas-saas-analogy.png)
+
+### Selecting a Region
+
+![Select Region](images/cloud-task-3-select-region.png)
+
+### Creating Application Interface VM
+
+![Application Interface](images/cloud-task-3-create-application-interface.png)
+
+### Creating Study Machine
+
+![Study Machine](images/cloud-task-3-create-study-machine-2.png)
+
+### Cloud Instances Dashboard
+
+![Cloud Instances Dashboard](images/cloud-task-3-cloud-instances-dashboard.png)
+
+### Billing Before Optimization
+
+![Billing Before Optimization](images/cloud-task-3-billing-before-optimization.png)
+
+### Cost Optimization
+
+![Cost Optimization](images/cloud-task-3-cost-optimization.png)
+
+---
+
+# Skills Gained
+
+- Computer hardware fundamentals
+- Boot sequence analysis
+- Device classification
+- Client-server communication
+- HTTP and web traffic analysis
+- Virtualization concepts
+- Virtual machine management
+- Cloud computing fundamentals
+- Cloud cost optimization
+- Infrastructure management
+
+---
+
+# Platform
+
+- Training Platform: TryHackMe
+- Module: Computer Fundamentals
+- Status: Completed ✅
