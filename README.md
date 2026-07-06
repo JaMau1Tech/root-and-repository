@@ -1,5 +1,9 @@
 # Cybersecurity Notes
 
+![GitHub last commit](https://img.shields.io/github/last-commit/JaMau1Tech/cybersecurity-notes)
+![GitHub repo size](https://img.shields.io/github/repo-size/JaMau1Tech/cybersecurity-notes)
+![GitHub stars](https://img.shields.io/github/stars/JaMau1Tech/cybersecurity-notes)
+
 A personal knowledge base documenting my journey into cybersecurity, Linux, networking, and hands-on labs.
 
 ---
@@ -103,7 +107,6 @@ Built my first Linux virtual machine using:
 
 - Intro to Cybersecurity
 - Computer Fundamentals
-- Operating Systems
 
 ## In Progress
 
@@ -111,7 +114,7 @@ Built my first Linux virtual machine using:
 
 ## Planned
 
-- Pre Security
+- Pre Security - Start Operating Systems
 - Complete Beginner
 - Jr Penetration Tester
 - SOC Level 1
@@ -158,7 +161,7 @@ Built my first Linux virtual machine using:
 
 - Oracle VirtualBox
 - Ubuntu
-- Xubuntu
+- Xubuntu 24.04 LTS
 - Git
 - GitHub
 - Visual Studio Code
@@ -185,6 +188,9 @@ Built my first Linux virtual machine using:
 
 **Ja'Maurian Williams**
 
-Aspiring Cybersecurity Professional | CSIT Student | Lifelong Learner
+CSIT Student | Aspiring Cybersecurity Professional
+
+GitHub:
+https://github.com/JaMau1Tech
 
 This repository is continuously updated as I learn new technologies and complete additional projects.
