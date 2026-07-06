@@ -1,5 +1,18 @@
+# VS Code
 .vscode/
-*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Linux temporary files
+*.swp
 *.tmp
-Thumbs.db
+
+# OS files
 .DS_Store
+Thumbs.db
