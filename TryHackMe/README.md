@@ -1,10 +1,14 @@
-# TryHackMe Notes
+# TryHackMe Progress
 
-This folder contains miscellaneous notes that don't belong to a specific module.
+This directory contains notes and screenshots from my TryHackMe learning journey.
 
-Examples:
+## Modules
+- Module 01 – Intro to Cybersecurity
+- Module 02 – Computer Fundamentals
+- Module 03 – Operating Systems
 
-- Commands learned
-- Interesting concepts
-- Troubleshooting notes
-- Study reminders
+## Goals
+- Learn cybersecurity fundamentals.
+- Practice hands-on skills.
+- Build documentation habits.
+- Create a professional portfolio.
