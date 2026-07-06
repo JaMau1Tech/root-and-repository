@@ -1,33 +1,70 @@
 # WSL Migration and Troubleshooting
 
-## Situation
+## Project Overview
 
-Both Ubuntu and Xubuntu virtual machines experienced installation problems and crashes inside VirtualBox.
+Both Ubuntu and Xubuntu virtual machines experienced installation problems and instability inside Oracle VirtualBox.
 
-To continue learning Linux and cybersecurity concepts, I decided to use Windows Subsystem for Linux (WSL).
+To continue learning Linux and cybersecurity concepts without further delays, I decided to migrate to Windows Subsystem for Linux (WSL).
 
 ---
 
-## Initial Problems
+# Objective
 
-### Ubuntu and Xubuntu VM Issues
+Create a stable Linux environment for:
+
+- Learning Linux fundamentals
+- Practicing command-line skills
+- Running development tools
+- Building cybersecurity knowledge
+- Continuing hands-on learning without relying on virtual machines
+
+---
+
+# Initial Virtual Machine Problems
+
+## Ubuntu and Xubuntu Issues
 
 Problems encountered:
 
 - Ubuntu installer freezes
-- Loading spinner hangs
-- Display driver issues
+- Loading spinner hangs indefinitely
+- Display driver compatibility issues
 - Xubuntu installation problems
-- Virtual machine crashes
-
-Troubleshooting attempted:
-
-- Safe graphics mode
-- Display settings adjustments
-- Increased video memory
-- Multiple reinstall attempts
+- Virtual machine crashes and instability
 
 ---
+
+# Troubleshooting Attempted
+
+- Booted using Safe Graphics Mode
+- Adjusted VirtualBox display settings
+- Increased video memory
+- Reinstalled operating systems multiple times
+- Modified VM hardware configurations
+
+Although some improvements were made, the environment remained unstable.
+
+---
+
+# Decision to Migrate to WSL
+
+Because the virtual machines continued to experience problems, I decided to use:
+
+```text
+Windows Subsystem for Linux (WSL)
+```
+
+Benefits:
+
+- Lightweight
+- Faster startup times
+- Lower resource usage
+- Easy integration with Windows
+- Excellent for Linux learning and development
+
+---
+
+# WSL Installation Problems
 
 ## WSL1 Not Supported
 
@@ -62,12 +99,13 @@ Feature name Microsoft-Windows-Subsystem-Linux is unknown.
 
 ---
 
-## Investigation
+# Investigation
 
-Commands:
+Commands used:
 
 ```powershell
 DISM /Online /Get-Features /Format:Table | findstr /i "linux"
+
 DISM /Online /Get-Features /Format:Table | findstr /i "virtual"
 ```
 
@@ -80,7 +118,7 @@ VirtualMachinePlatform | Enabled
 
 ---
 
-## Resolution
+# Resolution
 
 Restarted the computer.
 
@@ -104,7 +142,7 @@ wsl --install
 
 ---
 
-## Installation Delay
+# Installation Delay
 
 The installation appeared frozen at:
 
@@ -113,7 +151,13 @@ Installing: Ubuntu
 49.1%
 ```
 
-After pressing `Ctrl + C`, the installation immediately completed successfully.
+After pressing:
+
+```text
+Ctrl + C
+```
+
+the installation immediately completed successfully.
 
 Output:
 
@@ -124,21 +168,72 @@ Launching Ubuntu...
 
 ---
 
-## Lessons Learned
+# Final Result
 
-- Terminal output can sometimes be misleading.
-- Not every installation delay is a failure.
-- Gather information before assuming something is broken.
-- Documentation makes troubleshooting easier.
-- WSL provides a lightweight Linux environment without requiring a virtual machine.
+Successfully installed:
+
+- Windows Subsystem for Linux (WSL)
+- Ubuntu
+- Linux user account
+- Working Linux terminal
+
+Successfully launched:
+
+```text
+jamaurlan@DESKTOP-XXXXX:~$
+```
+
+The system was now ready for:
+
+- Linux command-line practice
+- Python development
+- Git and GitHub workflows
+- Cybersecurity learning and experimentation
 
 ---
 
-## Skills Practiced
+# Lessons Learned
+
+- Terminal output can sometimes be misleading.
+- Not every installation delay indicates failure.
+- Gather information before assuming something is broken.
+- Troubleshooting often requires multiple approaches.
+- Documentation makes future troubleshooting significantly easier.
+- WSL provides an excellent lightweight Linux environment.
+
+---
+
+# Skills Practiced
 
 - Troubleshooting
+- Problem solving
 - PowerShell
 - DISM commands
+- Windows administration
 - Linux environment setup
 - Documentation
-- Problem solving
+- Research and investigation
+
+---
+
+# Cybersecurity Relevance
+
+This project helped build skills that are directly applicable to cybersecurity:
+
+- Operating system troubleshooting
+- Linux administration
+- Documentation and reporting
+- Investigative thinking
+- Understanding virtualization technologies
+- Building and maintaining lab environments
+
+---
+
+# Future Goals
+
+- Learn Linux fundamentals.
+- Practice Bash commands.
+- Learn package management.
+- Use WSL for Python development.
+- Build additional cybersecurity labs using Linux.
+- Continue documenting all projects and lessons learned.
