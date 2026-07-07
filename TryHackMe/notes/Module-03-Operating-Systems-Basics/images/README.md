@@ -33,6 +33,11 @@ linux-task2-find-mission-brief
 linux-task3-uname-output
 linux-task3-os-release
 linux-task3-day1-report
+
+windowscli-task2-command-prompt-open
+windowscli-task2-find-task-brief
+windowscli-task3-systeminfo-output
+windowscli-task3-ipconfig-output
 ```
 
 ---
@@ -41,21 +46,73 @@ linux-task3-day1-report
 
 Screenshots are collected to:
 
-- Document completion of TryHackMe labs
-- Provide visual evidence of hands-on activities
+- Document completion of TryHackMe hands-on labs
+- Provide visual evidence of practical exercises
 - Support technical documentation
 - Reinforce learning through visual references
-- Demonstrate practical Windows and Linux experience
+- Demonstrate Windows and Linux administration skills
 - Showcase cybersecurity learning progress
 
 ---
 
-## Included Topics
+## Included Rooms
 
-Current screenshots include evidence from:
+### Introduction to Operating Systems
 
-- Introduction to Operating Systems
-- Windows Basics
-- Linux CLI Basics
+Topics covered:
 
-Additional screenshots will be added as the remaining module rooms are completed.
+- Operating system responsibilities
+- Process and memory management
+- Operating system families
+- GUI vs. CLI
+- Linux file systems
+- System monitoring
+
+---
+
+### Windows Basics
+
+Topics covered:
+
+- Windows desktop navigation
+- Start Menu and File Explorer
+- System settings
+- Device specifications
+- Task Manager
+- Windows Security
+- Windows Defender Firewall
+- Malware scanning
+
+---
+
+### Linux CLI Basics
+
+Topics covered:
+
+- Linux terminal basics
+- Filesystem navigation
+- Directory management
+- File searching
+- Reading files
+- Linux system information
+- Disk usage
+- Linux distribution information
+
+---
+
+### Windows CLI Basics
+
+Topics covered:
+
+- Windows Command Prompt (CMD)
+- Directory navigation
+- Hidden files
+- File searching
+- Reading files
+- User identification
+- Windows system information
+- Network configuration
+
+---
+
+Additional screenshots will be added as the remaining rooms in the **Operating Systems Basics** module are completed.
