@@ -1,6 +1,6 @@
 # VirtualBox Configuration
 
-This document records the configuration used to create my first Ubuntu virtual machine.
+This document records the VirtualBox configuration used during the Ubuntu/Xubuntu virtual machine setup.
 
 ---
 
@@ -12,26 +12,25 @@ This document records the configuration used to create my first Ubuntu virtual m
 Cyber-Lab-Ubuntu
 ```
 
-## Operating System
+## Guest Operating System
 
 ```text
-Ubuntu 25.04 (64-bit)
+Xubuntu
 ```
 
 ---
 
 # Hardware Configuration
 
-## Memory (RAM)
+## Memory
 
 ```text
 2048 MB
 ```
 
 Reason:
-Allocated enough memory to run Ubuntu while still leaving resources available for the Windows host operating system.
 
----
+Allocated enough memory for basic Linux use while leaving resources available for the Windows host.
 
 ## Processor
 
@@ -40,9 +39,8 @@ Allocated enough memory to run Ubuntu while still leaving resources available fo
 ```
 
 Reason:
-Sufficient for basic Linux learning, command-line practice, and introductory cybersecurity labs.
 
----
+Sufficient for Linux fundamentals, command-line practice, and introductory cybersecurity labs.
 
 ## Virtual Hard Disk
 
@@ -51,7 +49,8 @@ Sufficient for basic Linux learning, command-line practice, and introductory cyb
 ```
 
 Reason:
-Provides adequate space for Ubuntu, software updates, screenshots, notes, and future learning tools.
+
+Provides space for the operating system, updates, notes, screenshots, and future tools.
 
 ---
 
@@ -70,7 +69,8 @@ VBoxSVGA
 ```
 
 Reason:
-Provides improved graphical performance and compatibility with Ubuntu Desktop.
+
+Improves graphical performance and compatibility during installation.
 
 ---
 
@@ -83,41 +83,8 @@ NAT
 ```
 
 Reason:
-Allows the virtual machine to access the internet through the host computer while keeping the virtual machine isolated from the local network.
 
----
-
-# Issues Encountered
-
-## Installation Freeze
-
-The Ubuntu installer appeared to freeze during installation.
-
-### Troubleshooting Performed
-
-- Verified VirtualBox settings.
-- Increased video memory.
-- Restarted the virtual machine.
-- Attempted installation again.
-
-### Resolution
-
-Booted Ubuntu using:
-
-```text
-Safe Graphics Mode
-```
-
-The installation then completed successfully.
-
----
-
-# Lessons Learned
-
-- Virtual machine display settings can affect operating system installation.
-- Safe Graphics Mode can resolve compatibility issues during Ubuntu installation.
-- Recording system configurations makes troubleshooting much easier in the future.
-- Documentation is an important skill in both IT and cybersecurity.
+Allows the virtual machine to access the internet through the host while keeping it isolated from the local network.
 
 ---
 
@@ -125,5 +92,5 @@ The installation then completed successfully.
 
 - Increase RAM to 4096 MB if additional tools are installed.
 - Experiment with Bridged Networking.
-- Create additional Linux virtual machines for cybersecurity labs.
-- Build a dedicated penetration testing lab.
+- Create VirtualBox snapshots before major changes.
+- Build additional Linux virtual machines for lab practice.

@@ -1,6 +1,6 @@
 # Networking Notes
 
-This folder contains my notes and documentation related to networking concepts that are essential for cybersecurity, system administration, and troubleshooting.
+This folder contains notes related to networking concepts used in cybersecurity, system administration, and troubleshooting.
 
 ---
 
@@ -22,47 +22,33 @@ This folder contains my notes and documentation related to networking concepts t
 
 ## osi-model.md
 
-Topics covered:
+Covers:
 
-- The seven layers of the OSI model
+- Seven OSI layers
 - Protocols and devices at each layer
-- Encapsulation and data flow
+- Data flow
 - Cybersecurity relevance
-- Real-world networking examples
-
----
+- Real-world examples
 
 ## tcp-ip.md
 
-Topics covered:
+Covers:
 
-- The four layers of the TCP/IP model
+- Four TCP/IP layers
 - TCP vs UDP
-- Encapsulation and decapsulation
+- Encapsulation
 - Internet communication
-- Networking fundamentals
-
----
+- Network fundamentals
 
 ## ports-and-protocols.md
 
-Topics covered:
+Covers:
 
-- Common network ports
+- Common ports
 - Network protocols
-- Protocol purposes and risks
+- Protocol risks
 - Security considerations
 - Networking commands
-
----
-
-# Learning Goals
-
-- Understand how data moves across networks.
-- Learn common networking protocols and services.
-- Build strong troubleshooting skills.
-- Understand how cybersecurity tools use networking concepts.
-- Develop the foundational knowledge needed for cybersecurity certifications.
 
 ---
 
@@ -112,12 +98,9 @@ Topics covered:
 
 # Why Networking Matters in Cybersecurity
 
-Networking is one of the most important foundations of cybersecurity because:
+Networking is a foundation of cybersecurity because:
 
-- Most cyberattacks occur across networks.
-- Security professionals analyze network traffic daily.
-- Understanding protocols helps identify malicious activity.
-- Firewalls, IDS, VPNs, and other security technologies all rely on networking concepts.
-- Strong networking knowledge makes troubleshooting and incident response significantly easier.
-
-This folder will continue to grow as I learn more about networking and cybersecurity.
+- Many attacks occur across networks.
+- Security professionals analyze traffic.
+- Protocol knowledge helps detect malicious activity.
+- Firewalls, IDS, VPNs, and SIEM tools rely on networking concepts.

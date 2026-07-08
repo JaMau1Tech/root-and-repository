@@ -1,13 +1,13 @@
 # WSL Installation Screenshots
 
-This folder contains screenshots documenting the installation and troubleshooting of Windows Subsystem for Linux (WSL).
+This folder contains screenshots documenting the WSL installation and troubleshooting process.
 
 ---
 
 # Screenshot Timeline
 
 | Screenshot | Description |
-|------------|-------------|
+|---|---|
 | wsl-admin-powershell.png | Opened PowerShell as Administrator |
 | wsl-install-command.png | Executed WSL installation command |
 | wsl-install-start.png | WSL installation started |
@@ -36,10 +36,3 @@ This folder contains screenshots documenting the installation and troubleshootin
 - Linux installation
 - Troubleshooting
 - Documentation
-- Problem solving
-
----
-
-# Project Outcome
-
-Successfully installed Ubuntu through Windows Subsystem for Linux and created a fully functional Linux environment directly inside Windows.

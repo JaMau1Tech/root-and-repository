@@ -1,18 +1,18 @@
 # Linux Notes
 
-This folder contains my notes, documentation, and hands-on learning related to Linux, Bash, and Windows Subsystem for Linux (WSL).
+This folder contains notes and documentation related to Linux, Bash, WSL, and command-line fundamentals.
 
 ---
 
 # Topics Covered
 
 - Linux commands
-- Bash scripting
+- Bash
 - File system navigation
 - User management
 - File permissions
 - Package management
-- Windows Subsystem for Linux (WSL)
+- Windows Subsystem for Linux
 - Linux troubleshooting
 - Command-line fundamentals
 
@@ -22,7 +22,7 @@ This folder contains my notes, documentation, and hands-on learning related to L
 
 ## bash-notes.md
 
-Notes covering:
+Covers:
 
 - Bash fundamentals
 - Terminal navigation
@@ -30,50 +30,34 @@ Notes covering:
 - Helpful Linux commands
 - Command-line concepts
 
----
-
 ## linux-commands.md
 
-Documentation for:
+Covers:
 
 - Navigation commands
 - File management commands
 - File viewing commands
-- Permissions and administrative commands
-- Common Linux command examples
-
----
+- Permissions
+- Administrative commands
 
 ## wsl-notes.md
 
-Documentation covering:
+Covers:
 
 - Installing Ubuntu with WSL
-- WSL concepts and benefits
+- WSL concepts
 - Linux user creation
-- Lessons learned during installation
-- WSL troubleshooting and observations
-
----
+- Installation observations
+- Troubleshooting notes
 
 ## wsl-feature-name-unknown.md
 
-Troubleshooting documentation for:
+Covers:
 
-- WSL installation errors
-- Windows feature detection issues
+- WSL feature errors
 - DISM commands
-- Lessons learned and root cause analysis
-
----
-
-# Learning Goals
-
-- Become comfortable using the Linux command line.
-- Learn file system navigation and administration.
-- Understand permissions and user management.
-- Build Linux skills for cybersecurity and system administration.
-- Develop troubleshooting and documentation habits.
+- Windows feature detection
+- Root cause analysis
 
 ---
 
@@ -106,11 +90,9 @@ Troubleshooting documentation for:
 
 # Why Linux Matters in Cybersecurity
 
-Linux is one of the most important operating systems in cybersecurity because:
+Linux is important in cybersecurity because:
 
-- Most servers run Linux.
-- Many cybersecurity tools are built for Linux.
+- Many servers run Linux.
+- Many security tools are built for Linux.
 - Penetration testing distributions are Linux-based.
-- Command-line skills are essential for system administration and security work.
-
-This folder will continue to grow as I learn more about Linux and cybersecurity.
+- Command-line skills are essential for security work.

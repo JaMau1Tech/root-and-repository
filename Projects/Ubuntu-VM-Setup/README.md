@@ -1,42 +1,25 @@
-# Projects
+# Ubuntu VM Setup
 
-This folder contains hands-on projects that document my cybersecurity and IT learning journey.
+This project documents the process of creating a Linux lab environment for cybersecurity practice.
 
-Each project includes:
-
-- Documentation
-- Installation steps
-- Troubleshooting notes
-- Screenshots
-- Lessons learned
-- Configuration files
-- Future improvements
+The project began with Oracle VirtualBox and Xubuntu. After repeated virtual machine installation and stability issues, the lab environment was expanded to include Windows Subsystem for Linux.
 
 ---
 
-# Current Projects
+# Objective
 
-## Ubuntu VM Setup
+Create a stable Linux environment for:
 
-Built my first Linux virtual machine using Oracle VirtualBox and Ubuntu/Xubuntu.
+- Linux fundamentals
+- Bash command practice
+- Cybersecurity labs
+- Git and GitHub workflows
+- Troubleshooting practice
+- Technical documentation
 
-### Skills Learned
+---
 
-- Virtualization concepts
-- Installing operating systems
-- VM hardware configuration
-- Troubleshooting boot issues
-- Linux installation procedures
-- Documentation practices
-
-### Technologies Used
-
-- Oracle VirtualBox
-- Ubuntu Desktop
-- Xubuntu
-- Windows 11
-
-### Project Structure
+# Project Structure
 
 ```text
 Ubuntu-VM-Setup/
@@ -49,28 +32,41 @@ Ubuntu-VM-Setup/
 
 ---
 
-# Future Projects
+# Tools Used
 
-- Kali Linux Lab
-- Windows Server Lab
-- Active Directory Lab
-- Vulnerability Scanning Lab
-- Home SOC
-- SIEM Lab
-- Network Monitoring Lab
-- Python Automation Projects
-- Web Application Security Lab
+- Windows 11
+- Oracle VirtualBox
+- Xubuntu
+- Ubuntu WSL
+- PowerShell
+- DISM
+- GitHub
 
 ---
 
-# Goals
+# Outcome
 
-- Build practical cybersecurity experience.
-- Learn troubleshooting and documentation.
-- Create a professional portfolio.
-- Demonstrate hands-on technical skills.
-- Develop repeatable lab environments.
+Successfully created a working Linux learning environment using WSL after troubleshooting VirtualBox installation issues.
 
 ---
 
-This folder will continue to grow as I complete additional cybersecurity and IT projects.
+# Skills Practiced
+
+- Virtualization
+- Linux installation
+- WSL installation
+- Operating system troubleshooting
+- PowerShell commands
+- DISM feature investigation
+- Screenshot documentation
+- Technical writing
+
+---
+
+# Lessons Learned
+
+- Virtual machine settings can affect Linux installation.
+- Safe Graphics Mode can resolve display-related installation problems.
+- WSL is a lightweight alternative to a full virtual machine.
+- Terminal output can sometimes be misleading.
+- Documentation makes troubleshooting easier in the future.

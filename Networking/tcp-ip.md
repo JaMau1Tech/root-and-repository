@@ -2,17 +2,17 @@
 
 ## What is TCP/IP?
 
-TCP/IP (Transmission Control Protocol/Internet Protocol) is the networking model used by the Internet. It defines how data is transmitted between devices on a network.
+TCP/IP, or Transmission Control Protocol/Internet Protocol, is the networking model used by the Internet. It defines how data is transmitted between devices.
 
 ---
 
-# The Four Layers of the TCP/IP Model
+# The Four Layers of TCP/IP
 
 ## 1. Application Layer
 
 Provides network services directly to user applications.
 
-### Examples
+Examples:
 
 - HTTP
 - HTTPS
@@ -21,7 +21,7 @@ Provides network services directly to user applications.
 - DNS
 - SMTP
 
-### Common Activities
+Common activities:
 
 - Browsing websites
 - Sending emails
@@ -34,14 +34,14 @@ Provides network services directly to user applications.
 
 Responsible for end-to-end communication between devices.
 
-### Protocols
+### TCP
 
-#### TCP (Transmission Control Protocol)
+TCP is:
 
 - Connection-oriented
 - Reliable
-- Performs error checking
-- Guarantees delivery
+- Error-checking
+- Delivery-confirming
 
 Examples:
 
@@ -49,11 +49,13 @@ Examples:
 - SSH
 - FTP
 
-#### UDP (User Datagram Protocol)
+### UDP
+
+UDP is:
 
 - Connectionless
 - Faster than TCP
-- No guarantee of delivery
+- Not guaranteed to deliver data
 
 Examples:
 
@@ -67,17 +69,17 @@ Examples:
 
 Responsible for routing packets across networks.
 
-### Protocols
+Protocols:
 
 - IP
 - ICMP
 - ARP
 
-### Functions
+Functions:
 
 - Logical addressing
 - Packet routing
-- Determining the best path to a destination
+- Path selection
 
 ---
 
@@ -85,24 +87,24 @@ Responsible for routing packets across networks.
 
 Responsible for communication with the physical network.
 
-### Technologies
+Technologies:
 
 - Ethernet
 - Wi-Fi
-- Fiber Optic
-- MAC Addresses
+- Fiber optic
+- MAC addresses
 
-### Devices
+Devices:
 
 - Switches
-- Network Interface Cards (NICs)
+- Network Interface Cards
 
 ---
 
 # TCP/IP vs OSI Model
 
 | TCP/IP Layer | OSI Equivalent |
-|--------------|----------------|
+|---|---|
 | Application | Application, Presentation, Session |
 | Transport | Transport |
 | Internet | Network |
@@ -122,14 +124,10 @@ Responsible for communication with the physical network.
 
 # Decapsulation Process
 
-When data reaches the destination:
-
-1. The Network Access layer removes the frame information.
-2. The Internet layer removes the IP header.
-3. The Transport layer removes the TCP or UDP header.
-4. The Application layer receives the original data.
-
-This process is called **decapsulation**.
+1. Network Access layer removes frame information.
+2. Internet layer removes IP header.
+3. Transport layer removes TCP or UDP header.
+4. Application layer receives the original data.
 
 ---
 
@@ -138,37 +136,37 @@ This process is called **decapsulation**.
 1. User enters a URL.
 2. DNS resolves the domain name to an IP address.
 3. TCP establishes a connection.
-4. HTTP/HTTPS requests the webpage.
+4. HTTP or HTTPS requests the webpage.
 5. The server sends the response back to the client.
 
 ---
 
 # Key Terms
 
-- Packet: Unit of data at the Internet layer.
-- Segment: Unit of data at the Transport layer.
-- Frame: Unit of data at the Network Access layer.
-- IP Address: Logical address assigned to a device.
-- Port: Communication endpoint used by applications.
+| Term | Meaning |
+|---|---|
+| Packet | Unit of data at the Internet layer |
+| Segment | Unit of data at the Transport layer |
+| Frame | Unit of data at the Network Access layer |
+| IP Address | Logical address assigned to a device |
+| Port | Communication endpoint used by applications |
 
 ---
 
 # Cybersecurity Relevance
 
-Understanding the TCP/IP model is important because security professionals work with network traffic every day.
-
-Examples:
+TCP/IP knowledge is important for:
 
 - Packet captures in Wireshark
 - Firewall rules
 - Network troubleshooting
 - Port scanning with Nmap
 - Detecting malicious traffic
-- Understanding attacks and vulnerabilities
+- Understanding network attacks
 
 Examples of attacks:
 
-- Denial-of-Service (DoS)
+- Denial-of-Service
 - TCP SYN Floods
 - DNS attacks
 - IP spoofing
@@ -190,8 +188,7 @@ Examples of attacks:
 
 # Lessons Learned
 
-- The Internet operates using the TCP/IP model.
-- Data is encapsulated and decapsulated as it travels across a network.
+- The Internet operates using TCP/IP.
+- Data is encapsulated and decapsulated as it travels.
 - Different protocols operate at different layers.
-- Understanding TCP/IP makes troubleshooting and packet analysis much easier.
-- Many cybersecurity tools rely on knowledge of the TCP/IP model.
+- TCP/IP knowledge makes troubleshooting easier.

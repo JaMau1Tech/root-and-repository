@@ -2,7 +2,7 @@
 
 ## What is Bash?
 
-Bash (Bourne Again Shell) is the default command-line shell on many Linux distributions. It allows users to interact with the operating system by typing commands into a terminal.
+Bash, or Bourne Again Shell, is a command-line shell used on many Linux systems. It allows users to interact with the operating system by typing commands into a terminal.
 
 ---
 
@@ -16,8 +16,6 @@ pwd
 
 Displays the current working directory.
 
----
-
 ## ls
 
 ```bash
@@ -26,17 +24,13 @@ ls
 
 Lists files and directories.
 
----
-
 ## ls -la
 
 ```bash
 ls -la
 ```
 
-Shows hidden files and detailed information.
-
----
+Shows hidden files and detailed file information.
 
 ## cd
 
@@ -46,8 +40,6 @@ cd directory-name
 
 Changes to a specified directory.
 
----
-
 ## cd ..
 
 ```bash
@@ -55,6 +47,14 @@ cd ..
 ```
 
 Moves up one directory.
+
+## cd ~
+
+```bash
+cd ~
+```
+
+Returns to the home directory.
 
 ---
 
@@ -68,8 +68,6 @@ mkdir foldername
 
 Creates a new directory.
 
----
-
 ## touch
 
 ```bash
@@ -77,8 +75,6 @@ touch filename.txt
 ```
 
 Creates a new file.
-
----
 
 ## cp
 
@@ -88,8 +84,6 @@ cp source destination
 
 Copies a file or directory.
 
----
-
 ## mv
 
 ```bash
@@ -97,8 +91,6 @@ mv source destination
 ```
 
 Moves or renames a file.
-
----
 
 ## rm
 
@@ -108,8 +100,6 @@ rm filename
 
 Deletes a file.
 
----
-
 ## rm -r
 
 ```bash
@@ -117,6 +107,26 @@ rm -r foldername
 ```
 
 Deletes a directory and its contents.
+
+---
+
+# Searching Commands
+
+## find
+
+```bash
+find . -name filename.txt
+```
+
+Searches for files and directories.
+
+## grep
+
+```bash
+grep "search-text" filename.txt
+```
+
+Searches for text inside a file.
 
 ---
 
@@ -130,8 +140,6 @@ clear
 
 Clears the terminal screen.
 
----
-
 ## history
 
 ```bash
@@ -140,8 +148,6 @@ history
 
 Displays previously used commands.
 
----
-
 ## man
 
 ```bash
@@ -149,6 +155,14 @@ man command
 ```
 
 Displays the manual page for a command.
+
+## echo
+
+```bash
+echo "Hello"
+```
+
+Prints text to the terminal.
 
 ---
 
@@ -162,18 +176,19 @@ whoami
 
 Displays the currently logged-in Linux user.
 
-Example:
+---
 
-```text
-jamaurlan
-```
+# Cybersecurity Use Cases
 
-Cybersecurity Use Cases:
+Bash is useful for:
 
-- Verify the current user account.
-- Confirm permissions and privileges.
-- Identify which user is executing commands.
-- Useful during system administration and penetration testing.
+- Navigating Linux systems
+- Running cybersecurity tools
+- Automating tasks
+- Reading logs
+- Searching files
+- Managing scripts
+- Troubleshooting systems
 
 ---
 
@@ -181,5 +196,5 @@ Cybersecurity Use Cases:
 
 - Linux is case-sensitive.
 - Most Linux work is performed through the command line.
-- Understanding Bash commands is essential for cybersecurity and system administration.
-- Always read command documentation before using unfamiliar commands.
+- Bash is essential for cybersecurity and system administration.
+- Commands should be understood before running them with elevated privileges.

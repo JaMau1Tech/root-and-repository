@@ -1,6 +1,6 @@
 # Linux Commands
 
-This document contains commonly used Linux commands that I am learning and using throughout my cybersecurity journey.
+This document contains commonly used Linux commands learned during cybersecurity practice.
 
 ---
 
@@ -14,8 +14,6 @@ pwd
 
 Displays the current working directory.
 
----
-
 ## ls
 
 ```bash
@@ -24,7 +22,7 @@ ls
 
 Lists files and directories.
 
-### Useful Options
+Useful options:
 
 ```bash
 ls -l
@@ -33,8 +31,6 @@ ls -la
 
 - `-l` shows detailed information.
 - `-a` shows hidden files.
-
----
 
 ## cd
 
@@ -52,9 +48,6 @@ cd ..
 cd ~
 ```
 
-- `cd ..` moves up one directory.
-- `cd ~` returns to the home directory.
-
 ---
 
 # File Management Commands
@@ -67,8 +60,6 @@ mkdir foldername
 
 Creates a new directory.
 
----
-
 ## touch
 
 ```bash
@@ -76,8 +67,6 @@ touch filename.txt
 ```
 
 Creates a new file.
-
----
 
 ## cp
 
@@ -93,8 +82,6 @@ Example:
 cp notes.txt backup.txt
 ```
 
----
-
 ## mv
 
 ```bash
@@ -102,8 +89,6 @@ mv oldname.txt newname.txt
 ```
 
 Moves or renames files.
-
----
 
 ## rm
 
@@ -114,7 +99,7 @@ rm -r foldername
 
 Deletes files and directories.
 
-⚠️ Be careful with `rm` because deleted files usually cannot be recovered.
+Warning: deleted files are usually difficult to recover.
 
 ---
 
@@ -128,8 +113,6 @@ cat filename.txt
 
 Displays the contents of a file.
 
----
-
 ## nano
 
 ```bash
@@ -137,8 +120,6 @@ nano filename.txt
 ```
 
 Opens a file in the Nano text editor.
-
----
 
 ## less
 
@@ -148,11 +129,11 @@ less filename.txt
 
 Displays file contents one page at a time.
 
-Press:
+Useful keys:
 
-- `q` to quit
-- `Space` to move forward
-- `b` to move backward
+- `q` quits
+- `Space` moves forward
+- `b` moves backward
 
 ---
 
@@ -174,7 +155,13 @@ chmod +x script.sh
 
 Makes a file executable.
 
----
+## chown
+
+```bash
+sudo chown user file
+```
+
+Changes file ownership.
 
 ## sudo
 
@@ -192,20 +179,61 @@ sudo apt update
 
 ---
 
+# Searching Commands
+
+## find
+
+```bash
+find . -name filename.txt
+```
+
+Searches for files.
+
+## grep
+
+```bash
+grep "text" filename.txt
+```
+
+Searches inside files.
+
+---
+
+# Package Management
+
+## apt update
+
+```bash
+sudo apt update
+```
+
+Updates the package list.
+
+## apt upgrade
+
+```bash
+sudo apt upgrade
+```
+
+Upgrades installed packages.
+
+---
+
 # Cybersecurity Relevance
 
-Learning Linux commands is important because:
+Linux commands are important because:
 
 - Most cybersecurity tools run on Linux.
-- Penetration testing often requires command-line skills.
-- Linux administration is essential for servers and security operations.
-- Understanding permissions helps identify security misconfigurations.
+- Penetration testing requires command-line skills.
+- Linux administration is essential for servers.
+- Permissions help identify security misconfigurations.
+- Searching files is useful during investigations.
 
 ---
 
 # Lessons Learned
 
-- Linux is heavily command-line driven.
+- Linux is command-line driven.
 - Small commands can make major system changes.
-- Always understand a command before running it with `sudo`.
-- Practice commands in a virtual machine before using them on production systems.
+- Always understand a command before using `sudo`.
+- Practice commands in a lab before using them on important systems.
