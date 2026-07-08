@@ -38,6 +38,11 @@ windowscli-task2-command-prompt-open
 windowscli-task2-find-task-brief
 windowscli-task3-systeminfo-output
 windowscli-task3-ipconfig-output
+
+ossecurity-task3-ssh-login
+ossecurity-task3-command-history
+ossecurity-task3-root-login
+ossecurity-task3-flag
 ```
 
 ---
@@ -104,7 +109,7 @@ Topics covered:
 
 Topics covered:
 
-- Windows Command Prompt (CMD)
+- Windows Command Prompt
 - Directory navigation
 - Hidden files
 - File searching
@@ -115,4 +120,17 @@ Topics covered:
 
 ---
 
-Additional screenshots will be added as the remaining rooms in the **Operating Systems Basics** module are completed.
+### Operating System Security
+
+Topics covered:
+
+- CIA Triad
+- Authentication
+- Weak passwords
+- Least privilege
+- File permissions
+- Malware
+- SSH authentication
+- Command history review
+- Privilege escalation basics
+- Root account access

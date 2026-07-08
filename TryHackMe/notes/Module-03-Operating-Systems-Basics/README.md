@@ -2,15 +2,15 @@
 
 ## Status
 
-🚧 In Progress
+✅ Completed
 
 ---
 
 ## Overview
 
-This module introduces the fundamentals of operating systems, with a focus on Linux and Windows environments commonly encountered in IT and cybersecurity. Through hands-on TryHackMe labs, I explored how operating systems manage hardware and software, navigated graphical and command-line interfaces, and practiced using built-in administrative and security tools.
+This module introduced the fundamentals of operating systems, with a focus on Linux and Windows environments commonly encountered in IT and cybersecurity. Through hands-on TryHackMe labs, I explored how operating systems manage hardware and software, navigated graphical and command-line interfaces, gathered system information, and practiced using built-in administrative and security tools.
 
-The knowledge gained in this module builds a strong foundation for future topics such as networking, system administration, digital forensics, and penetration testing.
+The module also introduced basic operating system security concepts, including authentication, weak passwords, file permissions, malware, SSH access, and privilege escalation.
 
 ---
 
@@ -21,7 +21,10 @@ The knowledge gained in this module builds a strong foundation for future topics
 - Navigate graphical and command-line interfaces
 - Manage files and directories
 - Gather system information
+- Gather network information
 - Understand basic operating system security concepts
+- Use SSH to connect to a remote Linux system
+- Understand weak passwords and privilege escalation
 - Develop practical Linux and Windows administration skills
 
 ---
@@ -32,7 +35,7 @@ The knowledge gained in this module builds a strong foundation for future topics
 - ✅ Windows Basics
 - ✅ Linux CLI Basics
 - ✅ Windows CLI Basics
-- ⬜ Operating System Security
+- ✅ Operating System Security
 
 ---
 
@@ -43,10 +46,14 @@ The knowledge gained in this module builds a strong foundation for future topics
 - Linux command-line navigation
 - Windows command-line navigation
 - File and directory management
+- Windows and Linux file searching
 - System information gathering
 - Network information gathering
 - Windows system administration
 - Linux terminal usage
+- SSH authentication
+- Basic privilege escalation awareness
+- Operating system security fundamentals
 - Technical documentation
 - Cybersecurity portfolio development
 
@@ -81,16 +88,20 @@ Module-03-Operating-Systems-Basics/
 - Windows Basics ✅
 - Linux CLI Basics ✅
 - Windows CLI Basics ✅
-- Operating System Security ⬜
-- Topic Transition Recap ⬜
+- Operating System Security ✅
+- Topic Transition Recap ✅
 
 ---
 
 ## Next Steps
 
-Continue completing the remaining room:
+Continue building foundational cybersecurity knowledge by moving into the next TryHackMe module.
 
-- Operating System Security
+Focus areas going forward:
 
-After completing the final room, create the Topic Transition Recap to summarize the knowledge and skills gained throughout the Operating Systems Basics module.
-
+- Networking fundamentals
+- Linux practice
+- Windows administration
+- Security tools
+- Hands-on cybersecurity labs
+- Continued portfolio documentation
