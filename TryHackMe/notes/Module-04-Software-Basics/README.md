@@ -76,8 +76,33 @@ Throughout this module I developed an understanding of:
 - Conditional Statements
 - While Loops
 - Program Flow
-
+- JavaScript Fundamentals
+- Variables (`let`)
+- Constants (`const`)
+- Node.js
+- `console.log()`
+- `parseInt()`
+- Conditional Statements
+- While Loops
+- Program Flow
 ---
+
+### ✅ JavaScript: Simple Demo
+
+Introduced the fundamentals of JavaScript programming by creating an interactive "Guess the Number" game executed with Node.js.
+
+**Topics Covered**
+
+- Variables (`let`)
+- Constants (`const`)
+- Random Number Generation
+- User Input
+- `console.log()`
+- `parseInt()`
+- Conditional Statements
+- While Loops
+- Program Flow
+- Node.js
 
 ## Module Structure
 

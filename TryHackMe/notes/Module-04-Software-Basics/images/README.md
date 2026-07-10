@@ -61,7 +61,19 @@ dataencoding-room-complete
 - python-simple-demo-task4-while-loops
 - python-simple-demo-lab-guess-v3
 - python-simple-demo-room-complete
----
+
+## JavaScript: Simple Demo
+
+- javascript-simple-demo-room-introduction
+- javascript-simple-demo-task2-variables-constants-output
+- javascript-simple-demo-lab-guess-v1
+- javascript-simple-demo-task3-user-input
+- javascript-simple-demo-lab-guess-v1-input
+- javascript-simple-demo-task4-conditionals
+- javascript-simple-demo-lab-guess-v2
+- javascript-simple-demo-task5-while-loops
+- javascript-simple-demo-lab-guess-v3
+- javascript-simple-demo-room-complete
 
 ## Purpose
 
