@@ -1,36 +1,16 @@
 # Module 05 – Network Fundamentals
 
-This module introduces the core concepts of computer networking and builds the foundational knowledge required for system administration, networking, and cybersecurity.
+This module introduces the core concepts of computer networking, including how devices communicate, network topologies, the OSI Model, and the protocols that enable communication across local and wide area networks.
+
+The goal of this module is to build a strong networking foundation that will support future cybersecurity topics such as web technologies, packet analysis, network attacks, and defensive security.
 
 ---
 
-# Module Objectives
+# Module Progress
 
-By completing this module, I will be able to:
-
-- Understand how computer networks operate.
-- Explain how devices communicate across networks.
-- Identify common networking devices and their functions.
-- Understand IP addressing fundamentals.
-- Differentiate between IPv4 and IPv6.
-- Understand MAC addressing and MAC spoofing.
-- Perform basic network troubleshooting using Ping (ICMP).
-- Build the networking knowledge required for future cybersecurity topics.
-
----
-
-# Skills Developed
-
-- Networking Fundamentals
-- Internet Fundamentals
-- IP Addressing
-- MAC Addressing
-- IPv4
-- IPv6
-- Public vs Private Networks
-- ICMP
-- Ping
-- Basic Network Troubleshooting
+| Completed | Total Rooms | Progress |
+|-----------:|------------:|---------:|
+| 3 | 6 | **50%** 🟨 |
 
 ---
 
@@ -39,35 +19,95 @@ By completing this module, I will be able to:
 | Status | Room | Difficulty | Documentation |
 |:------:|------|:----------:|---------------|
 | ✅ | What is Networking? | Easy | [task-notes.md](./What-is-Networking/task-notes.md) |
-| ⏳ | Intro to LAN | Easy | Coming Soon |
+| ✅ | Intro to LAN | Easy | [task-notes.md](./Intro-to-LAN/task-notes.md) |
+| ✅ | OSI Model | Easy | [task-notes.md](./OSI-Model/task-notes.md) |
+| ⏳ | Packets & Frames | Easy | Coming Soon |
+| ⏳ | Extending Your Network | Easy | Coming Soon |
+| ⏳ | Topic Transition Recap | Easy | Coming Soon |
 
 ---
 
-# Module Progress
+# Module Objectives
 
-| Completed | Total Rooms | Progress |
-|-----------:|------------:|---------:|
-| 1 | 2 | 50% |
+By completing this module I will learn:
+
+- Computer networking fundamentals
+- Network communication
+- LAN technologies
+- Network addressing
+- The OSI Model
+- TCP/IP communication
+- Network protocols
+- Packet transmission
+- Basic network troubleshooting
 
 ---
 
-# Screenshots
+# Skills Developed
 
-All screenshots for this module are stored in the shared:
+## Networking Fundamentals
 
-```text
-images/
-```
+- Computer Networks
+- LAN Topologies
+- Switching
+- Routing
+- Public vs Private Networks
+- IPv4
+- IPv6
+- IP Addressing
+- MAC Addressing
+- MAC Address Spoofing
+- Subnetting
+- ARP
+- DHCP
+- ICMP
+- Ping
 
-directory.
+---
 
-Refer to:
+## OSI Model
 
-```text
-images/README.md
-```
+- Open Systems Interconnection (OSI)
+- Seven Layer Model
+- Encapsulation
+- Physical Layer
+- Data Link Layer
+- Network Layer
+- Transport Layer
+- Session Layer
+- Presentation Layer
+- Application Layer
 
-for the complete screenshot inventory.
+---
+
+## Transport Protocols
+
+- TCP
+- UDP
+- Reliability vs Speed
+- Connection-Oriented Communication
+- Connectionless Communication
+
+---
+
+# Practical Labs Completed
+
+## What is Networking?
+
+- MAC Address Spoofing Lab
+- Ping (ICMP) Lab
+
+---
+
+## Intro to LAN
+
+- LAN Topology Interactive Lab
+
+---
+
+## OSI Model
+
+- OSI Dungeon Interactive Lab
 
 ---
 
@@ -77,47 +117,54 @@ for the complete screenshot inventory.
 Module-05-Network-Fundamentals/
 │
 ├── README.md
+│
 ├── images/
 │   ├── README.md
-│   └── screenshots
+│   └── all screenshots for this module
 │
 ├── What-is-Networking/
 │   └── task-notes.md
 │
-└── Intro-to-LAN/
+├── Intro-to-LAN/
+│   └── task-notes.md
+│
+├── OSI-Model/
+│   └── task-notes.md
+│
+├── Packets-and-Frames/
+│   └── task-notes.md
+│
+├── Extending-Your-Network/
+│   └── task-notes.md
+│
+└── Topic-Transition-Recap/
     └── task-notes.md
 ```
 
 ---
 
-# Learning Outcomes
+# Current Module Statistics
 
-After completing this module, I can:
-
-- Explain the purpose of computer networks.
-- Identify common networking hardware.
-- Explain logical and physical addressing.
-- Describe the differences between IPv4 and IPv6.
-- Demonstrate MAC spoofing in a controlled lab.
-- Use Ping (ICMP) to troubleshoot connectivity.
+- ✅ 3 of 6 Rooms Completed
+- ✅ 4 Interactive Labs Completed
+- ✅ 3 Room Documentation Files
+- ✅ Standardized Screenshot Documentation
+- 🟨 Module 50% Complete
 
 ---
 
-# Next Module Room
+# Next Room
 
-➡️ **Intro to LAN**
+➡️ **Packets & Frames**
 
-This room expands on:
+Upcoming topics include:
 
-- Local Area Networks
-- Switching
-- Routing
-- Ethernet
-- Network Topologies
+- Packets
+- Frames
+- Encapsulation
+- Decapsulation
+- Data Transmission
 
 ---
 
-# Resources
-
-- TryHackMe – Pre Security Path
-- Root & Repository Standards v1.1
+This module is continuously updated as I complete each networking room, document hands-on labs, and expand my understanding of networking concepts essential for cybersecurity.

@@ -1,130 +1,298 @@
-# TryHackMe Notes
+# TryHackMe
 
-This folder contains notes, screenshots, and documentation from my progress through the **TryHackMe Pre Security** learning path.
+This repository contains my documentation, notes, screenshots, and hands-on labs completed throughout the **TryHackMe Pre Security Learning Path**.
 
-The purpose of this section is to:
+The purpose of this repository is to:
 
-- Practice hands-on cybersecurity skills
-- Learn foundational IT concepts
-- Build problem-solving abilities
-- Improve technical documentation skills
-- Track learning progress
-- Build a professional cybersecurity portfolio
+- Build a strong cybersecurity foundation
+- Develop practical hands-on skills
+- Practice professional technical documentation
+- Reinforce learning through handwritten notes
+- Create a portfolio demonstrating continuous growth
+- Track progress through structured learning paths
 
 ---
 
 # Progress
 
 | Module | Status |
-|---------|---------|
-| Module 01 – Introduction to Cybersecurity | ✅ Completed |
-| Module 02 – Computer Fundamentals | ✅ Completed |
-| Module 03 – Operating Systems Basics | ✅ Completed |
-| Module 04 – Software Basics | 🟨 In Progress |
-| Module 05 – Network Fundamentals | ⬜ Not Started |
+|---------|:------:|
+| Module 01 – Introduction to Cybersecurity | ✅ Complete |
+| Module 02 – Computer Fundamentals | ✅ Complete |
+| Module 03 – Operating Systems Basics | ✅ Complete |
+| Module 04 – Software Basics | ✅ Complete |
+| Module 05 – Network Fundamentals | 🟨 In Progress (3/6 Rooms Completed) |
 | Module 06 – How the Web Works | ⬜ Not Started |
 | Module 07 – Attacks and Defenses | ⬜ Not Started |
 
 ---
 
-# Skills Gained So Far
+# Repository Structure
 
-## Cybersecurity Foundations
-
-- CIA Triad
-- Threats and Vulnerabilities
-- Types of Cyber Attacks
-- Security Principles
-- Basic Risk Awareness
+```text
+TryHackMe/
+│
+├── README.md
+│
+├── Module-01-Introduction-to-Cybersecurity/
+│
+├── Module-02-Computer-Fundamentals/
+│
+├── Module-03-Operating-Systems-Basics/
+│
+├── Module-04-Software-Basics/
+│
+├── Module-05-Network-Fundamentals/
+│
+├── Module-06-How-the-Web-Works/
+│
+└── Module-07-Attacks-and-Defenses/
+```
 
 ---
 
-## Computer Fundamentals
+# Completed Modules
 
-- Client-Server Model
+## ✅ Module 01 – Introduction to Cybersecurity
+
+### Topics Covered
+
+- Introduction to Cybersecurity
+- Offensive Security
+- Defensive Security
+- Careers in Cybersecurity
+
+### Skills Developed
+
+- Cybersecurity Fundamentals
+- Security Domains
+- Threat Awareness
+- Security Careers
+- Technical Documentation
+
+---
+
+## ✅ Module 02 – Computer Fundamentals
+
+### Topics Covered
+
+- Client-Server
 - Cloud Computing
 - Computer Types
-- Computer Hardware
+- Inside a Computer
 - Virtualization
-- Embedded Systems
-- IoT Devices
+
+### Skills Developed
+
+- Computer Hardware
+- Client-Server Architecture
+- Cloud Concepts
+- Virtual Machines
 
 ---
 
-## Operating Systems
+## ✅ Module 03 – Operating Systems Basics
+
+### Topics Covered
 
 - Windows Fundamentals
 - Linux Fundamentals
-- Command Line Basics
-- Users and Permissions
 - File Systems
-- Process Management
-- System Navigation
+- Command Line
+- Operating Systems
+
+### Skills Developed
+
+- Windows Navigation
+- Linux Navigation
+- Command Line Usage
+- File Management
+- Operating System Fundamentals
 
 ---
 
-## Software Basics
+## ✅ Module 04 – Software Basics
 
-- Binary Numbers
-- Decimal Numbers
-- Hexadecimal Numbers
+### Topics Covered
+
 - Data Representation
-- RGB Color Representation
-- Character Encoding
+- Data Encoding
+- Python Basics
+- JavaScript Basics
+- SQL Basics
+- Topic Transition Recap
+
+### Skills Developed
+
+- Binary
+- Decimal
+- Hexadecimal
 - ASCII
 - Unicode
 - UTF-8
-- UTF-16
-- UTF-32
+- Python Fundamentals
+- JavaScript Fundamentals
+- SQL Fundamentals
+
+---
+
+## 🟨 Module 05 – Network Fundamentals *(In Progress)*
+
+### Completed Rooms
+
+- ✅ What is Networking?
+- ✅ Intro to LAN
+- ✅ OSI Model
+
+### Upcoming Rooms
+
+- ⏳ Packets & Frames
+- ⏳ Extending Your Network
+- ⏳ Topic Transition Recap
+
+### Skills Developed So Far
+
+- Networking Fundamentals
+- LAN Topologies
+- Switching
+- Routing
+- IPv4
+- IPv6
+- Public vs Private Addressing
+- MAC Addressing
+- MAC Spoofing
+- Subnetting
+- ARP
+- DHCP
+- ICMP
+- Ping
+- OSI Model
+- Physical Layer
+- Data Link Layer
+- Network Layer
+- Transport Layer
+- Session Layer
+- Presentation Layer
+- Application Layer
+- TCP
+- UDP
+- Encapsulation
+
+---
+
+# Skills Gained
+
+## Networking
+
+- Computer Networks
+- LAN Design
+- Switching
+- Routing
+- TCP/IP Fundamentals
+- IPv4
+- IPv6
+- Public & Private Networks
+- MAC Addressing
+- Subnetting
+- ARP
+- DHCP
+- ICMP
+- Ping
+- OSI Model
+- Encapsulation
+- Network Troubleshooting
+
+---
+
+## Programming
+
+### Python
+
+- Variables
+- User Input
+- Loops
+- Conditional Statements
+
+### JavaScript
+
+- Variables
+- Constants
+- Loops
+- Conditional Statements
+- Node.js
+
+---
+
+## Databases
+
+- Database Concepts
+- SQL
+- SELECT
+- FROM
+- WHERE
+- ORDER BY
 
 ---
 
 ## Technical Skills
 
-- Git & GitHub
-- Markdown Documentation
-- Technical Writing
-- Screenshot Organization
-- Browser Developer Tools
-- Structured Note Taking
-- Repository Management
+- Technical Documentation
+- Git
+- GitHub
+- Markdown
+- Repository Organization
+- Screenshot Documentation
+- Hands-On Labs
 
 ---
 
 # Current Portfolio Statistics
 
-- ✅ 3 Completed Modules
-- 🟨 Module 04 In Progress
-- ✅ Multiple Hands-On Labs
-- ✅ Windows Investigations
-- ✅ Wireshark Investigations
-- ✅ Organized Documentation
+- ✅ 4 Completed Modules
+- 🟨 1 Module In Progress
+- ✅ 3 Networking Rooms Completed
+- ✅ 4 Interactive Networking Labs Completed
+- ✅ Python Fundamentals
+- ✅ JavaScript Fundamentals
+- ✅ SQL Fundamentals
+- ✅ Structured Technical Documentation
+- ✅ Standardized Screenshot Library
 - ✅ Growing Cybersecurity Portfolio
 
 ---
 
-# Repository Structure
+# Current Focus
 
-Each module follows a standardized structure:
+I am currently completing:
 
-```text
-Module-XX-Module-Name/
-│
-├── README.md
-├── images/
-│   ├── README.md
-│   └── all screenshots for the module
-│
-├── Room-Name-1/
-│   └── task-notes.md
-│
-├── Room-Name-2/
-│   └── task-notes.md
-│
-└── Topic-Transition-Recap/
-    └── task-notes.md
-```
+**Module 05 – Network Fundamentals**
+
+Remaining Rooms:
+
+- Packets & Frames
+- Extending Your Network
+- Topic Transition Recap
 
 ---
 
-This repository is continuously updated as I complete additional TryHackMe modules and continue building a strong foundation in cybersecurity through hands-on labs, structured documentation, and practical investigations.
+# Learning Philosophy
+
+This repository follows my **Root & Repository** documentation standards.
+
+Each completed TryHackMe room includes:
+
+- Handwritten notebook notes
+- Screenshot documentation
+- Task notes
+- Hands-on lab documentation
+- GitHub-ready Markdown
+- Repository organization
+- Git version history
+
+This documentation-first approach reinforces learning while building a professional cybersecurity portfolio.
+
+---
+
+**Repository Status:** 🟨 Active Development
+
+This repository is continuously updated as I complete additional TryHackMe modules and expand my cybersecurity knowledge through hands-on practice and structured technical documentation.

@@ -1,92 +1,104 @@
-# Module 05 – Network Fundamentals Screenshots
+# Module 05 – Network Fundamentals Images
 
-This directory contains all screenshots captured while completing the **Network Fundamentals** module on TryHackMe.
+This directory contains all screenshots captured while completing the **Network Fundamentals** module in the TryHackMe Pre Security learning path.
 
-All screenshots follow the Root & Repository Screenshot Standards and are captured during task completion, hands-on labs, and room completion.
-
----
-
-# Screenshot Naming Convention
-
-Format:
-
-```text
-<room>-task##-description
-```
-
-Lab screenshots:
-
-```text
-<room>-task##-lab-description
-```
-
-Room completion:
-
-```text
-<room>-room-complete
-```
-
-All filenames use:
-
-- Lowercase letters
-- Hyphens
-- Descriptive names
-- No spaces
-- No special characters
-- No file extensions listed in documentation
+Screenshots are organized using standardized descriptive filenames to make documentation easy to reference and maintain.
 
 ---
 
-# What is Networking?
+# Room 1 – What is Networking?
 
 ## Task Screenshots
 
-| Screenshot | Description |
-|------------|-------------|
-| networking-task01-room-introduction | Room introduction and learning objectives |
-| networking-task02-network-types | Introduction to networks and the Internet |
-| networking-task03-identifying-devices-on-a-network | IP addresses, MAC addresses, IPv4, IPv6, and MAC spoofing concepts |
-| networking-task04-ping-icmp-overview | Ping (ICMP) concepts and command usage |
-
----
+- windows-networking-task01-what-is-networking
+- windows-networking-task02-internet
+- windows-networking-task03-identifying-devices
 
 ## Lab Screenshots
 
-| Screenshot | Description |
-|------------|-------------|
-| networking-task03-mac-address-spoofing-lab | Completed MAC spoofing interactive lab |
-| networking-task04-ping-icmp-lab | Successful Ping (ICMP) interactive lab |
-
----
+- windows-networking-task03-mac-spoofing-lab
+- windows-networking-task04-ping-lab
 
 ## Room Completion
 
-| Screenshot | Description |
-|------------|-------------|
-| networking-room-complete | Completed room showing 100% progress |
+- windows-networking-room-complete
 
 ---
 
-# Module Screenshot Summary
+# Room 2 – Intro to LAN
 
-| Type | Count |
-|------|------:|
-| Task Screenshots | 4 |
-| Lab Screenshots | 2 |
-| Room Completion | 1 |
-| **Total** | **7** |
+## Task Screenshots
+
+- intro-to-lan-task01-lan-topologies
+- intro-to-lan-task02-subnetting
+- intro-to-lan-task03-arp
+- intro-to-lan-task04-dhcp
+
+## Lab Screenshots
+
+- intro-to-lan-task01-lan-topologies-lab
+
+## Room Completion
+
+- intro-to-lan-room-complete
 
 ---
 
-# Notes
+# Room 3 – OSI Model
 
-These screenshots document the completion of the **What is Networking?** room and provide visual evidence of:
+## Task Screenshots
 
-- Task completion
-- Hands-on lab completion
-- Network identification concepts
-- MAC spoofing
-- Ping (ICMP)
-- Overall room completion
+- osi-model-task01-what-is-the-osi-model
+- osi-model-task02-layer01-physical
+- osi-model-task03-layer02-data-link
+- osi-model-task04-layer03-network
+- osi-model-task05-layer04-transport
+- osi-model-task06-layer05-session
+- osi-model-task07-layer06-presentation
+- osi-model-task08-layer07-application
 
-Future rooms completed within this module will be added to this document following the same format and naming conventions.
+## Lab Screenshot
+
+- osi-model-task09-osi-game-lab
+
+## Room Completion
+
+- osi-model-room-complete
+
+---
+
+# Screenshot Naming Standard
+
+Every screenshot follows this convention:
+
+```text
+room-name-taskXX-description
+```
+
+Labs use:
+
+```text
+room-name-taskXX-lab-description
+```
+
+Room completion screenshots use:
+
+```text
+room-name-room-complete
+```
+
+---
+
+# Current Image Statistics
+
+| Room | Task | Lab | Completion | Total |
+|------|-----:|----:|-----------:|------:|
+| What is Networking? | 3 | 2 | 1 | 6 |
+| Intro to LAN | 4 | 1 | 1 | 6 |
+| OSI Model | 8 | 1 | 1 | 10 |
+
+**Total Screenshots:** **22**
+
+---
+
+This image library is updated after every completed TryHackMe room to provide a consistent, searchable, and well-organized visual record of completed labs and learning activities.

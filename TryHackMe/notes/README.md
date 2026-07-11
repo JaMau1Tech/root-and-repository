@@ -20,7 +20,7 @@ The purpose of this section is to:
 | Module 02 – Computer Fundamentals | ✅ Completed |
 | Module 03 – Operating Systems Basics | ✅ Completed |
 | Module 04 – Software Basics | ✅ Completed |
-| Module 05 – Network Fundamentals | 🟨 In Progress (1/2 Rooms Completed) |
+| Module 05 – Network Fundamentals | 🟨 In Progress (2/6 Rooms Completed) |
 | Module 06 – How the Web Works | ⬜ Not Started |
 | Module 07 – Attacks and Defenses | ⬜ Not Started |
 
@@ -118,22 +118,31 @@ The purpose of this section is to:
 **Completed Rooms**
 
 - ✅ What is Networking?
+- ✅ Intro to LAN
 
 **Upcoming Rooms**
 
-- ⏳ Intro to LAN
+- ⏳ OSI Model
+- ⏳ Packets & Frames
+- ⏳ Extending Your Network
+- ⏳ Topic Transition Recap
 
 **Skills Developed**
 
 - Networking Fundamentals
 - Internet Fundamentals
-- Network Communication
+- LAN Topologies
+- Switching
+- Routing
 - IP Addressing
 - Public vs Private IP Addresses
 - IPv4
 - IPv6
 - MAC Addressing
 - MAC Address Spoofing
+- Subnetting
+- ARP
+- DHCP
 - ICMP
 - Ping
 - Basic Network Troubleshooting
@@ -164,12 +173,18 @@ The purpose of this section is to:
 
 - Computer Networks
 - Internet Fundamentals
+- LAN Topologies
+- Switching
+- Routing
 - IP Addressing
 - Public vs Private IP Addresses
 - IPv4
 - IPv6
 - MAC Addressing
 - MAC Address Spoofing
+- Subnetting
+- ARP
+- DHCP
 - ICMP
 - Ping
 - Basic Network Troubleshooting
@@ -218,9 +233,9 @@ The purpose of this section is to:
 # Current Portfolio Statistics
 
 - ✅ 4 Completed Modules
-- 🟨 Module 05 – Network Fundamentals (In Progress)
-- ✅ 1 TryHackMe Networking Room Completed
-- ✅ Multiple Hands-On Labs
+- 🟨 Module 05 – Network Fundamentals (2/6 Rooms Completed)
+- ✅ 2 TryHackMe Networking Rooms Completed
+- ✅ 3 Networking Hands-On Labs Completed
 - ✅ Python Fundamentals
 - ✅ JavaScript Fundamentals
 - ✅ SQL Fundamentals
