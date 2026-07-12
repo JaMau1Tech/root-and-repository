@@ -1,58 +1,6 @@
 # Changelog
 
-All major repository updates will be documented in this file.
-
----
-
-# v0.1 - Repository Foundation
-
-## Added
-
-- Created cybersecurity-notes repository.
-- Added project structure.
-- Added initial README files.
-- Added folders for Projects, Resources, Scripts, Screenshots, and TryHackMe.
-
----
-
-# v0.2 - Ubuntu VM Setup Project
-
-## Added
-
-- Ubuntu VM Setup project.
-- VirtualBox configuration notes.
-- Installation guide.
-- System specifications.
-- Troubleshooting documentation.
-- Screenshot folders.
-- Scripts folder placeholder.
-
-## Documented
-
-- VirtualBox setup.
-- Xubuntu installation attempts.
-- Safe Graphics Mode resolution.
-- Laptop cooling observation.
-- VM display troubleshooting.
-
----
-
-# v0.3 - WSL Setup and Migration
-
-## Added
-
-- WSL notes.
-- WSL troubleshooting documentation.
-- WSL screenshot timeline.
-- WSL migration explanation.
-
-## Documented
-
-- WSL installation.
-- DISM troubleshooting.
-- Feature name unknown error.
-- Ubuntu installation through WSL.
-- First Linux login.
+This changelog records significant updates, improvements, and milestones for the **Root & Repository** project. It serves as a historical record of the repository's development as new documentation, labs, templates, investigations, and projects are added.
 
 ---
 
@@ -60,14 +8,66 @@ All major repository updates will be documented in this file.
 
 ## Added
 
-- Bash notes.
-- Linux commands reference.
-- OSI Model notes.
-- TCP/IP Model notes.
-- Common ports and protocols.
+* Bash notes
+* Linux commands reference
+* OSI Model notes
+* TCP/IP Model notes
+* Common ports and protocols reference
 
 ## Improved
 
-- Added cybersecurity relevance sections.
-- Added lessons learned.
-- Added progress checklists.
+* Added cybersecurity relevance sections
+* Added lessons learned sections
+* Added progress checklists
+
+---
+
+# v0.3 - WSL Setup and Migration
+
+## Added
+
+* WSL setup notes
+* WSL troubleshooting documentation
+* WSL screenshot timeline
+* WSL migration documentation
+
+## Improved
+
+* Documented the WSL installation process
+* Documented DISM troubleshooting
+* Documented the "Feature name unknown" error resolution
+* Documented Ubuntu installation through WSL
+* Documented first Linux login experience
+
+---
+
+# v0.2 - Ubuntu VM Setup Project
+
+## Added
+
+* Ubuntu VM Setup project
+* VirtualBox configuration notes
+* Installation guide
+* System specifications
+* Troubleshooting documentation
+* Screenshot organization
+* Scripts folder placeholder
+
+## Improved
+
+* Documented VirtualBox setup
+* Documented Xubuntu installation attempts
+* Documented Safe Graphics Mode resolution
+* Documented laptop cooling observations
+* Documented VM display troubleshooting
+
+---
+
+# v0.1 - Repository Foundation
+
+## Added
+
+* Created the Root & Repository project
+* Established the initial repository structure
+* Added foundational README documentation
+* Created folders for Projects, Resources, Scripts, Screenshots, and TryHackMe
