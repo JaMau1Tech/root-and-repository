@@ -2,24 +2,26 @@
 
 ## Overview
 
-This folder stores all screenshots captured while completing the TryHackMe **How The Web Works** module.
+This folder stores every screenshot captured while completing the **How The Web Works** module of the TryHackMe Pre Security Learning Path.
 
 All screenshots follow the project's locked naming convention:
 
 - Lowercase
 - Hyphen-separated
-- No spaces
 - Descriptive filenames
-- No file extensions in documentation
+- No spaces
+- No file extensions used in documentation
+
+These screenshots document task completion, practical exercises, and completed rooms while providing visual evidence of hands-on work throughout the module.
 
 ---
 
-## DNS in Detail
+# DNS in Detail
 
-### Task Screenshots
+## Task Screenshots
 
 | Task | Description | Filename |
-|---|---|---|
+|------|-------------|----------|
 | Task 1 | What is DNS? | `dns-in-detail-task01-what-is-dns` |
 | Task 2 | Domain Hierarchy | `dns-in-detail-task02-domain-hierarchy` |
 | Task 3 | DNS Record Types | `dns-in-detail-task03-record-types` |
@@ -28,24 +30,24 @@ All screenshots follow the project's locked naming convention:
 ### Lab Screenshot
 
 | Task | Description | Filename |
-|---|---|---|
-| Task 5 | DNS Practical | `dns-in-detail-task05-dns-practical` |
+|------|-------------|----------|
+| Task 5 | Practical DNS Queries | `dns-in-detail-task05-dns-practical` |
 
 ### Room Completion
 
 | Description | Filename |
-|---|---|
-| Room Completed | `dns-in-detail-room-complete` |
+|-------------|----------|
+| DNS in Detail Completed | `dns-in-detail-room-complete` |
 
 ---
 
-## HTTP in Detail
+# HTTP in Detail
 
-### Task Screenshots
+## Task Screenshots
 
 | Task | Description | Filename |
-|---|---|---|
-| Task 1 | What is HTTP(S)? | `http-in-detail-task01-what-is-https` |
+|------|-------------|----------|
+| Task 1 | What is HTTP & HTTPS | `http-in-detail-task01-what-is-https` |
 | Task 2 | Requests and Responses | `http-in-detail-task02-requests-and-responses` |
 | Task 3 | HTTP Methods | `http-in-detail-task03-http-methods` |
 | Task 4 | HTTP Status Codes | `http-in-detail-task04-http-status-codes` |
@@ -55,26 +57,49 @@ All screenshots follow the project's locked naming convention:
 ### Lab Screenshot
 
 | Task | Description | Filename |
-|---|---|---|
-| Task 7 | Making HTTP Requests | `http-in-detail-task07-making-requests` |
+|------|-------------|----------|
+| Task 7 | Practical HTTP Requests | `http-in-detail-task07-making-requests` |
 
 ### Room Completion
 
 | Description | Filename |
-|---|---|
-| Room Completed | `http-in-detail-room-complete` |
+|-------------|----------|
+| HTTP in Detail Completed | `http-in-detail-room-complete` |
 
 ---
 
-## How Websites Work
+# How Websites Work
 
-No screenshots have been added yet.
+## Task Screenshots
+
+| Task | Description | Filename |
+|------|-------------|----------|
+| Task 1 | Website Components | `how-websites-work-task01-how-websites-work` |
+| Task 2 | HTML Fundamentals | `how-websites-work-task02-html` |
+| Task 3 | JavaScript | `how-websites-work-task03-javascript` |
+| Task 4 | Sensitive Data Exposure | `how-websites-work-task04-sensitive-data-exposure` |
+
+### Lab Screenshot
+
+| Task | Description | Filename |
+|------|-------------|----------|
+| Task 5 | HTML Injection | `how-websites-work-task05-html-injection` |
+
+### Room Completion
+
+| Description | Filename |
+|-------------|----------|
+| How Websites Work Completed | `how-websites-work-room-complete` |
 
 ---
 
-## Putting it all together
+# Putting it all together
 
 No screenshots have been added yet.
+
+This room is a **Topic Transition Recap**, which follows the locked documentation workflow.
+
+No screenshots will be generated for this room.
 
 ---
 
@@ -96,6 +121,13 @@ http-in-detail-task05-headers
 http-in-detail-task06-cookies
 http-in-detail-task07-making-requests
 http-in-detail-room-complete
+
+how-websites-work-task01-how-websites-work
+how-websites-work-task02-html
+how-websites-work-task03-javascript
+how-websites-work-task04-sensitive-data-exposure
+how-websites-work-task05-html-injection
+how-websites-work-room-complete
 ```
 
 ---
@@ -121,26 +153,33 @@ images/
 ├── http-in-detail-task05-headers.png
 ├── http-in-detail-task06-cookies.png
 ├── http-in-detail-task07-making-requests.png
-└── http-in-detail-room-complete.png
+├── http-in-detail-room-complete.png
+│
+├── how-websites-work-task01-how-websites-work.png
+├── how-websites-work-task02-html.png
+├── how-websites-work-task03-javascript.png
+├── how-websites-work-task04-sensitive-data-exposure.png
+├── how-websites-work-task05-html-injection.png
+└── how-websites-work-room-complete.png
 ```
 
 ---
 
-## Progress
+# Screenshot Statistics
 
-| Room | Screenshots |
-|---|---:|
-| DNS in Detail | 6 |
-| HTTP in Detail | 8 |
-| How Websites Work | 0 |
-| Putting it all together | 0 |
-| **Total** | **14** |
+| Room | Task Screenshots | Lab Screenshots | Completion Screenshots | Total |
+|------|-----------------:|----------------:|-----------------------:|------:|
+| DNS in Detail | 4 | 1 | 1 | 6 |
+| HTTP in Detail | 6 | 1 | 1 | 8 |
+| How Websites Work | 4 | 1 | 1 | 6 |
+| Putting it all together | 0 | 0 | 0 | 0 |
+| **Module Total** | **14** | **3** | **3** | **20** |
 
 ---
 
-## Screenshot Naming Convention
+# Screenshot Naming Convention
 
-### Task Screenshot
+## Task Screenshots
 
 ```text
 room-name-task01-description
@@ -149,26 +188,26 @@ room-name-task01-description
 Example:
 
 ```text
-http-in-detail-task03-http-methods
+how-websites-work-task03-javascript
 ```
 
 ---
 
-### Lab Screenshot
+## Lab Screenshots
 
 ```text
-room-name-task07-lab-description
+room-name-task05-lab-description
 ```
 
 Example:
 
 ```text
-http-in-detail-task07-making-requests
+how-websites-work-task05-html-injection
 ```
 
 ---
 
-### Room Completion Screenshot
+## Room Completion Screenshots
 
 ```text
 room-name-room-complete
@@ -177,5 +216,5 @@ room-name-room-complete
 Example:
 
 ```text
-http-in-detail-room-complete
+how-websites-work-room-complete
 ```

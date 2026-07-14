@@ -139,7 +139,12 @@ Generate documentation in this exact order:
 7. Repository structure review
 8. Git add / commit / push commands
 
-All affected files must be complete, current, internally consistent, and ready to replace the existing files directly.
+Before presenting the documentation:
+
+- Regenerate every affected documentation file in full.
+- Perform the Documentation Consistency Audit.
+- Verify all regenerated files are internally consistent.
+- Ensure every file is ready to replace the existing version without requiring manual edits.
 
 ---
 
@@ -224,14 +229,21 @@ No room completion screenshot is required.
 
 # After Every Topic Transition Recap
 
-Generate:
+Generate documentation in this exact order:
 
 1. Simplified recap `task-notes.md`
-2. FULL updated Module README
-3. Updated Module images README (no recap screenshots)
-4. Updated parent TryHackMe README
-5. Repository review
-6. Git commands
+2. FULL regenerated Module `README.md`
+3. FULL regenerated Module `images/README.md` with no recap screenshots
+4. FULL regenerated parent TryHackMe `README.md`
+5. Repository structure review
+6. Git add / commit / push commands
+
+Before presenting the documentation:
+
+- Regenerate every affected documentation file in full.
+- Perform the Documentation Consistency Audit.
+- Verify all regenerated files are internally consistent.
+- Ensure every file is ready to replace the existing version without requiring manual edits.
 
 ---
 
@@ -309,41 +321,61 @@ The recap is documented through its summary instead.
 
 ---
 
-# Full File Regeneration Standard
+# Full Documentation Regeneration Standard
 
-After every completed standard TryHackMe room, the assistant must regenerate every affected documentation file in full.
+After every completed standard TryHackMe room, the assistant must regenerate **all affected documentation files** in full.
 
-The assistant must not provide:
+The assistant must **never** provide:
 
 - Partial sections
 - Patch notes
-- “Add this section” instructions
-- Isolated updates that require manual merging
-- Incomplete replacement content
+- "Add this section" instructions
+- Merge instructions
+- Isolated updates requiring manual editing
 
-The following files must always be provided as complete, ready-to-replace files:
+Instead, every affected file must be regenerated completely so it can directly replace the previous version.
+
+This includes, but is not limited to:
 
 1. `task-notes.md`
-2. Full Module `README.md`
-3. Full Module `images/README.md`
-4. Full parent TryHackMe `README.md`
+2. Module `README.md`
+3. Module `images/README.md`
+4. Parent TryHackMe `README.md`
+5. Any additional documentation affected by the completed room
 
-Each regenerated file must reflect all current project information, including:
+Every regenerated file must reflect the current repository state.
 
-- Correct module number
-- Correct module name
-- Current room statuses
-- Completed room sections
-- Updated skills
-- Updated screenshot lists
-- Updated screenshot totals
-- Updated repository structure
-- Updated module progress
-- Correct next room
-- Correct module status
-- Any other dependent information affected by the completed room
+The assistant is responsible for ensuring the documentation is complete, current, and internally consistent.
 
-The assistant is responsible for checking internal consistency across all regenerated files so the user does not have to manually search for outdated information or merge documentation changes.
+---
+
+# Documentation Consistency Audit
+
+Before presenting any documentation, the assistant must perform a complete documentation consistency audit.
+
+Every regenerated file must agree on:
+
+- Module number
+- Module name
+- Room statuses
+- Completed room counts
+- Remaining room counts
+- Module progress percentages
+- Screenshot filenames
+- Screenshot totals
+- Skills learned
+- Repository structure
+- Current learning focus
+- Next room
+- Overall TryHackMe statistics
+- Module status
+- Any other information affected by the completed room
+
+If any inconsistency exists, the assistant must correct it before presenting the documentation.
+
+The user should never have to manually reconcile documentation differences.
+
+---
 
 # Assistant Responsibilities
 

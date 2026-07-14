@@ -21,8 +21,8 @@ The purpose of this repository is to:
 | Module 02 – Computer Fundamentals | ✅ Complete |
 | Module 03 – Operating Systems Basics | ✅ Complete |
 | Module 04 – Software Basics | ✅ Complete |
-| Module 05 – Network Fundamentals | 🟨 In Progress (5/6 Rooms Completed) |
-| Module 06 – How the Web Works | ⬜ Not Started |
+| Module 05 – Network Fundamentals | ✅ Complete |
+| Module 06 – How The Web Works | 🟨 In Progress (3/4 Rooms Completed) |
 | Module 07 – Attacks and Defenses | ⬜ Not Started |
 
 ---
@@ -44,7 +44,7 @@ TryHackMe/
 │
 ├── Module-05-Network-Fundamentals/
 │
-├── Module-06-How-the-Web-Works/
+├── Module-06-How-The-Web-Works/
 │
 └── Module-07-Attacks-and-Defenses/
 ```
@@ -136,7 +136,7 @@ TryHackMe/
 
 ---
 
-## 🟨 Module 05 – Network Fundamentals *(In Progress)*
+## ✅ Module 05 – Network Fundamentals
 
 ### Completed Rooms
 
@@ -145,12 +145,9 @@ TryHackMe/
 - ✅ OSI Model
 - ✅ Packets & Frames
 - ✅ Extending Your Network
+- ✅ Topic Transition Recap
 
-### Upcoming Rooms
-
-- ⏳ Topic Transition Recap
-
-### Skills Developed So Far
+### Skills Developed
 
 - Networking Fundamentals
 - LAN Topologies
@@ -207,6 +204,61 @@ TryHackMe/
 - VLANs
 - Network Simulation
 - Packet Flow Analysis
+
+---
+
+## 🟨 Module 06 – How The Web Works *(In Progress)*
+
+### Completed Rooms
+
+- ✅ DNS in Detail
+- ✅ HTTP in Detail
+- ✅ How Websites Work
+
+### Remaining Rooms
+
+- ⬜ Putting it all together
+
+### Skills Developed So Far
+
+#### DNS
+
+- DNS
+- DNS Hierarchy
+- DNS Resolution
+- DNS Record Types
+- DNS Caching
+- TTL
+
+#### HTTP
+
+- HTTP
+- HTTPS
+- URLs
+- HTTP Requests
+- HTTP Responses
+- HTTP Headers
+- Cookies
+- HTTP Methods
+- HTTP Status Codes
+
+#### Web Technologies
+
+- Front-End
+- Back-End
+- HTML
+- JavaScript
+- DOM Manipulation
+- Browser Rendering
+
+#### Web Security
+
+- Source Code Review
+- Sensitive Data Exposure
+- HTML Injection
+- Input Validation
+- Input Sanitization
+
 ---
 
 # Skills Gained
@@ -253,6 +305,35 @@ TryHackMe/
 
 ---
 
+## Web Technologies
+
+- DNS
+- HTTP
+- HTTPS
+- URLs
+- HTML
+- JavaScript
+- Front-End Development
+- Back-End Concepts
+- Browser Rendering
+- DOM Manipulation
+- Cookies
+- HTTP Headers
+- HTTP Methods
+- HTTP Status Codes
+
+---
+
+## Web Security
+
+- Source Code Review
+- Sensitive Data Exposure
+- HTML Injection
+- Input Validation
+- Input Sanitization
+
+---
+
 ## Programming
 
 ### Python
@@ -269,6 +350,7 @@ TryHackMe/
 - Loops
 - Conditional Statements
 - Node.js
+- DOM Manipulation
 
 ---
 
@@ -297,10 +379,10 @@ TryHackMe/
 
 # Current Portfolio Statistics
 
-- ✅ 4 Completed Modules
+- ✅ 5 Completed Modules
 - 🟨 1 Module In Progress
-- ✅ 5 Networking Rooms Completed
-- ✅ 8 Interactive Networking Labs
+- ✅ 6 Networking Rooms Completed
+- ✅ 3 Web Rooms Completed
 - ✅ Python Fundamentals
 - ✅ JavaScript Fundamentals
 - ✅ SQL Fundamentals
@@ -314,13 +396,13 @@ TryHackMe/
 
 I am currently completing:
 
-**Module 05 – Network Fundamentals**
+**Module 06 – How The Web Works**
 
-Final remaining room:
+Remaining room:
 
-- Topic Transition Recap
+- Putting it all together
 
-After completing this recap, Module 05 will be complete and I will begin **Module 06 – How the Web Works**.
+After completing this room, Module 06 will be complete and I will begin **Module 07 – Attacks and Defenses**.
 
 ---
 

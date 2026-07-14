@@ -2,89 +2,97 @@
 
 ## Overview
 
-This module introduces the core technologies that make the World Wide Web function. It covers how domain names are resolved, how browsers communicate with web servers, how websites are built, and how all of these technologies work together during a complete web request.
+This module introduces the technologies that power modern websites and web applications. It explains how DNS resolves domain names, how HTTP and HTTPS enable communication between browsers and servers, how websites are built using client-side and server-side technologies, and how these components work together to deliver web content securely.
 
-These concepts form an essential foundation for web application security, penetration testing, network analysis, API testing, and security troubleshooting.
+Understanding these technologies provides the foundation for web application security, penetration testing, vulnerability assessment, and future learning throughout the TryHackMe Pre Security path.
 
 ---
 
 ## Module Objectives
 
-- Understand the purpose and operation of DNS
-- Learn how HTTP and HTTPS enable web communication
-- Understand URL structure
-- Interpret HTTP requests and responses
-- Identify common HTTP methods and status codes
-- Understand HTTP headers and cookies
-- Learn how websites are structured and delivered
-- Understand the complete web request lifecycle
+- Understand the purpose of DNS
+- Understand HTTP and HTTPS communication
+- Learn how websites are built
+- Understand front-end and back-end technologies
+- Learn common web security concepts
 - Build a strong foundation for web application security
 
 ---
 
-## Rooms
+# Rooms
 
 | Status | Room | Description |
-|---|---|---|
-| ✅ | DNS in Detail | Learn how DNS translates human-readable domain names into IP addresses. |
-| ✅ | HTTP in Detail | Learn how browsers request content from web servers using HTTP and HTTPS. |
-| ⬜ | How Websites Work | Learn how websites are created using client-side and server-side technologies. |
-| ⬜ | Putting it all together | Combine DNS, HTTP, browsers, servers, and website technologies into the complete web request lifecycle. |
+|---------|------|-------------|
+| ✅ | DNS in Detail | Learn how DNS translates domain names into IP addresses. |
+| ✅ | HTTP in Detail | Learn how browsers communicate with web servers using HTTP and HTTPS. |
+| ✅ | How Websites Work | Learn how websites are built and introduce common web security concepts. |
+| ⬜ | Putting it all together | Review and combine DNS, HTTP, and website technologies into the complete web request lifecycle. |
 
 ---
 
-## Skills Learned
+# Skills Learned
 
-### DNS Fundamentals
+## DNS Fundamentals
 
-- Domain Name System
-- Domain hierarchy
-- Root domains
-- Top-Level Domains
-- Generic Top-Level Domains
-- Country Code Top-Level Domains
+- Domain Name System (DNS)
+- Domain Hierarchy
+- Root Domains
+- Top-Level Domains (TLD)
+- Generic Top-Level Domains (gTLD)
+- Country Code Top-Level Domains (ccTLD)
 - Second-Level Domains
 - Subdomains
-- DNS resolution
-- DNS caching
-- Time To Live
+- DNS Resolution
+- DNS Caching
+- Time To Live (TTL)
 
-### DNS Record Types
+---
 
-- A
-- AAAA
-- CNAME
-- MX
-- TXT
+## DNS Record Types
 
-### HTTP and HTTPS Fundamentals
+- A Records
+- AAAA Records
+- CNAME Records
+- MX Records
+- TXT Records
+
+---
+
+## HTTP & HTTPS
 
 - HyperText Transfer Protocol
 - HyperText Transfer Protocol Secure
-- TLS encryption
-- Client-server communication
-- HTTP requests
-- HTTP responses
-- HTTP protocol versions
-- URL structure
-- Query parameters
-- Body parameters
+- TLS Encryption
+- URLs
+- URL Components
+- HTTP Requests
+- HTTP Responses
+- HTTP Headers
+- HTTP Cookies
+- Sessions
+- Browser Communication
 
-### HTTP Methods
+---
+
+## HTTP Methods
 
 - GET
 - POST
 - PUT
 - DELETE
-- CRUD operations
 
-### HTTP Status Codes
+---
 
-- 1xx informational responses
-- 2xx successful responses
-- 3xx redirection responses
-- 4xx client errors
-- 5xx server errors
+## HTTP Status Codes
+
+- 1xx Informational
+- 2xx Success
+- 3xx Redirection
+- 4xx Client Errors
+- 5xx Server Errors
+
+Common Codes
+
 - 200 OK
 - 201 Created
 - 301 Moved Permanently
@@ -97,173 +105,163 @@ These concepts form an essential foundation for web application security, penetr
 - 500 Internal Server Error
 - 503 Service Unavailable
 
-### HTTP Headers
+---
 
-#### Request Headers
+## Web Technologies
 
-- Host
-- User-Agent
-- Content-Length
-- Accept-Encoding
-- Cookie
+### Front-End
 
-#### Response Headers
+- HTML
+- JavaScript
+- DOM
+- Browser Rendering
+- Client-Side Processing
 
-- Set-Cookie
-- Cache-Control
-- Content-Type
-- Content-Encoding
+### Back-End
 
-### Cookies and Sessions
-
-- HTTP statelessness
-- Cookie storage
-- Session tracking
-- Authentication cookies
-- Browser cookie handling
-- Set-Cookie responses
-- Cookie request headers
-
-### Practical Skills
-
-- Querying DNS records
-- Identifying DNS record types
-- Understanding DNS responses
-- Tracing the DNS resolution process
-- Using DNS lookup tools
-- Building GET requests
-- Building POST requests
-- Building PUT requests
-- Building DELETE requests
-- Configuring URI parameters
-- Configuring request body parameters
-- Interpreting HTTP responses
-- Analyzing HTTP headers
-- Understanding browser-server communication
-
-### Cybersecurity Relevance
-
-- DNS enumeration
-- Web reconnaissance
-- Network troubleshooting
-- Email security analysis
-- Phishing investigations
-- Threat hunting
-- Web application penetration testing
-- API testing
-- Authentication testing
-- Session analysis
-- Burp Suite request inspection
-- HTTP traffic analysis
+- Web Servers
+- Server-Side Processing
+- Databases
+- APIs
+- Authentication
 
 ---
 
-## Completed Rooms
+## Web Security Concepts
 
-### ✅ DNS in Detail
+- Source Code Review
+- Sensitive Data Exposure
+- HTML Injection
+- Input Validation
+- Input Sanitization
+- Output Encoding
 
-#### Overview
+---
 
-This room introduced the Domain Name System and explained how domain names are translated into IP addresses. It covered domain hierarchy, common DNS record types, the DNS lookup process, caching, and practical DNS queries.
+## Practical Skills
 
-#### Topics Covered
+### DNS
+
+- DNS Enumeration
+- Querying DNS Records
+- DNS Lookup Tools
+- Understanding DNS Responses
+
+### HTTP
+
+- Building GET Requests
+- Building POST Requests
+- Building PUT Requests
+- Building DELETE Requests
+- Configuring URI Parameters
+- Configuring Body Parameters
+- Reading HTTP Headers
+- Analyzing HTTP Responses
+
+### Website Analysis
+
+- Reading HTML
+- Editing HTML
+- Viewing Page Source
+- JavaScript Manipulation
+- DOM Manipulation
+- Credential Discovery
+- HTML Injection
+
+---
+
+# Completed Rooms
+
+## ✅ DNS in Detail
+
+### Overview
+
+Learned how DNS translates domain names into IP addresses and how DNS requests travel across the Internet.
+
+### Topics Covered
 
 - What DNS is
-- Domain hierarchy
-- Top-Level Domains
-- Second-Level Domains
-- Subdomains
-- A records
-- AAAA records
-- CNAME records
-- MX records
-- TXT records
-- Recursive DNS servers
-- Root DNS servers
-- TLD servers
-- Authoritative DNS servers
-- DNS caching
-- Time To Live
-- Practical DNS queries
+- Domain Hierarchy
+- DNS Record Types
+- DNS Resolution Process
+- DNS Caching
+- TTL
+- Practical DNS Queries
 
-#### Practical Experience
-
-- Queried the CNAME record for `shop.website.thm`
-- Retrieved the TXT record for `website.thm`
-- Identified the MX priority value
-- Retrieved the A record for `www.website.thm`
-
-#### Documentation
+### Documentation
 
 ```text
 DNS-in-Detail/task-notes.md
 ```
 
-#### Screenshot Count
+### Screenshots
 
-```text
-6 screenshots
-```
+**6**
 
 ---
 
-### ✅ HTTP in Detail
+## ✅ HTTP in Detail
 
-#### Overview
+### Overview
 
-This room introduced HTTP and HTTPS and explained how browsers communicate with web servers. It covered URL components, HTTP requests and responses, methods, status codes, headers, cookies, and practical request creation.
+Learned how browsers communicate with web servers using HTTP and HTTPS.
 
-#### Topics Covered
+### Topics Covered
 
 - HTTP
 - HTTPS
-- TLS encryption
-- URL structure
-- Schemes
-- Hosts
-- Ports
-- Paths
-- Query strings
-- Fragments
-- HTTP requests
-- HTTP responses
-- HTTP methods
-- HTTP status codes
-- Request headers
-- Response headers
+- URLs
+- Requests
+- Responses
+- HTTP Methods
+- Status Codes
+- Headers
 - Cookies
-- Sessions
-- Query parameters
-- Body parameters
+- Practical HTTP Requests
 
-#### Practical Experience
-
-- Made a GET request to `/room`
-- Made a GET request to `/blog` with `id=1`
-- Made a DELETE request to `/user/1`
-- Made a PUT request to `/user/2`
-- Submitted `username=admin` in the PUT request body
-- Made a POST request to `/login`
-- Submitted `username=thm`
-- Submitted `password=letmein`
-
-#### Documentation
+### Documentation
 
 ```text
 HTTP-in-Detail/task-notes.md
 ```
 
-#### Screenshot Count
+### Screenshots
 
-```text
-8 screenshots
-```
+**8**
 
 ---
 
-## Screenshots
+## ✅ How Websites Work
 
-All screenshots for this module are stored in the shared module images directory:
+### Overview
+
+Learned how websites are built using front-end and back-end technologies while introducing fundamental web security concepts.
+
+### Topics Covered
+
+- Website Architecture
+- Front-End
+- Back-End
+- HTML
+- JavaScript
+- Sensitive Data Exposure
+- HTML Injection
+
+### Documentation
+
+```text
+How-Websites-Work/task-notes.md
+```
+
+### Screenshots
+
+**6**
+
+---
+
+# Screenshots
+
+All screenshots for this module are stored in:
 
 ```text
 images/
@@ -275,19 +273,19 @@ The complete screenshot index is documented in:
 images/README.md
 ```
 
-### Current Screenshot Summary
+### Screenshot Summary
 
-| Room | Screenshot Count |
-|---|---:|
+| Room | Screenshots |
+|------|------------:|
 | DNS in Detail | 6 |
 | HTTP in Detail | 8 |
-| How Websites Work | 0 |
+| How Websites Work | 6 |
 | Putting it all together | 0 |
-| **Total** | **14** |
+| **Total** | **20** |
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 Module-06-How-The-Web-Works/
@@ -296,20 +294,7 @@ Module-06-How-The-Web-Works/
 │
 ├── images/
 │   ├── README.md
-│   ├── dns-in-detail-task01-what-is-dns.png
-│   ├── dns-in-detail-task02-domain-hierarchy.png
-│   ├── dns-in-detail-task03-record-types.png
-│   ├── dns-in-detail-task04-dns-request-process.png
-│   ├── dns-in-detail-task05-dns-practical.png
-│   ├── dns-in-detail-room-complete.png
-│   ├── http-in-detail-task01-what-is-https.png
-│   ├── http-in-detail-task02-requests-and-responses.png
-│   ├── http-in-detail-task03-http-methods.png
-│   ├── http-in-detail-task04-http-status-codes.png
-│   ├── http-in-detail-task05-headers.png
-│   ├── http-in-detail-task06-cookies.png
-│   ├── http-in-detail-task07-making-requests.png
-│   └── http-in-detail-room-complete.png
+│   ├── 20 screenshots
 │
 ├── DNS-in-Detail/
 │   └── task-notes.md
@@ -326,53 +311,52 @@ Module-06-How-The-Web-Works/
 
 ---
 
-## Module Progress
+# Module Progress
 
 | Room | Status |
-|---|---|
-| DNS in Detail | ✅ Completed |
-| HTTP in Detail | ✅ Completed |
-| How Websites Work | ⬜ Not Started |
-| Putting it all together | ⬜ Not Started |
+|------|:------:|
+| DNS in Detail | ✅ |
+| HTTP in Detail | ✅ |
+| How Websites Work | ✅ |
+| Putting it all together | ⬜ |
 
-**Rooms Completed:** 2 / 4
+**Rooms Completed:** **3 / 4**
 
-**Module Completion:** 50%
+**Module Completion:** **75%**
 
 ```text
-██████████░░░░░░░░░░ 50%
+██████████████████░░░░░░ 75%
 ```
 
 ---
 
-## Next Room
+# Next Room
 
-### ➡️ How Websites Work
+## ➜ Putting it all together
 
-The next room introduces how websites are created and delivered.
-
-Expected topics include:
-
-- HTML
-- CSS
-- JavaScript
-- Front-end technologies
-- Back-end technologies
-- Web servers
-- Databases
-- Website security fundamentals
-
-This room will build on the DNS and HTTP knowledge developed in the first two rooms.
+The final room reviews and reinforces everything learned throughout Module 06 by combining DNS, HTTP, website technologies, and web request processing into one complete overview before progressing to **Module 07 – Attacks and Defenses**.
 
 ---
 
-## Module Status
+# Module Status
 
-🚧 **In Progress**
+🟨 **In Progress**
 
-Two of four rooms have been completed.
+**Completed Rooms:** 3
 
-```text
-Completed: 2
-Remaining: 2
-```
+**Remaining Rooms:** 1
+
+---
+
+# Module Summary
+
+By completing this module, you will understand:
+
+- How browsers locate websites
+- How HTTP communication works
+- How websites are constructed
+- The relationship between front-end and back-end technologies
+- Fundamental web security concepts
+- The complete lifecycle of a web request
+
+These concepts provide the foundation for future web application security topics, including authentication, injection attacks, cross-site scripting (XSS), API security, and the OWASP Top 10.
