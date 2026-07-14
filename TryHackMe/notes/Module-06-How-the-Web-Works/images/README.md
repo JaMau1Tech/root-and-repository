@@ -1,5 +1,5 @@
 # Module 06 – How The Web Works Images
-s
+
 ## Overview
 
 This folder stores all screenshots captured while completing the TryHackMe rooms in the **How The Web Works** module.
