@@ -23,7 +23,8 @@ The purpose of this repository is to:
 | Module 04 – Software Basics | ✅ Complete |
 | Module 05 – Network Fundamentals | ✅ Complete |
 | Module 06 – How The Web Works | ✅ Complete |
-| Module 07 – Attacks and Defenses | 🟨 In Progress (2/5 Rooms Completed) |
+| Module 07 – Attacks and Defenses | 🟨 In Progress (3/5 Rooms Completed) |
+
 ---
 
 # Repository Structure
@@ -163,46 +164,15 @@ TryHackMe/
 - ICMP
 - Ping
 - OSI Model
-- Physical Layer
-- Data Link Layer
-- Network Layer
-- Transport Layer
-- Session Layer
-- Presentation Layer
-- Application Layer
+- TCP/IP
 - TCP
 - UDP
-- Encapsulation
-- Packets
-- Frames
-- TCP/IP Model
 - Three-Way Handshake
-- SYN
-- SYN/ACK
-- ACK
-- FIN
-- RST
-- TCP Headers
-- UDP Headers
-- Checksums
-- Sequence Numbers
 - Network Ports
-- Common Service Ports
-- Port Forwarding
 - Firewalls
-- Stateful Firewalls
-- Stateless Firewalls
-- Packet Inspection
-- VPN Fundamentals
-- PPP
-- PPTP
-- IPSec
-- Routing
-- Layer 2 Switching
-- Layer 3 Switching
+- VPNs
 - VLANs
-- Network Simulation
-- Packet Flow Analysis
+- Packet Inspection
 
 ---
 
@@ -219,12 +189,12 @@ TryHackMe/
 
 #### DNS
 
-- Domain Name System (DNS)
+- DNS
 - DNS Hierarchy
 - DNS Resolution
 - DNS Record Types
 - DNS Caching
-- Time To Live (TTL)
+- TTL
 
 #### HTTP
 
@@ -240,14 +210,14 @@ TryHackMe/
 
 #### Website Technologies
 
-- Front-End
-- Back-End
 - HTML
 - JavaScript
-- Browser Rendering
+- Front-End
+- Back-End
 - Static Content
 - Dynamic Content
 - Virtual Hosts
+- Browser Rendering
 
 #### Web Infrastructure
 
@@ -258,22 +228,37 @@ TryHackMe/
 - Node.js
 - Load Balancers
 - Health Checks
-- Content Delivery Networks (CDNs)
+- CDNs
 - Databases
-- Web Application Firewalls (WAFs)
+- WAFs
 
 #### Web Security
 
 - Source Code Review
-- Sensitive Data Exposure
 - HTML Injection
+- Sensitive Data Exposure
 - Input Validation
 - Input Sanitization
 - Web Request Lifecycle
 
-## Cybersecurity
+---
 
-### Core Principles
+## 🟨 Module 07 – Attacks and Defenses *(In Progress)*
+
+### Completed Rooms
+
+- ✅ The CIA Triad
+- ✅ Cryptography Concepts
+- ✅ Become a Hacker
+
+### Remaining Rooms
+
+- ⬜ Become a Defender
+- ⬜ Topic Rewind Recap
+
+### Skills Developed So Far
+
+#### Security Fundamentals
 
 - CIA Triad
 - Confidentiality
@@ -282,31 +267,41 @@ TryHackMe/
 - Security Mindset
 - Risk Assessment
 
-### Cryptography
+#### Cryptography
 
-- Cryptography Fundamentals
 - Plaintext
 - Ciphertext
 - Encryption
 - Decryption
-- Keys
-- Algorithms
 - Symmetric Encryption
 - Asymmetric Encryption
-- Caesar Cipher
-- Key Distribution Problem
-- Public Key Cryptography
+- Public Keys
+- Private Keys
+- Key Distribution
 - HTTPS
-- Certificates
-- Certificate Authorities (CA)
-- Hybrid Encryption
-
-### Secure Communications
-
 - TLS Concepts
-- Secure Web Browsing
-- Certificate Validation
-- Public Key Infrastructure (PKI)
+- Digital Certificates
+- Certificate Authorities
+
+#### Offensive Security
+
+- Ethical Hacking
+- Offensive Security
+- Penetration Testing
+- Enumeration
+- Reconnaissance
+- Vulnerability Assessment
+- Attack Surface Analysis
+- Hidden Resource Discovery
+- Authentication Testing
+- Dictionary Attacks
+- Credential Auditing
+- Password Security
+
+#### Security Tools
+
+- Gobuster
+- Hydra
 
 ---
 
@@ -329,74 +324,45 @@ TryHackMe/
 - ICMP
 - Ping
 - OSI Model
-- Encapsulation
-- Network Troubleshooting
-- Packets
-- Frames
-- TCP/IP
 - TCP
 - UDP
-- Three-Way Handshake
-- Network Ports
-- Common Ports
-- Port Forwarding
 - Firewalls
 - VPNs
-- PPP
-- PPTP
-- IPSec
-- Routing
-- Layer 2 Switching
-- Layer 3 Switching
 - VLANs
-- Packet Inspection
-- Network Simulation
 
 ---
 
 ## Web Technologies
 
-- Domain Name System (DNS)
-- DNS Resolution
-- DNS Record Types
+- DNS
 - HTTP
 - HTTPS
-- URLs
-- HTTP Requests
-- HTTP Responses
-- HTTP Headers
-- HTTP Methods
-- HTTP Status Codes
-- Cookies
 - HTML
 - JavaScript
-- Front-End Development
-- Back-End Concepts
-- Browser Rendering
-- Static Content
-- Dynamic Content
-- Virtual Hosts
+- Front-End
+- Back-End
 - Web Servers
-- Apache
-- Nginx
-- IIS
-- Node.js
 - Load Balancers
-- Health Checks
-- Content Delivery Networks (CDNs)
-- Databases
-- Web Application Firewalls (WAFs)
+- CDNs
+- WAFs
+- Browser Rendering
 
 ---
 
-## Web Security
+## Cybersecurity
 
-- Source Code Review
-- Sensitive Data Exposure
-- HTML Injection
-- Input Validation
-- Input Sanitization
-- Web Request Lifecycle
+- CIA Triad
+- Cryptography
+- Symmetric Encryption
+- Asymmetric Encryption
+- Public Key Infrastructure
+- Digital Certificates
+- Ethical Hacking
+- Penetration Testing
+- Enumeration
+- Dictionary Attacks
+- Authentication Security
+- Password Auditing
 
 ---
 
@@ -431,69 +397,6 @@ TryHackMe/
 
 ---
 
-## 🟨 Module 07 – Attacks and Defenses *(In Progress)*
-
-### Completed Rooms
-
-- ✅ The CIA Triad
-- ✅ Cryptography Concepts
-
-### Remaining Rooms
-
-- ⬜ Become a Hacker
-- ⬜ Become a Defender
-- ⬜ Topic Rewind Recap
-
-### Skills Developed So Far
-
-#### Cybersecurity Fundamentals
-
-- CIA Triad
-- Confidentiality
-- Integrity
-- Availability
-- Security Mindset
-- Risk Assessment
-
-#### Cryptography
-
-- Cryptography Fundamentals
-- Plaintext
-- Ciphertext
-- Encryption
-- Decryption
-- Symmetric Encryption
-- Asymmetric Encryption
-- Keys
-- Algorithms
-- Key Distribution Problem
-- Caesar Cipher
-- Public Key Cryptography
-- Public Keys
-- Private Keys
-- HTTPS
-- Digital Certificates
-- Certificate Authorities (CA)
-- Hybrid Encryption
-
-#### Defensive Security
-
-- Access Control
-- Data Protection
-- Secure Communications
-- Encryption Concepts
-- Certificate Validation
-
-#### Practical Skills
-
-- CIA Triad Analysis
-- Security Incident Classification
-- Caesar Cipher Encryption
-- Caesar Cipher Decryption
-- Secure Communication Analysis
-
----
-
 ## Technical Skills
 
 - Technical Documentation
@@ -512,14 +415,16 @@ TryHackMe/
 - 🟨 1 Module In Progress
 - ✅ 6 Networking Rooms Completed
 - ✅ 4 Web Rooms Completed
-- ✅ 2 Cybersecurity Rooms Completed
+- ✅ 3 Security Rooms Completed
 - ✅ Python Fundamentals
 - ✅ JavaScript Fundamentals
 - ✅ SQL Fundamentals
 - ✅ Cryptography Fundamentals
+- ✅ Offensive Security Fundamentals
 - ✅ Structured Technical Documentation
 - ✅ Standardized Screenshot Library
 - ✅ Growing Cybersecurity Portfolio
+
 ---
 
 # Current Focus
@@ -528,18 +433,13 @@ I am currently completing:
 
 **Module 07 – Attacks and Defenses**
 
-Completed rooms:
-
-- ✅ The CIA Triad
-- ✅ Cryptography Concepts
-
 Remaining rooms:
 
-- Become a Hacker
 - Become a Defender
 - Topic Rewind Recap
 
-After completing Module 07, I will have finished the **TryHackMe Pre Security Learning Path**.
+After completing these rooms, I will have finished the entire **TryHackMe Pre Security Learning Path**.
+
 ---
 
 # Learning Philosophy

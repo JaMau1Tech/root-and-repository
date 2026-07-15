@@ -1,140 +1,24 @@
 # Module 07 – Attacks and Defenses
 
-## Overview
-
-This module introduces the core principles of cybersecurity by exploring how defenders protect information and how attackers attempt to compromise it. Beginning with the CIA Triad and cryptography, the module builds the foundational knowledge needed to understand offensive and defensive security before progressing into practical security concepts.
+This module introduces the core concepts of offensive and defensive cybersecurity. It focuses on understanding how attackers think, how organizations defend against threats, and the security principles used to protect systems, networks, and data.
 
 ---
 
-## Module Objectives
+# Module Progress
 
-- Understand the CIA Triad
-- Learn the fundamentals of cryptography
-- Explore offensive security concepts
-- Explore defensive security concepts
-- Develop a cybersecurity mindset
+| Room | Status |
+|------|:------:|
+| The CIA Triad | ✅ Complete |
+| Cryptography Concepts | ✅ Complete |
+| Become a Hacker | ✅ Complete |
+| Become a Defender | ⬜ Not Started |
+| Topic Rewind Recap | ⬜ Not Started |
 
----
-
-## Rooms
-
-| Status | Room | Description |
-|---------|------|-------------|
-| ✅ | The CIA Triad | Learn the three pillars of cybersecurity: Confidentiality, Integrity, and Availability. |
-| ✅ | Cryptography Concepts | Learn how cryptography protects digital information using symmetric and asymmetric encryption. |
-| ⬜ | Become a Hacker | Learn how attackers think and how ethical hacking works. |
-| ⬜ | Become a Defender | Learn the role of defensive security professionals. |
-| ⬜ | Topic Rewind Recap | Review the concepts learned throughout the module. |
+**Module Progress:** **3 / 5 Rooms Completed (60%)**
 
 ---
 
-## Skills Learned
-
-### Cybersecurity Fundamentals
-
-- CIA Triad
-- Confidentiality
-- Integrity
-- Availability
-- Security Mindset
-- Risk Assessment
-
-### Cryptography
-
-- Cryptography Fundamentals
-- Plaintext
-- Ciphertext
-- Encryption
-- Decryption
-- Keys
-- Algorithms
-- Symmetric Encryption
-- Asymmetric Encryption
-- Key Distribution Problem
-- HTTPS
-- Public Key Infrastructure (PKI)
-- Certificates
-- Certificate Authorities (CA)
-- Hybrid Encryption
-
-### Defensive Security
-
-- Access Control
-- Data Protection
-- Secure Communications
-- Service Availability
-- Encryption Concepts
-
-### Practical Skills
-
-- CIA Triad Analysis
-- Security Incident Classification
-- Caesar Cipher Encryption
-- Caesar Cipher Decryption
-- Secret Message Analysis
-- Secure Communication Concepts
-
----
-
-## Completed Rooms
-
-### ✅ The CIA Triad
-
-**Topics Covered**
-
-- CIA Triad
-- Confidentiality
-- Integrity
-- Availability
-- Security Mindset
-- Security Incident Analysis
-
-**Documentation**
-
-- `The-CIA-Triad/task-notes.md`
-
----
-
-### ✅ Cryptography Concepts
-
-**Topics Covered**
-
-- Cryptography
-- Plaintext
-- Ciphertext
-- Encryption
-- Decryption
-- Symmetric Encryption
-- Asymmetric Encryption
-- HTTPS
-- Certificates
-- Certificate Authorities
-
-**Documentation**
-
-- `Cryptography-Concepts/task-notes.md`
-
----
-
-## Screenshots
-
-All screenshots for this module are stored in:
-
-```text
-images/
-```
-
-See:
-
-```text
-images/README.md
-```
-
-for the complete screenshot index.
-
----
-
-## Repository Structure
+# Repository Structure
 
 ```text
 Module-07-Attacks-and-Defenses/
@@ -142,7 +26,9 @@ Module-07-Attacks-and-Defenses/
 ├── README.md
 ├── images/
 │   ├── README.md
-│   └── screenshots
+│   ├── the-cia-triad-*
+│   ├── cryptography-concepts-*
+│   └── become-a-hacker-*
 │
 ├── The-CIA-Triad/
 │   └── task-notes.md
@@ -162,20 +48,219 @@ Module-07-Attacks-and-Defenses/
 
 ---
 
-## Progress
+# Completed Rooms
 
-**Rooms Completed:** 2 / 5
+## ✅ The CIA Triad
 
-**Module Completion:** 40%
+### Topics Covered
 
-```text
-██████████░░░░░░░░░░░░░ 40%
-```
+- Confidentiality
+- Integrity
+- Availability
+- Security Mindset
+- Risk Assessment
+
+### Skills Developed
+
+- CIA Triad
+- Information Security
+- Security Principles
+- Data Protection
+- Security Analysis
 
 ---
 
-## Next Room
+## ✅ Cryptography Concepts
 
-➡️ **Become a Hacker**
+### Topics Covered
 
-Learn how attackers think, the phases of ethical hacking, common attack techniques, and how offensive security helps improve defenses.
+- Cryptography
+- Plaintext vs Ciphertext
+- Keys
+- Encryption Algorithms
+- Symmetric Encryption
+- Asymmetric Encryption
+- HTTPS
+- Certificates
+
+### Skills Developed
+
+- Encryption Fundamentals
+- Symmetric Encryption
+- Asymmetric Encryption
+- Public & Private Keys
+- Key Distribution
+- Digital Certificates
+- HTTPS Security
+- Secure Communications
+
+---
+
+## ✅ Become a Hacker
+
+### Topics Covered
+
+- Offensive Security
+- Ethical Hacking
+- Penetration Testing
+- Enumeration
+- Hidden Resources
+- Authentication Testing
+- Dictionary Attacks
+
+### Skills Developed
+
+- Ethical Hacking
+- Offensive Security Methodology
+- Enumeration
+- Gobuster
+- Hydra
+- Directory Discovery
+- Credential Testing
+- Password Auditing
+- Authentication Security
+- Vulnerability Discovery
+
+---
+
+# Remaining Rooms
+
+- ⬜ Become a Defender
+- ⬜ Topic Rewind Recap
+
+---
+
+# Skills Developed
+
+## Security Fundamentals
+
+- CIA Triad
+- Confidentiality
+- Integrity
+- Availability
+- Security Mindset
+- Risk Assessment
+
+---
+
+## Cryptography
+
+- Plaintext
+- Ciphertext
+- Encryption
+- Decryption
+- Symmetric Encryption
+- Asymmetric Encryption
+- Public Keys
+- Private Keys
+- HTTPS
+- TLS Concepts
+- Digital Certificates
+- Certificate Authorities
+- Key Distribution
+
+---
+
+## Offensive Security
+
+- Ethical Hacking
+- Penetration Testing
+- Enumeration
+- Reconnaissance
+- Vulnerability Assessment
+- Attack Surface Discovery
+- Authentication Testing
+- Dictionary Attacks
+- Password Security
+- Credential Auditing
+
+---
+
+## Security Tools
+
+- Gobuster
+- Hydra
+
+---
+
+## Web Security
+
+- Hidden Directories
+- Login Portals
+- Authentication
+- HTTP Response Codes
+- Web Enumeration
+
+---
+
+## Technical Skills
+
+- Technical Documentation
+- Git
+- GitHub
+- Markdown
+- Screenshot Documentation
+- Hands-on Labs
+
+---
+
+# Statistics
+
+- ✅ 3 Rooms Completed
+- ⬜ 2 Rooms Remaining
+- ✅ 2 Hands-on Labs Completed
+- ✅ Gobuster Introduced
+- ✅ Hydra Introduced
+- ✅ CIA Triad Mastered
+- ✅ Cryptography Fundamentals
+- ✅ Offensive Security Fundamentals
+
+---
+
+# Current Focus
+
+Currently working on:
+
+**Become a Defender**
+
+Upcoming topics include:
+
+- Defensive Security
+- Blue Team Operations
+- Monitoring
+- Detection
+- Incident Response
+- Security Operations
+
+---
+
+# Learning Outcomes
+
+Upon completing this module, I will understand:
+
+- Core cybersecurity principles
+- Information security fundamentals
+- Encryption concepts
+- Offensive security methodology
+- Defensive security concepts
+- Ethical hacking fundamentals
+- Common security tools
+- Authentication security
+- Secure communications
+
+---
+
+# Documentation Standards
+
+Each completed room contains:
+
+- Handwritten notebook notes
+- Task documentation
+- Hands-on lab notes
+- Screenshot documentation
+- GitHub-ready Markdown
+- Professional technical documentation
+
+---
+
+**Module Status:** 🟨 In Progress (60% Complete)
