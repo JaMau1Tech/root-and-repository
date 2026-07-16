@@ -1,6 +1,6 @@
 # TryHackMe Documentation Workflow
 
-**Version:** 2.1
+**Version:** 2.0
 
 **Status:** 🔒 LOCKED
 
@@ -44,15 +44,17 @@ Provide a concise explanation of:
 
 ### 2. Generate Handwritten Notebook Notes
 
-Generate notes using the official **Notebook Standards**.
+Generate ultra-concise handwritten notebook notes using the exact established Module 06 notebook style.
 
-These notes must:
+The notes must:
 
-- Follow the locked notebook structure
-- Be concise
-- Use bullet points
+- Use compact bullet points and separators
 - Be easy to handwrite
+- Include only essential information
+- Follow the exact established layout and style
+- Never revert to older notebook templates
 - Never contain unnecessary paragraphs
+- Never change format without explicit user approval
 
 ---
 
@@ -131,7 +133,7 @@ room-name-room-complete
 Generate documentation in this exact order:
 
 1. Complete handwritten notebook notes
-2. Screenshot checklist
+2. Screenshot checklist containing every task screenshot, every lab screenshot, and the final room-completion screenshot
 3. Full `task-notes.md`
 4. FULL regenerated Module `README.md`
 5. FULL regenerated Module `images/README.md`
