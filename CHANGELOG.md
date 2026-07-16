@@ -139,3 +139,17 @@ This changelog records significant updates, improvements, and milestones for the
 * Established the initial repository structure
 * Added foundational README documentation
 * Created folders for Projects, Resources, Scripts, Screenshots, and TryHackMe
+
+---
+
+## July 2026
+
+### Repository Milestones
+
+- Created the Root & Repository portfolio (Established: July 6th 2026)
+- Established documentation standards and workflows
+- Completed the TryHackMe Pre Security Learning Path
+- Earned the TryHackMe Pre Security Certificate
+- Began Cisco Networking Academy – Networking Basics
+- Started networking with IT professionals on LinkedIn
+- Began preparing for entry-level IT Support opportunities
