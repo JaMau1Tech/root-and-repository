@@ -1,129 +1,70 @@
 # Resources
 
-The **Resources** folder serves as the centralized reference library for the **Root & Repository** project. It contains trusted learning materials, official documentation, study resources, and technical references that support my hands-on labs, investigations, projects, and continuous cybersecurity education.
+The Resources folder serves as the centralized reference library for the Root & Repository project.
 
-Rather than replacing practical experience, these resources complement my learning by providing reliable information that reinforces the concepts documented throughout this repository.
+It contains trusted learning materials, official documentation, study resources, technical references, and external platforms supporting my development in IT support, networking, Windows, Linux, scripting, and cybersecurity.
 
----
-
-# Purpose
-
-The goal of this folder is to maintain a well-organized collection of reference material that supports long-term learning and professional development.
-
-Resources are carefully selected to:
-
-* Reinforce hands-on learning
-* Support certification preparation
-* Provide trusted technical references
-* Encourage continued research and self-study
-* Build a personal cybersecurity knowledge library
+These resources complement hands-on practice by reinforcing concepts documented throughout the repository.
 
 ---
 
-# Organization
+## Purpose
 
-Resources are organized by category to ensure they remain easy to navigate, maintain, and expand as the repository grows.
+This section is used to:
 
-Each category focuses on a specific area of learning while keeping related materials grouped together.
-
----
-
-# Resource Categories
-
-## Books
-
-Books covering topics such as:
-
-* Linux
-* Networking
-* Cybersecurity Fundamentals
-* Python
-* Windows Administration
-* Security Certifications
+- Organize trusted technical learning resources
+- Maintain links to official documentation
+- Track books, videos, and websites used during training
+- Store original cheat sheets and reference notes
+- Support certification preparation
+- Build a personal IT and cybersecurity knowledge library
 
 ---
 
-## Certifications
+## Resource Categories
 
-Study materials and reference resources for certifications including:
+### Books
 
-* CompTIA A+
-* CompTIA Network+
-* CompTIA Security+
-* TryHackMe Learning Paths
-* Future cybersecurity certifications
+Reading lists, book references, and personal reading notes related to IT, networking, Linux, Windows, programming, and cybersecurity.
 
----
+### Certifications
 
-## Cheat Sheets
+Official certification pages, exam objectives, study plans, and preparation resources.
 
-Quick-reference guides for commonly used commands, tools, and concepts, including:
+Earned certificates are stored in their relevant portfolio sections, not in this folder.
 
-* Linux commands
-* Networking commands
-* Git commands
-* PowerShell commands
-* Common ports and protocols
-* Wireshark filters
-* Nmap commands
+### Cheat Sheets
 
----
+Original quick-reference materials for commands, concepts, protocols, tools, and technical workflows.
 
-## Documentation
+### Documentation
 
-Official documentation for operating systems, tools, programming languages, platforms, and cybersecurity technologies.
+Links and notes based on official vendor documentation, technical standards, manuals, and reference guides.
 
-Whenever possible, official documentation is preferred over third-party sources to ensure accuracy and reliability.
+### Videos
+
+Educational videos, playlists, courses, and demonstrations used to reinforce technical concepts.
+
+### Websites
+
+Trusted learning platforms, technical communities, documentation sites, and cybersecurity resources.
 
 ---
 
-## Videos
+## Repository Structure
 
-Educational videos, conference presentations, walkthroughs, and training content that reinforce practical cybersecurity concepts.
-
----
-
-## Websites
-
-Trusted online learning platforms and technical references, including:
-
-* TryHackMe
-* Hack The Box
-* OverTheWire
-* PortSwigger Web Security Academy
-* OWASP
-* Microsoft Learn
-* Cisco Skills for All
-* NIST
-* MITRE ATT&CK
-
----
-
-# Resource Standards
-
-When adding new resources to this folder, I aim to prioritize:
-
-* Official documentation whenever available
-* Accurate and up-to-date information
-* Reputable educational platforms
-* Practical value for hands-on learning
-* Long-term usefulness as a reference
-
----
-
-# Planned Expansion
-
-As the repository continues to grow, this folder will expand to include:
-
-* Official documentation links
-* Certification study guides
-* Topic-specific cheat sheets
-* Standards and frameworks (NIST, CIS, MITRE)
-* Tool documentation
-* Research papers and whitepapers
-* Curated learning paths
-* Beginner, intermediate, and advanced learning resources
-
----
-
-> The **Resources** folder is intended to be a living reference library that grows alongside my cybersecurity knowledge, supporting both structured learning and practical application throughout the **Root & Repository** project.
+```text
+Resources/
+├── Books/
+│   └── README.md
+├── Certifications/
+│   └── README.md
+├── Cheat-Sheets/
+│   └── README.md
+├── Documentation/
+│   └── README.md
+├── Videos/
+│   └── README.md
+├── Websites/
+│   └── README.md
+└── README.md
