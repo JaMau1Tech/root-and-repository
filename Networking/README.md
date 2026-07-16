@@ -1,6 +1,8 @@
-# Networking Notes
+# Networking
 
-This folder contains notes related to networking concepts used in cybersecurity, system administration, and troubleshooting.
+This folder contains networking notes, technical references, and future hands-on documentation supporting my development in IT support, system administration, and cybersecurity.
+
+The current foundational notes cover the OSI model, TCP/IP model, and common ports and protocols. Additional documentation will be added as I progress through Cisco Networking Academy – Networking Basics and complete practical networking exercises.
 
 ---
 
@@ -52,34 +54,37 @@ Covers:
 
 ---
 
-# Current Progress
+# Learning Status
 
-- [x] Learn the OSI Model
-- [x] Learn the TCP/IP Model
-- [x] Learn common ports and protocols
-- [ ] Learn DNS in depth
-- [ ] Learn DHCP in depth
-- [ ] Learn subnetting
-- [ ] Learn routing and switching
-- [ ] Learn packet analysis with Wireshark
-- [ ] Learn network security concepts
+## Completed Foundations
 
----
+- [x] OSI Model
+- [x] TCP/IP Model
+- [x] Common ports and protocols
+- [x] Basic TCP versus UDP concepts
+- [x] Introductory encapsulation and decapsulation
 
-# Future Topics
+## Currently Learning
 
-- DNS
-- DHCP
-- Subnetting
-- Routing and Switching
-- VLANs
-- Firewalls
-- NAT
-- VPNs
-- Wireless Networking
-- Network Monitoring
-- Packet Analysis
-- Network Security
+- [ ] Cisco Networking Academy – Networking Basics
+- [ ] Network devices and communication
+- [ ] IPv4 addressing
+- [ ] Basic network configuration
+- [ ] Network troubleshooting
+
+## Planned Topics
+
+- [ ] DNS in depth
+- [ ] DHCP in depth
+- [ ] Subnetting
+- [ ] Routing and switching
+- [ ] VLANs
+- [ ] NAT
+- [ ] Firewalls
+- [ ] VPNs
+- [ ] Wireless networking
+- [ ] Wireshark packet analysis
+- [ ] Nmap network discovery
 
 ---
 
@@ -96,9 +101,9 @@ Covers:
 
 ---
 
-# Why Networking Matters in Cybersecurity
+# Why Networking Matters in IT and Cybersecurity
 
-Networking is a foundation of cybersecurity because:
+Networking is a foundation of IT & cybersecurity because:
 
 - Many attacks occur across networks.
 - Security professionals analyze traffic.

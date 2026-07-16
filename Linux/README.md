@@ -61,34 +61,32 @@ Covers:
 
 ---
 
-# Current Progress
+# Learning Status
 
-- [x] Install Ubuntu through WSL
-- [x] Create first Linux user
-- [x] Run first Linux commands
-- [x] Learn basic Bash navigation
-- [ ] Learn file permissions
+## Previously Completed
+
+- [x] Installed Ubuntu through WSL on my previous computer
+- [x] Created a Linux user account
+- [x] Ran introductory Linux commands
+- [x] Practiced basic Bash navigation
+- [x] Documented WSL installation and troubleshooting
+
+## Current Status
+
+The previous WSL environment is not currently active on my new computer. The documentation is preserved as evidence of earlier Linux practice, Windows administration, and troubleshooting experience.
+
+## Next Steps
+
+- [ ] Rebuild a Linux environment on my current computer
+- [ ] Practice file permissions
 - [ ] Learn package management
 - [ ] Learn shell scripting
 - [ ] Learn process management
-- [ ] Learn networking commands
+- [ ] Practice Linux networking commands
 
 ---
 
-# Future Topics
-
-- Shell scripting
-- Process management
-- System services
-- Networking commands
-- Log analysis
-- User and group management
-- Linux security fundamentals
-- Penetration testing tools
-
----
-
-# Why Linux Matters in Cybersecurity
+# Why Linux Matters in IT and Cybersecurity
 
 Linux is important in cybersecurity because:
 

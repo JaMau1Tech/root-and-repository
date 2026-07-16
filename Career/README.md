@@ -10,15 +10,14 @@ The goal of this section is to document my career progression, prepare for inter
 
 # Directory Structure
 
-```
+```text
 Career/
 ├── README.md
 ├── Resume/
 ├── Cover-Letters/
 ├── LinkedIn/
 ├── Interview-Prep/
-├── Job-Tracker/
-└── References/
+└── Job-Tracker/
 ```
 
 ---
@@ -92,22 +91,23 @@ Tracks:
 
 ---
 
-## References
-
-Contains professional references and supporting documentation.
-
----
-
 # Career Goals
 
-Current Objectives:
+## Immediate Objectives
 
-- Obtain my first IT Support / Help Desk position
-- Continue progressing through the TryHackMe learning paths
-- Expand my GitHub portfolio with hands-on projects
-- Earn industry certifications
-- Develop practical cybersecurity skills
-- Continue improving technical documentation
+- Apply for entry-level IT Support and Help Desk positions
+- Complete Cisco Networking Academy – Networking Basics
+- Finalize targeted IT Support application materials
+- Continue expanding my GitHub portfolio with verified hands-on work
+- Strengthen Windows, Linux, and networking fundamentals
+- Prepare for technical and behavioral interviews
+
+## Long-Term Objectives
+
+- Gain professional IT support experience
+- Earn foundational IT and networking certifications
+- Build practical Windows Server, Active Directory, and help desk labs
+- Transition into a cybersecurity-focused role
 
 ---
 
