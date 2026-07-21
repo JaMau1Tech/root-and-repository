@@ -1,111 +1,118 @@
 # Networking
 
-This folder contains networking notes, technical references, and future hands-on documentation supporting my development in IT support, system administration, and cybersecurity.
+## Overview
 
-The current foundational notes cover the OSI model, TCP/IP model, and common ports and protocols. Additional documentation will be added as I progress through Cisco Networking Academy – Networking Basics and complete practical networking exercises.
+This repository documents my networking education through hands-on labs, coursework, certifications, and practical projects. It serves as a central location for tracking my progress as I build the networking knowledge required for a career in **Information Technology** and **Cybersecurity**.
 
----
-
-# Topics Covered
-
-- OSI Model
-- TCP/IP Model
-- Ports and Protocols
-- DNS
-- DHCP
-- Routing and Switching
-- Network Troubleshooting
-- Packet Analysis
-- Network Security Fundamentals
+My goal is to establish a strong networking foundation before pursuing more advanced topics in system administration, cloud computing, and cybersecurity.
 
 ---
 
-# Files
+# Learning Goals
 
-## osi-model.md
+Throughout this repository, I aim to:
 
-Covers:
-
-- Seven OSI layers
-- Protocols and devices at each layer
-- Data flow
-- Cybersecurity relevance
-- Real-world examples
-
-## tcp-ip.md
-
-Covers:
-
-- Four TCP/IP layers
-- TCP vs UDP
-- Encapsulation
-- Internet communication
-- Network fundamentals
-
-## ports-and-protocols.md
-
-Covers:
-
-- Common ports
-- Network protocols
-- Protocol risks
-- Security considerations
-- Networking commands
+- Build a strong understanding of networking fundamentals.
+- Develop practical troubleshooting skills.
+- Gain hands-on experience with Cisco technologies.
+- Prepare for industry certifications.
+- Document my learning journey through professional GitHub documentation.
 
 ---
 
-# Learning Status
+# Current Learning Path
 
-## Completed Foundations
-
-- [x] OSI Model
-- [x] TCP/IP Model
-- [x] Common ports and protocols
-- [x] Basic TCP versus UDP concepts
-- [x] Introductory encapsulation and decapsulation
-
-## Currently Learning
-
-- [ ] Cisco Networking Academy – Networking Basics
-- [ ] Network devices and communication
-- [ ] IPv4 addressing
-- [ ] Basic network configuration
-- [ ] Network troubleshooting
-
-## Planned Topics
-
-- [ ] DNS in depth
-- [ ] DHCP in depth
-- [ ] Subnetting
-- [ ] Routing and switching
-- [ ] VLANs
-- [ ] NAT
-- [ ] Firewalls
-- [ ] VPNs
-- [ ] Wireless networking
-- [ ] Wireshark packet analysis
-- [ ] Nmap network discovery
+| Provider | Course | Status | Progress |
+|----------|--------|:------:|:--------:|
+| Cisco Networking Academy | Getting Started with Cisco Packet Tracer | ✅ Complete | 100% |
+| Cisco Networking Academy | Networking Basics | 🟨 In Progress | 50% |
 
 ---
 
-# Tools Related to Networking
+# Repository Structure
 
-- Wireshark
-- Nmap
-- Ping
-- Traceroute
-- Netstat
-- tcpdump
-- nslookup
-- dig
+```text
+Networking/
+│
+├── README.md
+│
+└── Cisco-Networking-Academy/
+    ├── README.md
+    ├── Getting-Started-with-Cisco-Packet-Tracer/
+    ├── Networking-Basics/
+    └── images/
+```
 
 ---
 
-# Why Networking Matters in IT and Cybersecurity
+# Skills Developed
 
-Networking is a foundation of IT & cybersecurity because:
+Current networking skills include:
 
-- Many attacks occur across networks.
-- Security professionals analyze traffic.
-- Protocol knowledge helps detect malicious activity.
-- Firewalls, IDS, VPNs, and SIEM tools rely on networking concepts.
+## Networking Fundamentals
+
+- Computer networking concepts
+- Network communication
+- Client-server architecture
+- Peer-to-peer networking
+- Network infrastructure
+- End devices
+- Intermediate devices
+- Network media
+- ISP connectivity
+- Home networking
+- Internet connection technologies
+
+## Practical Skills
+
+- Cisco Packet Tracer
+- Basic network troubleshooting
+- Reading Cisco network diagrams
+- Understanding network communication paths
+
+---
+
+# Current Statistics
+
+| Metric | Value |
+|--------|------:|
+| Networking Courses Completed | 1 |
+| Networking Courses In Progress | 1 |
+| Networking Modules Completed | 2 |
+| Current Quiz Average | 100% |
+
+---
+
+# Current Focus
+
+I am currently studying:
+
+**Cisco Networking Academy**
+
+- Module 03 – Wireless and Mobile Networks
+
+Upcoming topics include:
+
+- Wireless networking
+- Wi-Fi standards
+- Wireless access points
+- Mobile networking
+- Wireless security
+- Wireless troubleshooting
+
+---
+
+# Future Goals
+
+After completing the Networking Basics course, I plan to continue expanding my networking knowledge through additional Cisco Networking Academy courses and certification preparation, including:
+
+- Cisco Certified Support Technician (CCST)
+- Cisco Certified Network Associate (CCNA)
+- Advanced networking labs
+- Network automation fundamentals
+
+---
+
+# Career Objective
+
+The knowledge and skills documented in this repository support my goal of becoming an **IT Support Specialist** before transitioning into **Cybersecurity**. By combining structured coursework, hands-on practice, and professional documentation, this repository demonstrates both my technical growth and my commitment to continuous learning.

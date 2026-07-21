@@ -1,10 +1,12 @@
 # Networking Basics Images
 
-This folder contains screenshots documenting progress throughout the **Networking Basics** course from Cisco Networking Academy.
+This folder contains screenshots documenting my progress throughout the **Networking Basics** course from the **Cisco Networking Academy**.
+
+Screenshots are captured only for meaningful milestones, including quiz results, important networking diagrams, Packet Tracer labs, and module completion artifacts.
 
 ---
 
-# Module 1 - Communication in a Connected World
+# Module 01 - Communication in a Connected World
 
 ## module-01-communication-in-a-connected-world-quiz-100-percent
 
@@ -19,30 +21,81 @@ Module 1 quiz completed with a perfect score.
 
 ---
 
+# Module 02 - Network Components, Types, and Connections
+
+## module-02-network-components-types-and-connections-quiz-100-percent
+
+**Description**
+
+Module 2 quiz completed with a perfect score.
+
+**Achievement**
+
+- Module 2 Completed
+- Quiz Score: **100%**
+
+---
+
+## module-02-network-infrastructure-symbols
+
+**Description**
+
+Reference diagram introducing Cisco networking symbols used throughout the course.
+
+The diagram illustrates the three major categories of network infrastructure:
+
+- End Devices
+- Intermediate Devices
+- Network Media
+
+This image serves as a foundational reference for understanding Cisco network diagrams used in future modules.
+
+---
+
 # Future Images
 
-As additional modules are completed, this folder will include:
+As additional modules are completed, this folder will expand to include:
 
-## Module 2
+## Module 03 - Wireless and Mobile Networks
 
-- Quiz results
-- Packet Tracer activities
-- Practical exercises
+Planned screenshots may include:
 
-## Module 3
+- Wireless networking diagrams
+- Wi-Fi concepts
+- Wireless communication
+- Module quiz results
+- Practical activities
 
-- Quiz results
-- Networking labs
-- Configuration screenshots
+---
 
-## Module 4
+## Module 04 - Build a Home Network
 
-- Quiz results
-- Home network labs
-- Final course activities
+Planned screenshots may include:
+
+- Packet Tracer topologies
+- Home network designs
+- Device configurations
+- Module quiz results
+- Practical networking labs
+
+---
+
+# Screenshot Naming Convention
+
+Screenshots follow a consistent naming standard:
+
+- Lowercase
+- Hyphen-separated
+- Descriptive filenames
+
+Examples:
+
+- `module-01-communication-in-a-connected-world-quiz-100-percent.png`
+- `module-02-network-components-types-and-connections-quiz-100-percent.png`
+- `module-02-network-infrastructure-symbols.png`
 
 ---
 
 # Purpose
 
-This folder documents the hands-on work and progress made throughout the Networking Basics course.
+These screenshots document meaningful milestones and practical learning throughout the Networking Basics course while supporting the written documentation contained in each module.

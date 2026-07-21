@@ -1,185 +1,186 @@
-# Cisco Networking Academy - Networking Basics
+# Networking Basics
 
-## Status
+## Overview
 
-🚧 In Progress
+This directory contains my work for the **Networking Basics** course from the **Cisco Networking Academy**.
 
----
+The course introduces the fundamental concepts of computer networking, including network communication, infrastructure, IP connectivity, wireless networking, home network design, and basic troubleshooting.
 
-## Course Overview
-
-This directory documents progress through the Cisco Networking Academy **Networking Basics** course.
-
-The course introduces foundational networking concepts, including:
-
-- Network types
-- Clients and servers
-- Network components
-- Internet service provider connections
-- Wireless and mobile networks
-- Network communication
-- IPv4 and IPv6 addressing
-- Routing
-- Switching
-- Network services
-- Basic troubleshooting
-
-The goal of this course is to build a strong networking foundation for IT support, help desk, systems administration, and future cybersecurity work.
+My goal is to develop a strong networking foundation that supports future study for the **Cisco Certified Support Technician (CCST)**, **CCNA**, and a career in **IT Support** and **Cybersecurity**.
 
 ---
 
-## Learning Approach
+# Learning Approach
 
-Each module is completed using a structured learning workflow focused on understanding, practical application, and documentation.
+This course is completed using my personal **Networking Masterclass Workflow**, which focuses on understanding concepts rather than memorization.
 
-### During Each Module
+The workflow includes:
 
-- Review the Cisco course material.
-- Study the major concepts.
-- Create handwritten notebook notes.
-- Complete interactive activities and quizzes.
-- Perform Packet Tracer labs when included.
-- Capture screenshots only when they provide meaningful evidence of practical work or completion.
-
-### After Each Module
-
-- Create or update the module documentation.
-- Record quiz results.
-- Document key concepts and skills developed.
-- Add meaningful screenshots.
-- Review repository consistency.
-- Commit and push the completed module documentation.
+- Big Picture learning
+- Concept connections
+- Real-world examples
+- Professional perspectives
+- Common mistakes
+- Interview preparation
+- Active recall
+- Rule of Seven (Spaced Repetition)
+- Concept mastery
+- Hands-on practice
+- Reflection and documentation
 
 ---
 
-## Progress
+# Progress
 
-| Module | Topic | Status | Quiz Score |
-|---|---|---:|---:|
-| Module 1 | Communication in a Connected World | ✅ Completed | 100% |
-| Module 2 | Network Components, Types, and Connections | 🚧 In Progress | — |
-| Module 3 | Wireless and Mobile Networks | ⏳ Not Started | — |
-| Module 4 | Build a Home Network | ⏳ Not Started | — |
+| Module | Status | Quiz |
+|----------|:------:|:----:|
+| Module 01 - Communication in a Connected World | ✅ Complete | **100%** |
+| Module 02 - Network Components, Types, and Connections | ✅ Complete | **100%** |
+| Module 03 - Wireless and Mobile Networks | ⬜ Not Started | — |
+| Module 04 - Build a Home Network | ⬜ Not Started | — |
 
 ---
 
-## Completed Modules
+# Completed Modules
 
-### Module 1 - Communication in a Connected World
+## Module 01 – Communication in a Connected World
 
-Module 1 introduced the basic concepts that explain how devices and networks communicate.
+### Topics
 
-Topics included:
-
-- The Internet as a network of networks
-- Local and SOHO networks
-- Connected and IoT devices
-- Personal data
-- Binary, bits, bytes, and ASCII
-- Electrical, optical, and wireless signals
+- Network Types
+- Data Transmission
+- Bits and Bytes
 - Bandwidth
 - Throughput
 - Latency
-- Network bottlenecks
 
-**Quiz Score:** 100%
+### Skills Developed
 
-Documentation:
-
-- [Module 1 Notes](Module-01/module-notes.md)
-
----
-
-## Current Module
-
-### Module 2 - Network Components, Types, and Connections
-
-Current topics include:
-
-- Clients and servers
-- Network components
-- ISP connectivity options
-
-Module objective:
-
-> Explain network types, components, and connections.
+- Understanding computer networks
+- Network communication fundamentals
+- Network performance concepts
+- Basic networking terminology
 
 ---
 
-## Skills Developed
+## Module 02 – Network Components, Types, and Connections
 
-- Explain the purpose of computer networks
-- Identify common network types
-- Describe LAN and SOHO networks
-- Explain how the Internet connects local networks
-- Identify connected and IoT devices
-- Explain how computers represent data using binary
-- Differentiate between bits and bytes
-- Recognize ASCII as a character encoding standard
-- Identify electrical, optical, and wireless transmission methods
-- Explain bandwidth and throughput
-- Describe latency and network bottlenecks
-- Interpret basic internet speed-test results
+### Topics
+
+- Clients and Servers
+- Peer-to-Peer Networking
+- Network Infrastructure
+- End Devices
+- Intermediate Devices
+- Network Media
+- Internet Service Providers (ISPs)
+- Internet Connection Types
+- Home Network Connectivity
+
+### Skills Developed
+
+- Client-server communication
+- Device classification
+- Reading Cisco network diagrams
+- Home network architecture
+- ISP connectivity
+- Basic network troubleshooting
 
 ---
 
-## Repository Structure
+# Screenshots
+
+Screenshots are stored in:
+
+```text
+images/Networking-Basics/
+```
+
+Current screenshots:
+
+| Screenshot | Description |
+|------------|-------------|
+| module-01-communication-in-a-connected-world-quiz-100-percent | Module 1 quiz completed with a perfect score |
+| module-02-network-components-types-and-connections-quiz-100-percent | Module 2 quiz completed with a perfect score |
+| module-02-network-infrastructure-symbols | Cisco network infrastructure reference diagram |
+
+---
+
+# Repository Structure
 
 ```text
 Networking-Basics/
+│
 ├── README.md
+│
 ├── Module-01/
 │   └── module-notes.md
+│
 ├── Module-02/
+│   └── module-notes.md
+│
 ├── Module-03/
+│
 └── Module-04/
 ```
 
-Additional module folders will be documented as the course progresses.
+---
+
+# Skills Gained
+
+Throughout this course, I have developed knowledge in:
+
+- Computer networking fundamentals
+- Client-server networking
+- Peer-to-peer networking
+- Network infrastructure
+- End devices
+- Intermediate devices
+- Network media
+- ISP connectivity
+- Home networking
+- Internet connection technologies
+- Reading network diagrams
+- Basic network troubleshooting
 
 ---
 
-## Screenshot Policy
+# Current Progress
 
-Screenshots are captured only when they provide meaningful evidence of learning or practical work.
-
-Capture:
-
-- Packet Tracer topologies
-- Device configurations
-- CLI output
-- Connectivity tests
-- Completed practical activities
-- Quiz or assessment results
-- Module completion results
-- Course completion certificates
-
-Do not capture:
-
-- Introductory reading pages
-- Course navigation pages
-- Standard lesson text
-- Videos without practical output
-- Repetitive completion indicators
+- **Course:** Networking Basics
+- **Modules Completed:** **2 / 4**
+- **Current Progress:** **50%**
+- **Quiz Average:** **100%**
 
 ---
 
-## Current Progress
+# Next Module
 
-- **Completed Modules:** 1
-- **Current Module:** Module 2
-- **Highest Quiz Score:** 100%
-- **Course Status:** In Progress
+## Module 03 – Wireless and Mobile Networks
+
+Upcoming topics include:
+
+- Wireless communication
+- Wi-Fi standards
+- Wireless access points
+- Mobile networking
+- Wireless security
+- Wireless best practices
 
 ---
 
-## Next Steps
+# Career Relevance
 
-1. Complete Module 2 - Network Components, Types, and Connections.
-2. Create notebook notes for:
-   - Clients and Servers
-   - Network Components
-   - ISP Connectivity Options
-3. Complete the Module 2 summary and quiz.
-4. Generate the full Module 2 repository documentation.
-5. Continue to Module 3 - Wireless and Mobile Networks.
+The concepts covered in this course directly support roles such as:
+
+- IT Support Specialist
+- Help Desk Technician
+- Desktop Support Technician
+- Junior Network Technician
+- Systems Support Technician
+
+This course also provides foundational networking knowledge for future studies in:
+
+- Cisco Certified Support Technician (CCST)
+- Cisco Certified Network Associate (CCNA)
+- Cybersecurity
