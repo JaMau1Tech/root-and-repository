@@ -1,14 +1,12 @@
 <p align="center">
-  <img src="assets/root-and-repository-banner.png" width="100%" alt="Root & Repository Banner">
+  <img src="assets/root-and-repository-banner.png" alt="Root & Repository Banner" width="100%">
 </p>
 
-# Root & Repository
+<h1 align="center">Root & Repository</h1>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/JaMau1Tech/root-and-repository)
-![GitHub repo size](https://img.shields.io/github/repo-size/JaMau1Tech/root-and-repository)
-![GitHub stars](https://img.shields.io/github/stars/JaMau1Tech/root-and-repository)
-
-A centralized IT and cybersecurity learning repository documenting my hands-on labs, investigations, projects, study notes, and technical documentation as I develop practical skills in IT support, networking, Linux, Windows, and cybersecurity.
+<p align="center">
+  <strong>Documenting my journey through IT, Networking, Cybersecurity, and Professional Development.</strong>
+</p>
 
 ---
 
