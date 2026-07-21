@@ -1,60 +1,58 @@
 # Cisco Networking Academy Images
 
-This folder contains screenshots, certificates, and supporting images for Cisco Networking Academy courses documented in this repository.
+This directory contains screenshots, certificates, and supporting images for Cisco Networking Academy courses documented in this repository.
+
+Images are organized by course to keep documentation clean, scalable, and easy to navigate.
 
 ---
 
-# Course Images
+# Course Image Collections
 
 ## Getting Started with Cisco Packet Tracer
 
-### getting-started-with-cisco-packet-tracer-certificate
+Location:
 
-**Description**
+```text
+Getting-Started-with-Cisco-Packet-Tracer/
+```
 
-Certificate awarded upon successful completion of the **Getting Started with Cisco Packet Tracer** course.
+Contents:
 
-**Achievement**
-
-- Cisco Networking Academy
-- Course Completed
-- Final Assessment Score: **100%**
+- Course completion certificate
+- Future Packet Tracer screenshots (if added)
 
 ---
 
 ## Networking Basics
 
-### module-01-communication-in-a-connected-world-quiz-100-percent
+Location:
 
-**Description**
+```text
+Networking-Basics/
+```
 
-Module 1 quiz completion showing a perfect score.
+Contents:
 
-**Achievement**
-
-- Module 1 Completed
-- Quiz Score: **100%**
+- Module quiz results
+- Module completion screenshots
+- Packet Tracer labs
+- Practical networking activities
+- Additional course documentation screenshots
 
 ---
 
-# Future Images
+# Screenshot Naming Convention
 
-As additional Cisco Networking Academy courses are completed, this folder will expand to include:
+Screenshots use descriptive, lowercase, hyphen-separated filenames.
 
-## Networking Basics
+Examples:
 
-- Packet Tracer topologies
-- Device configurations
-- Connectivity testing
-- Module completion results
-- Quiz results
-- Practical networking labs
+- `module-01-communication-in-a-connected-world-quiz-100-percent.png`
+- `module-02-network-components-packet-tracer-topology.png`
+- `module-03-ip-addressing-lab-complete.png`
 
-## Future Cisco Courses
+---
 
-- Skills for All
-- CCST Networking
-- CCNA
-- CyberOps
-- Additional Packet Tracer projects
-- Course completion certificates
+# Purpose
+
+This folder serves as the central image repository for all Cisco Networking Academy courses within this project.
