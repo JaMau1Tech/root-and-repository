@@ -10,17 +10,23 @@ Standalone TryHackMe Rooms focused on Microsoft Active Directory administration,
 |------|--------|
 | Windows Active Directory Basics | ✅ Completed |
 | Active Directory Hardening | ✅ Completed |
-| Monitoring Active Directory | ⏳ Not Started |
+| Monitoring Active Directory | ✅ Completed |
 
-**Progress:** **2 / 3 Rooms (67%)**
+**Progress:** **3 / 3 Rooms (100%)**
 
 ---
 
 # Collection Overview
 
-This standalone collection develops practical knowledge of Microsoft Active Directory from administration fundamentals through enterprise security hardening and monitoring.
+This standalone collection develops practical knowledge of Microsoft Active Directory from administration fundamentals through enterprise security hardening and enterprise monitoring.
 
-The rooms focus on understanding Active Directory architecture, securing authentication, implementing Microsoft's security recommendations, and monitoring enterprise environments for suspicious activity.
+The collection progresses through three major phases:
+
+- Understanding Active Directory architecture
+- Securing Active Directory using Microsoft's recommended best practices
+- Monitoring and investigating Active Directory environments using Windows Security Events and Splunk
+
+Completing the collection provides practical experience with both preventative security controls and defensive monitoring techniques used by enterprise Blue Teams.
 
 ---
 
@@ -36,8 +42,12 @@ By completing this collection, you will learn how to:
 - Configure Group Policy security settings
 - Deploy Microsoft Security Compliance Toolkit
 - Detect and mitigate common Active Directory attacks
-- Monitor Active Directory environments
-- Improve enterprise Windows security
+- Monitor Active Directory authentication
+- Analyze Windows Security Event Logs
+- Configure Windows Advanced Audit Policies
+- Build authentication baselines
+- Detect anomalies using stack counting
+- Correlate Windows security events during investigations
 
 ---
 
@@ -101,20 +111,38 @@ By completing this collection, you will learn how to:
 
 ---
 
-# Remaining Room
+## ✅ Monitoring Active Directory
 
-## ⏳ Monitoring Active Directory
+### Topics Covered
 
-### Planned Topics
+- Kerberos authentication monitoring
+- NTLM authentication monitoring
+- LDAP, SMB, and RDP traffic
+- Windows Security Event Logs
+- Authentication events
+- Account lifecycle events
+- Group membership monitoring
+- Directory Service changes
+- Windows Advanced Audit Policies
+- Baseline development
+- Stack counting
+- Splunk investigations
+- Event correlation
+- User onboarding investigations
 
-- Active Directory monitoring
-- Security auditing
-- Windows event logging
+### Skills Developed
+
+- Windows Event Log analysis
+- Splunk searching
 - Authentication monitoring
-- Account monitoring
-- Detecting suspicious activity
-- Defensive monitoring
-- Security operations
+- Kerberos investigation
+- NTLM investigation
+- Audit Policy configuration
+- Baseline analysis
+- Threat hunting
+- Event correlation
+- Security monitoring
+- Blue Team investigations
 
 ---
 
@@ -141,12 +169,19 @@ Standalone-Rooms/
 
 Screenshots are stored in the shared `images/` directory and document:
 
-- Administrative configuration
-- Group Policy changes
+- Active Directory administration
+- Group Policy configuration
 - Authentication hardening
 - Microsoft Security Compliance Toolkit
 - Password auditing
-- Troubleshooting
+- Windows Security Event investigations
+- Kerberos authentication
+- NTLM authentication
+- Splunk searches
+- Baseline analysis
+- Stack counting
+- Event correlation
+- Blue Team investigations
 - Room completion
 
 ---
@@ -180,36 +215,52 @@ Screenshots are stored in the shared `images/` directory and document:
 
 ## Defensive Security
 
-- ✅ Password auditing
-- ✅ Kerberoasting mitigation
-- ⏳ Active Directory monitoring
-- ⏳ Security auditing
+- ✅ Windows Security Event Logs
+- ✅ Active Directory monitoring
+- ✅ Security auditing
+- ✅ Kerberos monitoring
+- ✅ NTLM monitoring
+- ✅ Audit Policy configuration
+- ✅ Authentication monitoring
+- ✅ Account monitoring
+- ✅ Group monitoring
+- ✅ Baseline development
+- ✅ Stack counting
+- ✅ Event correlation
+- ✅ Threat hunting
+- ✅ Splunk investigations
 
 ---
 
 # Progress
 
 ```text
-█████████████░░░░░░ 67%
+████████████████████ 100%
 
-Completed: 2 / 3 Rooms
-Remaining: 1 Room
+Completed: 3 / 3 Rooms
+Remaining: 0 Rooms
 ```
 
 ---
 
-# Next Room
+# Collection Complete
 
-➡️ **Monitoring Active Directory**
+This collection provides a complete introduction to defending Microsoft Active Directory environments.
 
-The final room in this collection focuses on monitoring Active Directory environments, reviewing authentication events, auditing activity, and identifying suspicious behavior to strengthen enterprise defensive capabilities.
+The progression follows a practical defensive workflow:
+
+1. Build Active Directory knowledge
+2. Secure the environment using Microsoft's recommended hardening guidance
+3. Monitor authentication activity, investigate security events, establish baselines, and identify suspicious behavior using Splunk
+
+Together, these rooms develop the foundational knowledge expected of junior Windows administrators, SOC analysts, Blue Team analysts, and cybersecurity professionals responsible for securing enterprise Active Directory environments.
 
 ---
 
 # Collection Status
 
-**Status:** 🟡 In Progress
+**Status:** ✅ Completed
 
-**Rooms Completed:** 2 / 3
+**Rooms Completed:** 3 / 3
 
-**Completion:** **67%**
+**Completion:** **100%**

@@ -1,126 +1,139 @@
-# Images
+# Active Directory Images
 
-This directory contains all screenshots for the **Active Directory** standalone TryHackMe collection.
+This directory contains screenshots captured while completing the **Active Directory** standalone TryHackMe collection.
 
-Screenshots document practical administration, security configuration, troubleshooting, auditing, and room completion. They provide visual evidence of hands-on work completed during each room.
+The screenshots document practical exercises, security configurations, investigations, and room completion evidence across all rooms in the collection.
 
 ---
 
-# Screenshot Standards
+# Collection Progress
 
-Screenshots are captured only for meaningful activities, including:
+| Room | Status |
+|------|--------|
+| Windows Active Directory Basics | ✅ |
+| Active Directory Hardening | ✅ |
+| Monitoring Active Directory | ✅ |
 
-- Administrative configuration
-- Group Policy changes
-- Security policy implementation
-- Authentication hardening
-- Microsoft security tools
-- Password auditing
-- Troubleshooting
-- Room completion
-
-Screenshots are **not** taken for reading-only tasks or multiple-choice questions unless they demonstrate a practical concept.
+**Collection Completion:** **100%**
 
 ---
 
 # Windows Active Directory Basics
 
-## Room Status
+## Administrative Tools
 
-✅ Completed
-
-### Screenshots
-
-| Screenshot | Description |
-|------------|-------------|
-| *(Screenshots from the Windows Active Directory Basics room.)* |
+- Windows Active Directory administration
+- Active Directory Users and Computers (ADUC)
+- Domain structure
+- Organizational Units
+- Group Policy
+- Administrative interfaces
 
 ---
 
 # Active Directory Hardening
 
-## Room Status
+## Security Configuration
 
-✅ Completed
-
-### Troubleshooting
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-authentication-failed` | Browser client authentication failure before troubleshooting. |
-| `active-directory-hardening-lab-connection-restored` | Successful recovery after establishing a new browser session. |
-
----
-
-### Task 3 – Securing Authentication Methods
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-task03-lm-hash-storage-disabled` | Disabled storage of LAN Manager password hashes. |
-| `active-directory-hardening-task03-smb-signing-enabled` | Enabled SMB signing for secure SMB communications. |
-| `active-directory-hardening-task03-ldap-signing-required` | Required LDAP signing on the domain controller. |
-| `active-directory-hardening-task03-password-policy-viewed` | Reviewed the default domain password policy. |
-| `active-directory-hardening-task03-authentication-hardening-policies` | Summary view of authentication hardening policies configured through Group Policy. |
-
----
-
-### Task 5 – Microsoft Security Compliance Toolkit
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-task05-msct-script-analysis-baseline` | Reviewed the `BaselineLocalInstall.ps1` script in PowerShell ISE. |
-| `active-directory-hardening-task05-msct-script-analysis-merge-policy` | Reviewed the `Merge-PolicyRules.ps1` script in PowerShell ISE. |
-
----
-
-### Task 6 – Protecting Against Known Attacks
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-task06-password-audit-report` | Reviewed the generated password audit report and password reuse findings. |
-
----
-
-### Task 7 – Windows AD Hardening Cheat Sheet
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-task07-hardening-cheat-sheet` | Final Active Directory hardening reference guide. |
-
----
-
-### Room Completion
-
-| Screenshot | Description |
-|------------|-------------|
-| `active-directory-hardening-room-complete` | Successful completion of the Active Directory Hardening room. |
+- Authentication hardening
+- Password policy configuration
+- Least Privilege implementation
+- Tiered Administration
+- SMB Signing
+- LDAP Signing
+- Microsoft Security Compliance Toolkit
+- Policy Analyzer
+- Password auditing
+- Security recommendations
+- Room completion
 
 ---
 
 # Monitoring Active Directory
 
-## Room Status
+## Authentication Monitoring
 
-⏳ Not Started
-
-Screenshots will be added after completing the room.
-
----
-
-# Screenshot Statistics
-
-| Collection | Count |
-|-----------|------:|
-| Windows Active Directory Basics | *(Existing screenshots)* |
-| Active Directory Hardening | 12 |
-| Monitoring Active Directory | 0 |
-| **Current Total** | **12 + Windows Active Directory Basics screenshots** |
+- active-directory-logging-and-monitoring-task02-ad-protocol-summary
+- active-directory-logging-and-monitoring-task03-kerberos-tgt-requests
+- active-directory-logging-and-monitoring-task03-ntlm-authentication-validation
+- active-directory-logging-and-monitoring-task03-ntlm-target-logon
+- active-directory-logging-and-monitoring-task03-unique-tgt-accounts
 
 ---
 
-# Documentation Notes
+## Account & Group Monitoring
 
-- Screenshots are stored in a shared directory for the entire Active Directory collection.
-- Filenames use lowercase letters and hyphens for consistency.
-- Each screenshot corresponds to a meaningful administrative, security, auditing, troubleshooting, or completion milestone.
-- The troubleshooting screenshots document a browser/session connectivity issue encountered during the lab and the successful recovery, illustrating real-world troubleshooting alongside Active Directory hardening tasks.
+- active-directory-logging-and-monitoring-task04-account-creation-events
+- active-directory-logging-and-monitoring-task04-group-membership-changes
+- active-directory-logging-and-monitoring-task04-gpo-modifications *(optional)*
+- active-directory-logging-and-monitoring-task04-logon-type-distribution
+
+---
+
+## Baseline & Threat Hunting
+
+- active-directory-logging-and-monitoring-task05-computer-vs-user-accounts
+- active-directory-logging-and-monitoring-task05-stack-counting-users
+- active-directory-logging-and-monitoring-task05-most-requested-service
+- active-directory-logging-and-monitoring-task05-service-ticket-client-address-count
+- active-directory-logging-and-monitoring-task05-ticket-encryption-types
+- active-directory-logging-and-monitoring-task05-unique-users-per-service
+
+---
+
+## Investigation Scenario
+
+- active-directory-logging-and-monitoring-task07-account-created
+- active-directory-logging-and-monitoring-task07-group-membership
+- active-directory-logging-and-monitoring-task07-first-tgt-request
+
+---
+
+## Audit Policy
+
+- active-directory-logging-and-monitoring-task06-audit-policy-configuration *(optional)*
+
+---
+
+## Room Completion
+
+- active-directory-logging-and-monitoring-room-complete
+
+---
+
+# Screenshot Categories
+
+The screenshots demonstrate practical experience with:
+
+- Active Directory administration
+- Authentication security
+- Windows Security Event Logs
+- Kerberos authentication
+- NTLM authentication
+- Splunk searches
+- Event correlation
+- Audit Policy verification
+- Baseline analysis
+- Stack counting
+- Threat hunting
+- Blue Team investigations
+- Security monitoring
+- Enterprise log analysis
+
+---
+
+# Documentation Purpose
+
+These screenshots are intended to document hands-on work rather than simply verify room completion.
+
+The collection demonstrates:
+
+- Security configuration
+- Administrative tasks
+- Log analysis
+- Authentication monitoring
+- Threat hunting methodology
+- Practical investigations
+- Defensive security workflows
+
+Together, they provide visual evidence of Active Directory administration, hardening, and monitoring skills developed throughout the collection.

@@ -1,62 +1,348 @@
-# Standalone Rooms
+# TryHackMe
 
-This directory contains standalone TryHackMe rooms completed outside of structured learning paths.
+This repository contains my documentation, handwritten notes, screenshots, and hands-on labs completed throughout my **TryHackMe** learning journey.
 
-Unlike learning paths, these rooms focus on specific technologies, platforms, or cybersecurity topics that I want to explore in greater depth. Each collection contains its own documentation, screenshots, and progress tracking while following my Root & Repository documentation standards.
+The purpose of this repository is to:
+
+- Build a strong cybersecurity foundation
+- Develop practical hands-on skills
+- Practice professional technical documentation
+- Reinforce learning through handwritten notes
+- Create a professional cybersecurity portfolio
+- Track progress through structured learning paths and standalone room collections
+- Demonstrate continuous learning and skill development
 
 ---
 
-# Purpose
+# Learning Path Status
 
-The purpose of this directory is to:
+| Learning Path | Status |
+|--------------|:------:|
+| Pre Security | ✅ Complete |
 
-- Expand beyond guided learning paths
-- Develop deeper knowledge in specialized cybersecurity topics
-- Gain practical, hands-on administration and security experience
-- Document real-world skills through structured notes and screenshots
-- Build a professional cybersecurity portfolio
+---
+
+# Standalone Room Collections
+
+| Collection | Status |
+|------------|:------:|
+| Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
 
 ---
 
 # Progress
 
-| Collection | Status | Progress |
-|------------|:------:|:--------:|
-| Active Directory | 🚧 In Progress | **2 / 3 Rooms (67%)** |
+## Learning Paths
+
+| Module | Status |
+|---------|:------:|
+| Module 01 – Introduction to Cybersecurity | ✅ Complete |
+| Module 02 – Computer Fundamentals | ✅ Complete |
+| Module 03 – Operating Systems Basics | ✅ Complete |
+| Module 04 – Software Basics | ✅ Complete |
+| Module 05 – Network Fundamentals | ✅ Complete |
+| Module 06 – How The Web Works | ✅ Complete |
+| Module 07 – Attacks and Defenses | ✅ Complete |
+
+**Learning Path Progress:** **7 / 7 Modules Completed (100%)**
+
+---
+
+## Standalone Rooms
+
+| Collection | Progress |
+|------------|:--------:|
+| Active Directory | **3 / 3 Rooms Completed (100%)** |
 
 ---
 
 # Repository Structure
 
 ```text
-Standalone-Rooms/
+TryHackMe/
 │
 ├── README.md
 │
-└── Active-Directory/
+├── Learning-Paths/
+│   │
+│   └── Pre-Security/
+│       │
+│       ├── Module-01-Introduction-to-Cybersecurity/
+│       ├── Module-02-Computer-Fundamentals/
+│       ├── Module-03-Operating-Systems-Basics/
+│       ├── Module-04-Software-Basics/
+│       ├── Module-05-Network-Fundamentals/
+│       ├── Module-06-How-The-Web-Works/
+│       └── Module-07-Attacks-and-Defenses/
+│
+└── Standalone-Rooms/
     │
-    ├── README.md
-    ├── images/
-    │
-    ├── Windows-Active-Directory-Basics/
-    │   └── task-notes.md
-    │
-    ├── Active-Directory-Hardening/
-    │   └── task-notes.md
-    │
-    └── Monitoring-Active-Directory/
-        └── task-notes.md
+    └── Active-Directory/
+        │
+        ├── README.md
+        ├── images/
+        │   └── README.md
+        ├── Windows-Active-Directory-Basics/
+        ├── Active-Directory-Hardening/
+        └── Monitoring-Active-Directory/
 ```
 
 ---
 
-# Collections
+# Completed Learning Paths
 
-## 🚧 Active Directory
+## 📘 Pre Security
 
-### Overview
+**Status:** ✅ Complete
 
-This collection focuses on Microsoft Active Directory administration, enterprise Windows environments, authentication, Group Policy, security hardening, monitoring, and enterprise identity management.
+The Pre Security Learning Path provided a comprehensive introduction to cybersecurity fundamentals, covering computer hardware, operating systems, networking, web technologies, and core security principles. Completing this path established the knowledge required for more advanced cybersecurity training and hands-on labs.
+
+### Completed Modules
+
+| Module | Status |
+|---------|:------:|
+| Module 01 – Introduction to Cybersecurity | ✅ Complete |
+| Module 02 – Computer Fundamentals | ✅ Complete |
+| Module 03 – Operating Systems Basics | ✅ Complete |
+| Module 04 – Software Basics | ✅ Complete |
+| Module 05 – Network Fundamentals | ✅ Complete |
+| Module 06 – How The Web Works | ✅ Complete |
+| Module 07 – Attacks and Defenses | ✅ Complete |
+
+## ✅ Module 01 – Introduction to Cybersecurity
+
+### Topics Covered
+
+- Introduction to Cybersecurity
+- Offensive Security
+- Defensive Security
+- Careers in Cybersecurity
+
+### Skills Developed
+
+- Cybersecurity Fundamentals
+- Security Domains
+- Threat Awareness
+- Security Careers
+- Technical Documentation
+
+---
+
+## ✅ Module 02 – Computer Fundamentals
+
+### Topics Covered
+
+- Client-Server
+- Cloud Computing
+- Computer Types
+- Inside a Computer
+- Virtualization
+
+### Skills Developed
+
+- Computer Hardware
+- Client-Server Architecture
+- Cloud Computing Concepts
+- Virtual Machines
+
+---
+
+## ✅ Module 03 – Operating Systems Basics
+
+### Topics Covered
+
+- Windows Fundamentals
+- Linux Fundamentals
+- File Systems
+- Command Line
+- Operating Systems
+
+### Skills Developed
+
+- Windows Navigation
+- Linux Navigation
+- Command Line Usage
+- File Management
+- Operating System Fundamentals
+
+---
+
+## ✅ Module 04 – Software Basics
+
+### Topics Covered
+
+- Data Representation
+- Data Encoding
+- Python Basics
+- JavaScript Basics
+- SQL Basics
+- Topic Transition Recap
+
+### Skills Developed
+
+- Binary
+- Decimal
+- Hexadecimal
+- ASCII
+- Unicode
+- UTF-8
+- Python Fundamentals
+- JavaScript Fundamentals
+- SQL Fundamentals
+
+---
+
+## ✅ Module 05 – Network Fundamentals
+
+### Completed Rooms
+
+- ✅ What is Networking?
+- ✅ Intro to LAN
+- ✅ OSI Model
+- ✅ Packets & Frames
+- ✅ Extending Your Network
+- ✅ Topic Transition Recap
+
+### Skills Developed
+
+- Networking Fundamentals
+- LAN Topologies
+- Switching
+- Routing
+- IPv4 / IPv6
+- Subnetting
+- ARP
+- DHCP
+- ICMP
+- OSI Model
+- TCP/IP
+- Packets & Frames
+- Firewalls
+- VPN Fundamentals
+- VLANs
+- Network Simulation
+
+---
+
+## ✅ Module 06 – How The Web Works
+
+### Completed Rooms
+
+- ✅ DNS in Detail
+- ✅ HTTP in Detail
+- ✅ How Websites Work
+- ✅ Putting it all Together
+
+### Skills Developed
+
+#### DNS
+
+- DNS
+- DNS Resolution
+- DNS Record Types
+- DNS Caching
+
+#### HTTP
+
+- HTTP / HTTPS
+- URLs
+- HTTP Requests
+- HTTP Responses
+- HTTP Methods
+- HTTP Status Codes
+- Cookies
+
+#### Website Technologies
+
+- HTML
+- JavaScript
+- Front-End
+- Back-End
+- Browser Rendering
+
+#### Web Infrastructure
+
+- Apache
+- Nginx
+- IIS
+- Node.js
+- Load Balancers
+- CDNs
+- Databases
+- WAFs
+
+#### Web Security
+
+- Source Code Review
+- HTML Injection
+- Input Validation
+- Sensitive Data Exposure
+
+---
+
+## ✅ Module 07 – Attacks and Defenses
+
+### Completed Activities
+
+- ✅ The CIA Triad
+- ✅ Cryptography Concepts
+- ✅ Become a Hacker
+- ✅ Become a Defender
+- ✅ Topic Rewind Recap
+
+### Skills Developed
+
+#### Security Foundations
+
+- CIA Triad
+- Confidentiality
+- Integrity
+- Availability
+- Risk Assessment
+
+#### Cryptography
+
+- Encryption
+- Decryption
+- Symmetric Encryption
+- Asymmetric Encryption
+- PKI
+- Digital Certificates
+
+#### Offensive Security
+
+- Ethical Hacking
+- Penetration Testing
+- Enumeration
+- Reconnaissance
+- Password Auditing
+
+#### Defensive Security
+
+- Blue Team Fundamentals
+- Detection
+- Mitigation
+- Incident Response
+- Layered Security
+
+#### Security Tools
+
+- Gobuster
+- Hydra
+
+---
+
+# Active Directory
+
+**Status:** ✅ Complete
+
+The Active Directory collection provides practical experience administering, securing, and monitoring Microsoft Active Directory environments.
+
+The collection progresses through three major stages:
+
+1. Understanding Active Directory architecture and administration.
+2. Applying Microsoft's enterprise hardening recommendations.
+3. Monitoring authentication activity, Windows Security Events, and investigating enterprise environments using Splunk.
 
 ### Progress
 
@@ -64,115 +350,397 @@ This collection focuses on Microsoft Active Directory administration, enterprise
 |------|:------:|
 | Windows Active Directory Basics | ✅ Complete |
 | Active Directory Hardening | ✅ Complete |
-| Monitoring Active Directory | ⏳ Not Started |
+| Monitoring Active Directory | ✅ Complete |
 
-**Collection Progress**
-
-**2 / 3 Rooms Completed (67%)**
+**Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
-### Skills Being Developed
+## ✅ Windows Active Directory Basics
 
-- Windows Administration
+### Overview
+
+This room introduced Microsoft Active Directory architecture, Windows Domains, Organizational Units, Group Policy, user management, computer management, and enterprise authentication.
+
+### Skills Developed
+
 - Active Directory Administration
-- Windows Domains
-- Domain Controllers
+- Windows Domain Administration
 - User Management
 - Computer Management
-- Organizational Units (OUs)
-- Group Policy Objects (GPOs)
-- Kerberos Authentication
-- NetNTLM Authentication
+- Organizational Unit Administration
+- Group Policy Management
 - PowerShell Administration
+- Kerberos Fundamentals
+- NetNTLM Fundamentals
 - Enterprise Authentication
-- Trees & Forests
+- Delegated Administration
+- Active Directory Troubleshooting
+
+---
+
+## ✅ Active Directory Hardening
+
+### Overview
+
+Focused on securing enterprise Active Directory environments using Microsoft's recommended hardening guidance and Group Policy security settings.
+
+### Skills Developed
+
+- Windows Security Hardening
+- Authentication Security
+- Group Policy Management
+- Enterprise Security Baselines
+- Microsoft Security Compliance Toolkit
+- Policy Analyzer
+- Password Policy Management
+- Least Privilege
+- RBAC
+- Tiered Administration
+- Kerberoasting Mitigation
+- Password Auditing
+- Active Directory Attack Mitigation
+
+---
+
+## ✅ Monitoring Active Directory
+
+### Overview
+
+Focused on monitoring Active Directory authentication, analyzing Windows Security Event Logs, configuring audit policies, developing authentication baselines, and investigating user activity using Splunk.
+
+### Topics Covered
+
+- Kerberos authentication
+- NTLM authentication
+- Windows Security Event Logs
+- Authentication events
+- Account lifecycle events
+- Group membership monitoring
+- Directory Service changes
+- Windows Advanced Audit Policies
+- Baseline analysis
+- Stack counting
+- Splunk investigations
+- Event correlation
+- User onboarding investigations
+
+### Skills Developed
+
+- Windows Event Log Analysis
+- Splunk Searching
+- Authentication Monitoring
+- Kerberos Investigation
+- NTLM Investigation
+- Audit Policy Configuration
+- Baseline Development
+- Stack Counting
+- Event Correlation
+- Threat Hunting
+- Security Monitoring
+- Blue Team Investigations
+
+---
+
+### Collection Outcome
+
+The completed Active Directory collection provides foundational knowledge for Windows administration, enterprise security, SOC operations, and Blue Team investigations by combining administration, hardening, and monitoring into a complete defensive workflow.
+
+# Skills Gained
+
+Throughout my TryHackMe learning journey, I have developed practical knowledge and hands-on experience across multiple cybersecurity domains.
+
+---
+
+## Networking
+
+- Computer Networks
+- LAN Design
+- Switching
+- Routing
+- TCP/IP Fundamentals
+- IPv4
+- IPv6
+- Public & Private Networks
+- MAC Addressing
+- ARP
+- DHCP
+- ICMP
+- OSI Model
+- TCP
+- UDP
+- Three-Way Handshake
+- Network Ports
+- Firewalls
+- VPN Fundamentals
+- VLANs
+
+---
+
+## Web Technologies
+
+- DNS
+- DNS Resolution
+- HTTP
+- HTTPS
+- URLs
+- HTTP Requests
+- HTTP Responses
+- HTTP Headers
+- HTTP Methods
+- HTTP Status Codes
+- Cookies
+- HTML
+- JavaScript
+- Front-End Development
+- Back-End Concepts
+- Browser Rendering
+- Web Servers
+- Apache
+- Nginx
+- IIS
+- Node.js
+- Load Balancers
+- Content Delivery Networks (CDNs)
+- Web Application Firewalls (WAFs)
+
+---
+
+## Windows & Active Directory
+
+### Administration
+
+- Windows Administration
+- Windows Domains
+- Active Directory Fundamentals
+- Domain Controllers
+- Active Directory Objects
+- Organizational Units (OUs)
+- User Administration
+- Computer Administration
+- Group Policy Objects (GPOs)
 - Trust Relationships
+- Trees & Forests
+- Delegated Administration
+- PowerShell for Active Directory
+
+### Security Hardening
+
 - Authentication Hardening
+- LAN Manager Hash Protection
 - SMB Signing
 - LDAP Signing
 - Password Policies
+- Password Rotation
+- Microsoft Security Compliance Toolkit
+- Security Baselines
+- Policy Analyzer
 - Least Privilege
 - Role-Based Access Control (RBAC)
 - Tiered Administration
-- Microsoft Security Compliance Toolkit
-- Policy Analyzer
 - Kerberoasting Mitigation
 - Password Auditing
-- Active Directory Security
-- Enterprise Administration
-- Troubleshooting
+
+### Monitoring & Blue Team
+
+- Windows Security Event Logs
+- Kerberos Authentication Monitoring
+- NTLM Authentication Monitoring
+- Authentication Analysis
+- Account Lifecycle Monitoring
+- Group Membership Monitoring
+- Directory Service Monitoring
+- Windows Advanced Audit Policies
+- Event Correlation
+- Baseline Development
+- Stack Counting
+- Splunk Searching
+- Splunk Statistics
+- Threat Hunting
+- Security Monitoring
+- Blue Team Investigations
 
 ---
 
-### Documentation
+## Cybersecurity
 
-Each completed room contains:
+### Security Foundations
+
+- CIA Triad
+- Confidentiality
+- Integrity
+- Availability
+- Risk Assessment
+- Security Mindset
+
+### Cryptography
+
+- Encryption
+- Decryption
+- Symmetric Encryption
+- Asymmetric Encryption
+- Public Key Infrastructure (PKI)
+- HTTPS
+- TLS Concepts
+- Digital Certificates
+- Certificate Authorities
+
+### Offensive Security
+
+- Ethical Hacking
+- Penetration Testing
+- Enumeration
+- Reconnaissance
+- Vulnerability Assessment
+- Hidden Resource Discovery
+- Password Auditing
+- Dictionary Attacks
+- Authentication Testing
+
+### Defensive Security
+
+- Blue Team Fundamentals
+- Infrastructure Visibility
+- Asset Management
+- Threat Anticipation
+- Prevention
+- Detection
+- Mitigation
+- Analysis
+- Incident Response
+- Layered Security
+
+---
+
+## Programming
+
+### Python
+
+- Variables
+- User Input
+- Loops
+- Conditional Statements
+
+### JavaScript
+
+- Variables
+- Constants
+- Loops
+- Conditional Statements
+- Node.js
+- DOM Manipulation
+
+---
+
+## Databases
+
+- Database Concepts
+- SQL
+- SELECT
+- FROM
+- WHERE
+- ORDER BY
+
+---
+
+## Technical Skills
+
+- Technical Documentation
+- Git
+- GitHub
+- Markdown
+- Repository Organization
+- Screenshot Documentation
+- Hands-on Labs
+- Professional Note Taking
+
+---
+
+# Portfolio Statistics
+
+| Statistic | Total |
+|-----------|------:|
+| Learning Paths Completed | 1 |
+| Standalone Collections Completed | 1 |
+| Modules Completed | 7 |
+| Standard Rooms Completed | 26 |
+| Standalone Rooms Completed | 3 |
+| Topic Recaps Completed | 4 |
+| Hands-on Labs Completed | 20+ |
+| Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
+| Documentation Files | 45+ |
+| Screenshot Library | Professionally Organized |
+
+---
+
+# Learning Philosophy
+
+This repository follows my **Root & Repository** documentation standards.
+
+Every completed TryHackMe room includes:
 
 - Handwritten notebook notes
-- Screenshot documentation
+- Screenshot checklist
 - Task notes
-- Hands-on lab documentation
-- Repository updates
+- Hands-on investigation documentation
+- GitHub-ready Markdown
+- Repository organization
 - Git version history
 
----
-
-### Current Focus
-
-Currently working through the Active Directory standalone collection before expanding into additional standalone cybersecurity topics.
-
-Next room:
-
-➡️ **Monitoring Active Directory**
+My documentation emphasizes understanding concepts, performing hands-on investigations, troubleshooting technical issues, documenting engineering workflows, and producing professional-quality technical documentation suitable for long-term study and portfolio development.
 
 ---
 
-# Documentation Standards
+# Current Focus
 
-Every standalone room follows my Root & Repository documentation workflow:
+## 🎯 Continue Expanding Standalone Collections
 
-1. Complete handwritten notebook notes
-2. Screenshot checklist
-3. `task-notes.md`
-4. Full updated collection `README.md`
-5. Full updated collection `images/README.md`
-6. Full updated `Standalone-Rooms/README.md`
-7. Full updated parent `TryHackMe/README.md`
-8. Repository consistency review
-9. Git add / commit / push commands
+Current learning goals include expanding into additional cybersecurity topics such as:
 
----
-
-# Long-Term Roadmap
-
-Future standalone collections may include:
-
-- Windows
-- Linux
-- SOC
+- Windows Security
+- SOC Operations
+- Threat Hunting
 - Digital Forensics
 - Malware Analysis
-- Threat Hunting
-- Active Directory
-- Cloud Security
-- Azure
-- Microsoft Defender
 - SIEM Platforms
-- Detection Engineering
-
-These collections will complement structured learning paths while providing deeper specialization in individual cybersecurity domains.
+- Microsoft Defender
+- Azure Security
+- Cloud Security
 
 ---
 
 # Repository Status
 
-**Collections Started:** 1
+## ✅ Pre Security Learning Path Complete
 
-**Collections Completed:** 0
+Completed all modules, rooms, documentation, screenshots, and supporting materials for the TryHackMe Pre Security Learning Path.
 
-**Current Collection:** Active Directory
+---
 
-**Current Room:** Monitoring Active Directory
+## ✅ Active Directory Standalone Collection Complete
 
-**Overall Status:** 🚧 In Progress
+Completed:
+
+- ✅ Windows Active Directory Basics
+- ✅ Active Directory Hardening
+- ✅ Monitoring Active Directory
+
+Skills gained include:
+
+- Active Directory Administration
+- Enterprise Security Hardening
+- Windows Security Event Analysis
+- Splunk Investigations
+- Authentication Monitoring
+- Audit Policy Configuration
+- Baseline Development
+- Event Correlation
+- Threat Hunting
+
+---
+
+**Learning Path Status:** ✅ Pre Security Complete
+
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete)
+
+**Overall Repository Status:** 🚀 Active Development
