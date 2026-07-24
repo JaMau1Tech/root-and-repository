@@ -1,4 +1,4 @@
-# TryHackMe Standalone Room Documentation Workflow v2.0
+# TryHackMe Standalone Room Documentation Workflow v2.1
 
 _Last Updated: July 2026_
 
@@ -190,13 +190,28 @@ Regenerate the full `images/README.md` with all screenshot references updated.
 
 ---
 
-## 6. Update the Parent TryHackMe README
+## 6. Update the Parent Standalone Rooms README
 
-Update only the affected sections of the master `TryHackMe/README.md` while preserving all existing content.
+Regenerate the full `Standalone-Rooms/README.md` with all affected sections updated, including:
+
+- Collection progress
+- Room counts
+- Completion percentages
+- Current room
+- Next room
+- Skills developed
+- Documentation standards
+- Repository status
 
 ---
 
-## 7. Repository Consistency Review
+## 7. Update the Parent TryHackMe README
+
+Update the affected sections of the master `TryHackMe/README.md` while preserving all existing content and ensuring consistency with the standalone collection documentation.
+
+---
+
+## 8. Repository Consistency Review
 
 Verify:
 
@@ -206,13 +221,15 @@ Verify:
 - Skills lists
 - Repository structure
 - Documentation consistency
-- README references
+- Collection README references
+- Standalone Rooms README
+- Parent TryHackMe README
 
 Ensure all documentation is internally consistent before finalizing.
 
 ---
 
-## 8. Git Commands
+## 9. Git Commands
 
 Generate the exact Git commands:
 
@@ -256,5 +273,7 @@ Standalone-Rooms/
 - Produce comprehensive notebook notes after completing the room.
 - Document practical work instead of question completion.
 - Capture troubleshooting as part of the learning process.
+- Regenerate every affected documentation file in full.
+- Perform a documentation consistency audit before finalizing.
 - Maintain professional, portfolio-quality documentation.
 - Keep repository organization consistent across all standalone collections.

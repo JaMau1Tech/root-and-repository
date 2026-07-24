@@ -26,7 +26,7 @@ The purpose of this repository is to:
 
 | Collection | Status |
 |------------|:------:|
-| Active Directory | 🚧 In Progress |
+| Active Directory | 🚧 2 / 3 Rooms Completed |
 
 ---
 
@@ -52,7 +52,7 @@ The purpose of this repository is to:
 
 | Collection | Progress |
 |------------|:--------:|
-| Active Directory | **1 / 3 Rooms Completed (33%)** |
+| Active Directory | **2 / 3 Rooms Completed (67%)**
 
 ---
 
@@ -333,12 +333,6 @@ The Pre Security Learning Path provided a comprehensive introduction to cybersec
 
 ---
 
-# Standalone Rooms
-
-In addition to structured learning paths, I complete standalone TryHackMe rooms to deepen my knowledge in specific cybersecurity domains. These rooms focus on practical administration, defensive security, offensive security, and other specialized topics that extend beyond the guided learning paths.
-
----
-
 ## Active Directory
 
 **Status:** 🚧 In Progress
@@ -350,10 +344,10 @@ The Active Directory collection focuses on Microsoft's enterprise identity and a
 | Room | Status |
 |------|:------:|
 | Windows Active Directory Basics | ✅ Complete |
-| Active Directory Hardening | ⏳ Not Started |
+| Active Directory Hardening | ✅ Complete |
 | Monitoring Active Directory | ⏳ Not Started |
 
-**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+**Collection Progress:** **2 / 3 Rooms Completed (67%)**
 
 ---
 
@@ -362,43 +356,6 @@ The Active Directory collection focuses on Microsoft's enterprise identity and a
 #### Overview
 
 This room introduced the fundamentals of Microsoft Active Directory and Windows Domains while providing practical administrative experience in a simulated enterprise environment.
-
-The room covered:
-
-- Windows Domains
-- Domain Controllers
-- Active Directory Objects
-- Users and Groups
-- Organizational Units (OUs)
-- Computer Objects
-- Group Policy Objects (GPOs)
-- Kerberos Authentication
-- NetNTLM Authentication
-- Trees
-- Forests
-- Trust Relationships
-
----
-
-#### Hands-on Activities
-
-Completed practical exercises involving:
-
-- Creating Organizational Units
-- Deleting Organizational Units
-- Managing Active Directory users
-- Managing computer objects
-- Delegating administrative permissions
-- Resetting passwords
-- Managing password policies
-- Creating Group Policy Objects
-- Linking Group Policies
-- Configuring workstation security policies
-- Using PowerShell for Active Directory administration
-- Troubleshooting authentication issues
-- Verifying Group Policy application
-
----
 
 #### Skills Developed
 
@@ -417,47 +374,76 @@ Completed practical exercises involving:
 
 ---
 
-#### Tools Used
+### ✅ Active Directory Hardening
 
-- Active Directory Users and Computers (ADUC)
-- Group Policy Management Console (GPMC)
-- Windows PowerShell
-- Windows Remote Desktop
-- FreeRDP
+#### Overview
 
----
+This room focused on securing enterprise Active Directory environments using Microsoft's recommended hardening practices and Group Policy security settings.
 
-#### Documentation
+#### Topics Covered
 
-```text
-Standalone-Rooms/
-└── Active-Directory/
-    ├── README.md
-    ├── Windows-Active-Directory-Basics/
-    │   └── task-notes.md
-    └── images/
-```
+- Authentication hardening
+- LAN Manager hash protection
+- SMB Signing
+- LDAP Signing
+- Password policies
+- Password rotation
+- Least Privilege
+- Role-Based Access Control (RBAC)
+- Tiered Administration
+- Microsoft Security Compliance Toolkit
+- Security Baselines
+- Policy Analyzer
+- Kerberoasting mitigation
+- Password auditing
+- Active Directory hardening checklist
+
+#### Hands-on Activities
+
+- Configured Group Policy security settings
+- Disabled LM hash storage
+- Enabled SMB signing
+- Required LDAP signing
+- Reviewed password policy
+- Examined Microsoft security baseline scripts
+- Reviewed password audit report
+- Troubleshot browser/lab connectivity
+- Applied enterprise hardening recommendations
+
+#### Skills Developed
+
+- Windows security hardening
+- Authentication security
+- Group Policy Management
+- Enterprise security baselines
+- Microsoft Security Compliance Toolkit
+- Policy Analyzer
+- Password policy management
+- Least Privilege implementation
+- Tiered Administration
+- Active Directory attack mitigation
+- Security troubleshooting
 
 ---
 
 ### 🔜 Next Room
 
-**Active Directory Hardening**
+**Monitoring Active Directory**
 
 Upcoming topics include:
 
-- Tiered Administration
-- Least Privilege
-- Microsoft LAPS
-- Secure Administrative Workstations
-- Group Policy Hardening
-- Administrative Security Best Practices
+- Windows Event Logging
+- Authentication monitoring
+- Security auditing
+- Suspicious activity detection
+- Defensive monitoring
+- Enterprise visibility
 
 ---
 
 ### Long-Term Goal
 
-Complete the Active Directory collection to develop practical enterprise Windows administration skills before progressing into more advanced Windows security, monitoring, detection engineering, and Active Directory attack techniques.
+Complete the Active Directory collection to develop practical enterprise Windows administration, security hardening, monitoring, and defensive operations skills.
 
 ---
 
@@ -540,6 +526,20 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Delegated Administration
 - PowerShell for Active Directory
 - Active Directory Troubleshooting
+- Authentication Hardening
+- LAN Manager Hash Protection
+- SMB Signing
+- LDAP Signing
+- Password Policies
+- Password Rotation
+- Microsoft Security Compliance Toolkit
+- Security Baselines
+- Policy Analyzer
+- Least Privilege
+- Role-Based Access Control (RBAC)
+- Tiered Administration
+- Kerberoasting Mitigation
+- Password Auditing
 
 ---
 
@@ -645,11 +645,11 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Standalone Collections | 1 In Progress |
 | Modules Completed | 7 |
 | Standard Rooms Completed | 25 |
-| Standalone Rooms Completed | 1 |
+| Standalone Rooms Completed | 2 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell |
-| Documentation Files | 35+ |
+| Documentation Files | 40+ |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -678,8 +678,8 @@ My documentation emphasizes understanding concepts, practicing hands-on skills, 
 
 Current standalone learning objectives include:
 
-- Active Directory Hardening
 - Monitoring Active Directory
+- Active Directory Detection
 - Enterprise Windows Administration
 - Active Directory Security
 - Windows Authentication
@@ -698,16 +698,16 @@ Completed all modules, rooms, documentation, screenshots, and supporting materia
 Completed:
 
 - ✅ Windows Active Directory Basics
+- ✅ Active Directory Hardening
 
 Upcoming:
 
-- ⏳ Active Directory Hardening
 - ⏳ Monitoring Active Directory
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Progress:** 🚧 Active Directory (1 / 3)
+**Standalone Progress:** 🚧 Active Directory (2 / 3)
 
 **Overall Repository Status:** 🚀 Active Development

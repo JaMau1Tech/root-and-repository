@@ -22,7 +22,7 @@ The purpose of this directory is to:
 
 | Collection | Status | Progress |
 |------------|:------:|:--------:|
-| Active Directory | 🚧 In Progress | 1 / 3 Rooms |
+| Active Directory | 🚧 In Progress | **2 / 3 Rooms (67%)** |
 
 ---
 
@@ -42,8 +42,10 @@ Standalone-Rooms/
     │   └── task-notes.md
     │
     ├── Active-Directory-Hardening/
+    │   └── task-notes.md
     │
     └── Monitoring-Active-Directory/
+        └── task-notes.md
 ```
 
 ---
@@ -61,12 +63,12 @@ This collection focuses on Microsoft Active Directory administration, enterprise
 | Room | Status |
 |------|:------:|
 | Windows Active Directory Basics | ✅ Complete |
-| Active Directory Hardening | ⏳ Not Started |
+| Active Directory Hardening | ✅ Complete |
 | Monitoring Active Directory | ⏳ Not Started |
 
 **Collection Progress**
 
-**1 / 3 Rooms Completed (33%)**
+**2 / 3 Rooms Completed (67%)**
 
 ---
 
@@ -86,6 +88,17 @@ This collection focuses on Microsoft Active Directory administration, enterprise
 - Enterprise Authentication
 - Trees & Forests
 - Trust Relationships
+- Authentication Hardening
+- SMB Signing
+- LDAP Signing
+- Password Policies
+- Least Privilege
+- Role-Based Access Control (RBAC)
+- Tiered Administration
+- Microsoft Security Compliance Toolkit
+- Policy Analyzer
+- Kerberoasting Mitigation
+- Password Auditing
 - Active Directory Security
 - Enterprise Administration
 - Troubleshooting
@@ -111,7 +124,7 @@ Currently working through the Active Directory standalone collection before expa
 
 Next room:
 
-➡️ **Active Directory Hardening**
+➡️ **Monitoring Active Directory**
 
 ---
 
@@ -121,12 +134,13 @@ Every standalone room follows my Root & Repository documentation workflow:
 
 1. Complete handwritten notebook notes
 2. Screenshot checklist
-3. task-notes.md
-4. Collection README updates
-5. Image documentation updates
-6. Parent README updates
-7. Repository review
-8. Git history
+3. `task-notes.md`
+4. Full updated collection `README.md`
+5. Full updated collection `images/README.md`
+6. Full updated `Standalone-Rooms/README.md`
+7. Full updated parent `TryHackMe/README.md`
+8. Repository consistency review
+9. Git add / commit / push commands
 
 ---
 
@@ -159,6 +173,6 @@ These collections will complement structured learning paths while providing deep
 
 **Current Collection:** Active Directory
 
-**Current Room:** Active Directory Hardening
+**Current Room:** Monitoring Active Directory
 
 **Overall Status:** 🚧 In Progress
