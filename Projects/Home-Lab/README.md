@@ -4,7 +4,7 @@
 
 This repository documents the development of a hands-on enterprise Home Lab built to strengthen practical IT and cybersecurity skills through real-world infrastructure projects.
 
-The environment is hosted in VMware Workstation Pro and is designed to simulate a small enterprise network. Projects build upon one another, beginning with virtualization and operating system deployment before progressing into enterprise services such as Active Directory, DNS, Group Policy, networking, security monitoring, and system administration.
+The environment is hosted in VMware Workstation Pro and simulates a small enterprise network. Each project builds upon the previous one, progressing from virtualization and operating system deployment into enterprise identity management, Windows administration, networking, security, and IT operations.
 
 ---
 
@@ -15,9 +15,9 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 - Practice Linux administration
 - Gain experience with virtualization
 - Configure enterprise networking
-- Deploy Active Directory services
-- Implement identity and access management
-- Prepare for cybersecurity and IT operations roles
+- Deploy Active Directory Domain Services
+- Implement centralized identity and access management
+- Prepare for IT Support, System Administration, and Cybersecurity roles
 
 ---
 
@@ -34,9 +34,9 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 |-----------------|:------:|---------|
 | Ubuntu 24.04 LTS | ✅ Complete | Linux administration and virtualization foundation |
 | Windows Server 2022 | ✅ Complete | Enterprise infrastructure server |
-| Windows 11 Client | ⏳ Planned | Domain-joined workstation |
-| pfSense Firewall | ⏳ Planned | Network security and routing |
-| Additional Security Systems | ⏳ Planned | Future security projects |
+| Windows 11 Client | ⏳ Next Project | Domain-joined workstation |
+| pfSense Firewall | ⏳ Planned | Firewall, routing, and network segmentation |
+| Additional Security Systems | ⏳ Planned | Future security and monitoring projects |
 
 ---
 
@@ -44,46 +44,57 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 
 ## ✅ Project 01 – Ubuntu Foundation
 
-### Objectives
-
-- Install Ubuntu Server
-- Configure Linux
-- Practice command-line administration
-- Learn virtualization fundamentals
-
 ### Skills Developed
 
 - VMware Workstation
 - Ubuntu Server
 - Linux CLI
+- Package Management
 - SSH
-- Package management
-- System administration
+- System Administration
 
 ---
 
 ## ✅ Project 02 – Windows Server Foundation
 
+### Skills Developed
+
+- Windows Server Installation
+- Static Networking
+- Windows Updates
+- Server Manager
+- PowerShell
+- Snapshot Management
+
+---
+
+## ✅ Project 03 – Active Directory
+
 ### Objectives
 
-- Deploy Windows Server 2022
-- Configure enterprise virtual hardware
-- Install Windows manually
-- Configure enterprise hostname
-- Install VMware Tools
-- Apply Windows Updates
-- Configure static networking
-- Create baseline snapshot
+- Deploy Active Directory Domain Services
+- Promote a Domain Controller
+- Configure Active Directory Integrated DNS
+- Create Organizational Units
+- Create and manage users
+- Create and manage security groups
+- Configure Group Policy
+- Practice enterprise identity management
 
 ### Skills Developed
 
-- Windows Server administration
-- VMware virtualization
-- Static IPv4 configuration
-- Windows Updates
-- PowerShell verification
-- Snapshot management
-- Enterprise server deployment
+- Active Directory Domain Services
+- Domain Controller Deployment
+- DNS Administration
+- Organizational Unit Design
+- User Lifecycle Management
+- Security Group Administration
+- Group Membership Management
+- Password Administration
+- Account Enable / Disable
+- Group Policy Management
+- gpresult Verification
+- Enterprise Identity Management
 
 ---
 
@@ -93,12 +104,14 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 |---------|:------:|
 | Project 01 – Ubuntu Foundation | ✅ Complete |
 | Project 02 – Windows Server Foundation | ✅ Complete |
-| Project 03 – Active Directory | ⏳ Next |
-| Project 04 – Windows 11 Client | ⏳ Planned |
-| Project 05 – Group Policy | ⏳ Planned |
-| Project 06 – File Services | ⏳ Planned |
-| Project 07 – Security Hardening | ⏳ Planned |
-| Project 08 – Monitoring & Logging | ⏳ Planned |
+| Project 03 – Active Directory | ✅ Complete |
+| Project 04 – Windows 11 Client | ⏳ Next |
+| Project 05 – File Services | ⏳ Planned |
+| Project 06 – Security Hardening | ⏳ Planned |
+| Project 07 – Monitoring & Logging | ⏳ Planned |
+| Project 08 – osTicket Help Desk | ⏳ Planned |
+| Project 09 – pfSense Firewall | ⏳ Planned |
+| Project 10 – SIEM | ⏳ Planned |
 
 ---
 
@@ -106,16 +119,22 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 
 ```text
                     VMware Workstation Pro
-                            │
-        ┌───────────────────┼───────────────────┐
-        │                   │                   │
-        │                   │                   │
- Ubuntu 24.04         Windows Server      Windows 11
-  Project 01            SRV-DC01            Planned
-                           │
-                           │
-                  Active Directory
-                    (Next Project)
+                             │
+         ┌───────────────────┴───────────────────┐
+         │                                       │
+  Ubuntu 24.04                          Windows Server 2022
+   Project 01                                SRV-DC01
+                                                  │
+                                        Active Directory
+                                           jamaursec.lab
+                                                  │
+                      ┌──────────────┬──────────────┬──────────────┐
+                      │              │              │
+                     DNS            OUs        Security Groups
+                      │
+               Group Policy
+                      │
+          Windows 11 Client (Next)
 ```
 
 ---
@@ -125,31 +144,40 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 ## Virtualization
 
 - VMware Workstation Pro
-- Virtual machine deployment
-- Virtual hardware configuration
-- Snapshot management
+- Virtual Machine Deployment
+- Virtual Hardware Configuration
+- Snapshot Management
 
 ## Linux
 
-- Ubuntu administration
-- Linux command line
-- Package management
-- System configuration
+- Ubuntu Administration
+- Linux Command Line
+- Package Management
+- System Configuration
 
 ## Windows
 
-- Windows Server installation
+- Windows Server Administration
 - Server Manager
-- Windows Updates
 - PowerShell
-- Enterprise configuration
+- Enterprise Configuration
+
+## Active Directory
+
+- Active Directory Domain Services
+- Domain Controller Deployment
+- Organizational Units
+- User Administration
+- Security Groups
+- Identity Management
+- Group Policy
 
 ## Networking
 
-- IPv4 addressing
-- Static IP configuration
-- NAT networking
-- Connectivity verification
+- IPv4 Configuration
+- DNS
+- Active Directory Integrated DNS
+- NAT Networking
 
 ---
 
@@ -159,21 +187,15 @@ The environment is hosted in VMware Workstation Pro and is designed to simulate 
 Home-Lab/
 ├── README.md
 ├── Project-01-Ubuntu-Foundation/
-│   ├── README.md
-│   ├── architecture.md
-│   ├── project-notes.md
-│   └── images/
 ├── Project-02-Windows-Server/
-│   ├── README.md
-│   ├── architecture.md
-│   ├── project-notes.md
-│   └── images/
 ├── Project-03-Active-Directory/
 ├── Project-04-Windows-11-Client/
-├── Project-05-Group-Policy/
-├── Project-06-File-Services/
-├── Project-07-Security-Hardening/
-└── Project-08-Monitoring-Logging/
+├── Project-05-File-Services/
+├── Project-06-Security-Hardening/
+├── Project-07-Monitoring-Logging/
+├── Project-08-osTicket/
+├── Project-09-pfSense/
+└── Project-10-SIEM/
 ```
 
 ---
@@ -182,28 +204,40 @@ Home-Lab/
 
 | Metric | Status |
 |--------|--------|
-| Projects Completed | **2 / 8** |
-| Current Project | **Project 03 – Active Directory** |
-| Infrastructure Status | **Windows Server Foundation Complete** |
+| Projects Completed | **3 / 10** |
+| Current Project | **Project 04 – Windows 11 Client** |
+| Infrastructure Status | **Enterprise Active Directory Operational** |
 
 ---
 
 # Next Project
 
-## Project 03 – Active Directory
+## Project 04 – Windows 11 Client
 
-### Planned Objectives
+### Objectives
 
-- Install Active Directory Domain Services (AD DS)
-- Install DNS Server
-- Promote **SRV-DC01** to a Domain Controller
-- Create a new Active Directory forest
-- Configure the lab domain
-- Create Organizational Units (OUs)
-- Create security groups
-- Create user accounts
-- Verify authentication
-- Prepare for Windows 11 domain join
+- Install Windows 11
+- Configure networking
+- Join the `jamaursec.lab` domain
+- Verify domain authentication
+- Apply Group Policy
+- Test centralized administration
+- Validate communication with the Domain Controller
+
+---
+
+# Future Projects
+
+Following the Windows 11 domain join, the Home Lab will continue expanding into enterprise administration with:
+
+- Enterprise File Services
+- NTFS & Share Permissions
+- DHCP
+- osTicket Help Desk
+- pfSense Firewall
+- SIEM Integration
+- PowerShell Automation
+- Enterprise Troubleshooting Scenarios
 
 ---
 
