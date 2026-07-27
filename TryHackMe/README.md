@@ -9,7 +9,7 @@ The purpose of this repository is to:
 - Practice professional technical documentation
 - Reinforce learning through handwritten notes
 - Create a professional cybersecurity portfolio
-- Track progress through structured learning paths and standalone rooms
+- Track progress through structured learning paths and standalone room collections
 - Demonstrate continuous learning and skill development
 
 ---
@@ -26,7 +26,8 @@ The purpose of this repository is to:
 
 | Collection | Status |
 |------------|:------:|
-| Active Directory | 🚧 2 / 3 Rooms Completed |
+| Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
+| Windows Fundamentals | 🚧 1 / 3 Rooms Completed (33%) |
 
 ---
 
@@ -52,7 +53,8 @@ The purpose of this repository is to:
 
 | Collection | Progress |
 |------------|:--------:|
-| Active Directory | **2 / 3 Rooms Completed (67%)**
+| Active Directory | **3 / 3 Rooms Completed (100%)** |
+| Windows Fundamentals | **1 / 3 Rooms Completed (33%)** |
 
 ---
 
@@ -77,13 +79,22 @@ TryHackMe/
 │
 └── Standalone-Rooms/
     │
-    └── Active-Directory/
+    ├── README.md
+    │
+    ├── Active-Directory/
+    │   │
+    │   ├── README.md
+    │   ├── images/
+    │   │   └── README.md
+    │   ├── Windows-Active-Directory-Basics/
+    │   ├── Active-Directory-Hardening/
+    │   └── Monitoring-Active-Directory/
+    │
+    └── Windows-Fundamentals/
         │
         ├── README.md
         ├── images/
-        ├── Windows-Active-Directory-Basics/
-        ├── Active-Directory-Hardening/
-        └── Monitoring-Active-Directory/
+        └── Windows-Fundamentals-1/
 ```
 
 ---
@@ -107,8 +118,6 @@ The Pre Security Learning Path provided a comprehensive introduction to cybersec
 | Module 05 – Network Fundamentals | ✅ Complete |
 | Module 06 – How The Web Works | ✅ Complete |
 | Module 07 – Attacks and Defenses | ✅ Complete |
-
----
 
 ## ✅ Module 01 – Introduction to Cybersecurity
 
@@ -333,11 +342,19 @@ The Pre Security Learning Path provided a comprehensive introduction to cybersec
 
 ---
 
+# Standalone Room Collections
+
 ## Active Directory
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Complete
 
-The Active Directory collection focuses on Microsoft's enterprise identity and access management platform. These rooms build practical experience administering Windows domains, managing users and computers, configuring Group Policy, securing Active Directory environments, and monitoring enterprise infrastructure.
+The Active Directory collection provides practical experience administering, securing, and monitoring Microsoft Active Directory environments.
+
+The collection progresses through three major stages:
+
+1. Understanding Active Directory architecture and administration.
+2. Applying Microsoft's enterprise hardening recommendations.
+3. Monitoring authentication activity, Windows Security Events, and investigating enterprise environments using Splunk.
 
 ### Progress
 
@@ -345,9 +362,9 @@ The Active Directory collection focuses on Microsoft's enterprise identity and a
 |------|:------:|
 | Windows Active Directory Basics | ✅ Complete |
 | Active Directory Hardening | ✅ Complete |
-| Monitoring Active Directory | ⏳ Not Started |
+| Monitoring Active Directory | ✅ Complete |
 
-**Collection Progress:** **2 / 3 Rooms Completed (67%)**
+**Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
@@ -355,7 +372,7 @@ The Active Directory collection focuses on Microsoft's enterprise identity and a
 
 #### Overview
 
-This room introduced the fundamentals of Microsoft Active Directory and Windows Domains while providing practical administrative experience in a simulated enterprise environment.
+This room introduced Microsoft Active Directory architecture, Windows Domains, Organizational Units, Group Policy, user management, computer management, and enterprise authentication.
 
 #### Skills Developed
 
@@ -378,72 +395,125 @@ This room introduced the fundamentals of Microsoft Active Directory and Windows 
 
 #### Overview
 
-This room focused on securing enterprise Active Directory environments using Microsoft's recommended hardening practices and Group Policy security settings.
-
-#### Topics Covered
-
-- Authentication hardening
-- LAN Manager hash protection
-- SMB Signing
-- LDAP Signing
-- Password policies
-- Password rotation
-- Least Privilege
-- Role-Based Access Control (RBAC)
-- Tiered Administration
-- Microsoft Security Compliance Toolkit
-- Security Baselines
-- Policy Analyzer
-- Kerberoasting mitigation
-- Password auditing
-- Active Directory hardening checklist
-
-#### Hands-on Activities
-
-- Configured Group Policy security settings
-- Disabled LM hash storage
-- Enabled SMB signing
-- Required LDAP signing
-- Reviewed password policy
-- Examined Microsoft security baseline scripts
-- Reviewed password audit report
-- Troubleshot browser/lab connectivity
-- Applied enterprise hardening recommendations
+Focused on securing enterprise Active Directory environments using Microsoft's recommended hardening guidance and Group Policy security settings.
 
 #### Skills Developed
 
-- Windows security hardening
-- Authentication security
+- Windows Security Hardening
+- Authentication Security
 - Group Policy Management
-- Enterprise security baselines
+- Enterprise Security Baselines
 - Microsoft Security Compliance Toolkit
 - Policy Analyzer
-- Password policy management
-- Least Privilege implementation
+- Password Policy Management
+- Least Privilege
+- RBAC
 - Tiered Administration
-- Active Directory attack mitigation
-- Security troubleshooting
+- Kerberoasting Mitigation
+- Password Auditing
+- Active Directory Attack Mitigation
+
+---
+
+### ✅ Monitoring Active Directory
+
+#### Overview
+
+Focused on monitoring Active Directory authentication, analyzing Windows Security Event Logs, configuring audit policies, developing authentication baselines, and investigating user activity using Splunk.
+
+#### Topics Covered
+
+- Kerberos authentication
+- NTLM authentication
+- Windows Security Event Logs
+- Authentication events
+- Account lifecycle events
+- Group membership monitoring
+- Directory Service changes
+- Windows Advanced Audit Policies
+- Baseline analysis
+- Stack counting
+- Splunk investigations
+- Event correlation
+- User onboarding investigations
+
+#### Skills Developed
+
+- Windows Event Log Analysis
+- Splunk Searching
+- Authentication Monitoring
+- Kerberos Investigation
+- NTLM Investigation
+- Audit Policy Configuration
+- Baseline Development
+- Stack Counting
+- Event Correlation
+- Threat Hunting
+- Security Monitoring
+- Blue Team Investigations
+
+---
+
+### Collection Outcome
+
+The completed Active Directory collection provides foundational knowledge for Windows administration, enterprise security, SOC operations, and Blue Team investigations by combining administration, hardening, and monitoring into a complete defensive workflow.
+
+---
+
+## Windows Fundamentals
+
+**Status:** 🚧 In Progress
+
+The Windows Fundamentals collection covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), Settings and Control Panel, and Task Manager. These rooms build the foundational Windows knowledge underpinning the more advanced Windows and Active Directory work in this repository.
+
+### Progress
+
+| Room | Status |
+|------|:------:|
+| Windows Fundamentals 1 | ✅ Complete |
+| Windows Fundamentals 2 | ⏳ Not Started |
+| Windows Fundamentals 3 | ⏳ Not Started |
+
+**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+
+---
+
+### ✅ Windows Fundamentals 1
+
+#### Overview
+
+This room introduced core Windows operating system concepts through hands-on work in a Windows Server 2019 Standard lab environment: version history and end-of-life risk, the Desktop GUI, the NTFS file system (permissions and Alternate Data Streams), local user accounts and groups, User Account Control, Settings vs. Control Panel, and Task Manager.
+
+#### Skills Developed
+
+- Windows Version History and End-of-Life Risk
+- Desktop GUI Navigation and Configuration
+- NTFS File System Fundamentals
+- NTFS Permissions
+- Alternate Data Streams (ADS)
+- Environment Variables
+- System32 and Critical OS Files
+- Local User and Group Administration (`lusrmgr.msc`)
+- User Account Types (Administrator vs. Standard User)
+- User Account Control (UAC)
+- Settings and Control Panel Administration
+- Programs and Features Software Inventory
+- Task Manager Administration
+- Remote Desktop Protocol (RDP) Access
 
 ---
 
 ### 🔜 Next Room
 
-**Monitoring Active Directory**
+**Windows Fundamentals 2**
 
-Upcoming topics include:
-
-- Windows Event Logging
-- Authentication monitoring
-- Security auditing
-- Suspicious activity detection
-- Defensive monitoring
-- Enterprise visibility
+Continuing the Windows Fundamentals series to build further practical Windows administration and security fundamentals.
 
 ---
 
 ### Long-Term Goal
 
-Complete the Active Directory collection to develop practical enterprise Windows administration, security hardening, monitoring, and defensive operations skills.
+Complete the Windows Fundamentals collection to establish a strong foundation in Windows OS administration ahead of more advanced Windows security, hardening, and Active Directory-focused work.
 
 ---
 
@@ -509,7 +579,10 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 
 ## Windows & Active Directory
 
+### Administration
+
 - Windows Administration
+- Windows Version Lifecycle and End-of-Life Risk
 - Windows Domains
 - Active Directory Fundamentals
 - Domain Controllers
@@ -518,14 +591,13 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - User Administration
 - Computer Administration
 - Group Policy Objects (GPOs)
-- Kerberos Authentication
-- NetNTLM Authentication
-- Enterprise Authentication
 - Trust Relationships
 - Trees & Forests
 - Delegated Administration
 - PowerShell for Active Directory
-- Active Directory Troubleshooting
+
+### Security Hardening
+
 - Authentication Hardening
 - LAN Manager Hash Protection
 - SMB Signing
@@ -540,6 +612,38 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Tiered Administration
 - Kerberoasting Mitigation
 - Password Auditing
+
+### Monitoring & Blue Team
+
+- Windows Security Event Logs
+- Kerberos Authentication Monitoring
+- NTLM Authentication Monitoring
+- Authentication Analysis
+- Account Lifecycle Monitoring
+- Group Membership Monitoring
+- Directory Service Monitoring
+- Windows Advanced Audit Policies
+- Event Correlation
+- Baseline Development
+- Stack Counting
+- Splunk Searching
+- Splunk Statistics
+- Threat Hunting
+- Security Monitoring
+- Blue Team Investigations
+
+### Windows Fundamentals
+
+- NTFS File System
+- NTFS Permissions
+- Alternate Data Streams (ADS)
+- Environment Variables
+- System32 / Critical OS Files
+- Local User and Group Administration
+- User Account Control (UAC)
+- Windows Settings and Control Panel Administration
+- Task Manager Administration
+- Remote Desktop Protocol (RDP)
 
 ---
 
@@ -642,14 +746,15 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Statistic | Total |
 |-----------|------:|
 | Learning Paths Completed | 1 |
-| Standalone Collections | 1 In Progress |
+| Standalone Collections Completed | 1 |
+| Standalone Collections In Progress | 1 |
 | Modules Completed | 7 |
-| Standard Rooms Completed | 25 |
-| Standalone Rooms Completed | 2 |
+| Standard Rooms Completed | 26 |
+| Standalone Rooms Completed | 4 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
-| Security Tools Learned | Gobuster, Hydra, PowerShell |
-| Documentation Files | 40+ |
+| Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
+| Documentation Files | 49+ |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -661,29 +766,41 @@ This repository follows my **Root & Repository** documentation standards.
 Every completed TryHackMe room includes:
 
 - Handwritten notebook notes
-- Screenshot documentation
+- Screenshot checklist
 - Task notes
-- Hands-on lab documentation
+- Hands-on investigation documentation
 - GitHub-ready Markdown
 - Repository organization
 - Git version history
 
-My documentation emphasizes understanding concepts, practicing hands-on skills, troubleshooting real-world issues, and maintaining professional-quality technical documentation that demonstrates continuous learning.
+My documentation emphasizes understanding concepts, performing hands-on investigations, troubleshooting technical issues, documenting engineering workflows, and producing professional-quality technical documentation suitable for long-term study and portfolio development.
 
 ---
 
 # Current Focus
 
-## 🚧 Active Directory Learning
+## 🎯 Continue Expanding Standalone Collections
+
+Current learning goals include expanding into additional cybersecurity topics such as:
+
+- Windows Security
+- SOC Operations
+- Threat Hunting
+- Digital Forensics
+- Malware Analysis
+- SIEM Platforms
+- Microsoft Defender
+- Azure Security
+- Cloud Security
+
+## 🚧 Windows Fundamentals
 
 Current standalone learning objectives include:
 
-- Monitoring Active Directory
-- Active Directory Detection
-- Enterprise Windows Administration
-- Active Directory Security
-- Windows Authentication
-- Group Policy Security
+- Windows Fundamentals 2
+- Windows Fundamentals 3
+- Core Windows Administration
+- Windows Security Fundamentals
 
 ---
 
@@ -693,21 +810,45 @@ Current standalone learning objectives include:
 
 Completed all modules, rooms, documentation, screenshots, and supporting materials for the TryHackMe Pre Security Learning Path.
 
-## 🚧 Active Directory Standalone Collection In Progress
+---
+
+## ✅ Active Directory Standalone Collection Complete
 
 Completed:
 
 - ✅ Windows Active Directory Basics
 - ✅ Active Directory Hardening
+- ✅ Monitoring Active Directory
+
+Skills gained include:
+
+- Active Directory Administration
+- Enterprise Security Hardening
+- Windows Security Event Analysis
+- Splunk Investigations
+- Authentication Monitoring
+- Audit Policy Configuration
+- Baseline Development
+- Event Correlation
+- Threat Hunting
+
+---
+
+## 🚧 Windows Fundamentals Standalone Collection In Progress
+
+Completed:
+
+- ✅ Windows Fundamentals 1
 
 Upcoming:
 
-- ⏳ Monitoring Active Directory
+- ⏳ Windows Fundamentals 2
+- ⏳ Windows Fundamentals 3
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Progress:** 🚧 Active Directory (2 / 3)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · 🚧 Windows Fundamentals (1 / 3)
 
 **Overall Repository Status:** 🚀 Active Development
