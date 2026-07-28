@@ -103,6 +103,9 @@ I believe documentation is just as important as technical ability because it dem
 - Git & GitHub
 - Bash
 - TryHackMe
+- Active Directory Fundamentals
+- Windows Server Administration
+- Home Lab Development
 
 ### 🛠️ Active Projects
 
@@ -144,6 +147,9 @@ I believe documentation is just as important as technical ability because it dem
 - TryHackMe
 - Wireshark
 - Nmap / Zenmap
+- Active Directory Fundamentals
+- Authentication Concepts
+- Identity Management
 
 ## Scripting & Automation
 
@@ -164,6 +170,13 @@ I believe documentation is just as important as technical ability because it dem
 - Research
 - Problem Solving
 - Version Control
+
+## Identity & Systems Administration
+
+- Active Directory Fundamentals
+- User and Computer Accounts
+- Authentication Concepts
+- Group Policy Fundamentals
 
 ---
 
@@ -235,7 +248,7 @@ root-and-repository/
 ├── Networking/
 ├── Projects/
 ├── Resources/
-├── Roadmap/
+├── Career-Roadmap/
 ├── Screenshots/
 ├── Scripts/
 ├── Standards/
@@ -283,6 +296,9 @@ Every contribution follows these principles:
 - Linux Administration
 - Git & GitHub
 - Technical Documentation
+- Active Directory
+- Windows Server
+- Home Lab
 
 ## Next Goals
 

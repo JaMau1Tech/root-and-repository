@@ -79,3 +79,14 @@ Checklist for tailoring each cover letter to a specific employer.
 ### application-checklist.md
 
 Final quality assurance checklist before submitting an application.
+
+---
+
+## Maintenance
+
+Review these templates:
+
+- after significant new projects
+- after earning certifications
+- after major resume updates
+- after receiving interview feedback

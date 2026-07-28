@@ -95,3 +95,25 @@ Review progress, completed applications, interviews, portfolio updates, and goal
 ### job-search-checklist.md
 
 Final checklist to complete before submitting any job application.
+
+---
+
+## Maintenance
+
+Review and update this system:
+
+- weekly during active job searching
+- monthly career review
+- after every interview
+- after every offer or rejection
+- whenever resumes or career goals change
+
+---
+
+## Related Career Resources
+
+- Career/Resume
+- Career/Cover-Letters
+- Career/Interview-Prep
+- Career/Applications
+- Career/Interviews

@@ -93,3 +93,14 @@ Strategy for connecting with IT professionals, recruiters, hiring managers, and 
 ### profile-checklist.md
 
 Checklist used to review and optimize my LinkedIn profile for completeness and professionalism.
+
+---
+
+## Maintenance
+
+Review this folder:
+
+- after major Home Lab projects
+- after completing certifications
+- after updating resumes
+- quarterly to ensure LinkedIn matches GitHub and resumes

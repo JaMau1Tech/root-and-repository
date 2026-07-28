@@ -119,3 +119,15 @@ This section grows alongside my technical learning journey.
 As I complete additional projects, certifications, investigations, and hands-on labs, this directory will continue to expand and evolve.
 
 The objective is not only to secure my first IT position but also to document my long-term growth as an Information Technology and Cybersecurity professional.
+
+---
+
+## Maintenance
+
+Review resumes:
+
+- after completing major Home Lab projects
+- after earning certifications
+- after finishing college coursework
+- after updating LinkedIn
+- before every job application

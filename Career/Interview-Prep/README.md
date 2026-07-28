@@ -97,3 +97,14 @@ Checklist used before every interview.
 ### mock-interview.md
 
 Complete mock interview script for practicing technical and behavioral interview questions.
+
+---
+
+## Maintenance
+
+Review these documents:
+
+- after completing major technical projects
+- after earning certifications
+- after every interview
+- when interview feedback identifies weak areas
