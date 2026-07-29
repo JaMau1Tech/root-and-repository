@@ -27,7 +27,7 @@ The purpose of this repository is to:
 | Collection | Status |
 |------------|:------:|
 | Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
-| Windows Fundamentals | 🚧 1 / 3 Rooms Completed (33%) |
+| Windows Fundamentals | 🚧 2 / 3 Rooms Completed (67%) |
 
 ---
 
@@ -54,7 +54,7 @@ The purpose of this repository is to:
 | Collection | Progress |
 |------------|:--------:|
 | Active Directory | **3 / 3 Rooms Completed (100%)** |
-| Windows Fundamentals | **1 / 3 Rooms Completed (33%)** |
+| Windows Fundamentals | **2 / 3 Rooms Completed (67%)** |
 
 ---
 
@@ -94,7 +94,8 @@ TryHackMe/
         │
         ├── README.md
         ├── images/
-        └── Windows-Fundamentals-1/
+        ├── Windows-Fundamentals-1/
+        └── Windows-Fundamentals-2/
 ```
 
 ---
@@ -471,10 +472,10 @@ The Windows Fundamentals collection covers core Windows operating system concept
 | Room | Status |
 |------|:------:|
 | Windows Fundamentals 1 | ✅ Complete |
-| Windows Fundamentals 2 | ⏳ Not Started |
+| Windows Fundamentals 2 | ✅ Complete |
 | Windows Fundamentals 3 | ⏳ Not Started |
 
-**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+**Collection Progress:** **2 / 3 Rooms Completed (67%)**
 
 ---
 
@@ -503,11 +504,36 @@ This room introduced core Windows operating system concepts through hands-on wor
 
 ---
 
+### ✅ Windows Fundamentals 2
+
+#### Overview
+
+This room continued directly from Room 1, covering deeper Windows administrative tooling in a Windows Server 2019 Standard lab environment: System Configuration (msconfig) and Advanced System Settings, UAC settings configuration, Computer Management, System Information, Resource Monitor, Command Prompt, and the Windows Registry.
+
+#### Skills Developed
+
+- System Configuration (`msconfig`) Administration
+- Advanced System Settings (Page File, Crash Dump Configuration)
+- User Account Control (UAC) Settings Configuration
+- Computer Management Administration (`compmgmt.msc`)
+- Task Scheduler
+- Event Viewer and Windows Event Logs
+- Shared Folders and Default Administrative Shares
+- Disk Management
+- Services Administration (Startup Types)
+- System Information (`msinfo32`)
+- Resource Monitor (`resmon`)
+- Command Prompt Diagnostics (`ipconfig`, `netstat`, `net`, `systeminfo`)
+- Windows Registry Structure and Root Keys
+- Registry Editing Methods and Best Practices
+
+---
+
 ### 🔜 Next Room
 
-**Windows Fundamentals 2**
+**Windows Fundamentals 3**
 
-Continuing the Windows Fundamentals series to build further practical Windows administration and security fundamentals.
+Continuing the Windows Fundamentals series to complete the foundational Windows administration track.
 
 ---
 
@@ -644,6 +670,19 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Windows Settings and Control Panel Administration
 - Task Manager Administration
 - Remote Desktop Protocol (RDP)
+- System Configuration (`msconfig`)
+- Advanced System Settings (Page File, Crash Dump Configuration)
+- Computer Management (`compmgmt.msc`)
+- Task Scheduler
+- Event Viewer and Windows Event Logs
+- Shared Folders and Default Administrative Shares
+- Disk Management
+- Services Administration (Startup Types)
+- System Information (`msinfo32`)
+- Resource Monitor (`resmon`)
+- Command Prompt Diagnostics
+- Windows Registry Structure and Root Keys
+- Registry Editing Methods and Best Practices
 
 ---
 
@@ -750,11 +789,11 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Standalone Collections In Progress | 1 |
 | Modules Completed | 7 |
 | Standard Rooms Completed | 26 |
-| Standalone Rooms Completed | 4 |
+| Standalone Rooms Completed | 5 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
-| Documentation Files | 49+ |
+| Documentation Files | 52+ |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -797,7 +836,6 @@ Current learning goals include expanding into additional cybersecurity topics su
 
 Current standalone learning objectives include:
 
-- Windows Fundamentals 2
 - Windows Fundamentals 3
 - Core Windows Administration
 - Windows Security Fundamentals
@@ -839,16 +877,16 @@ Skills gained include:
 Completed:
 
 - ✅ Windows Fundamentals 1
+- ✅ Windows Fundamentals 2
 
 Upcoming:
 
-- ⏳ Windows Fundamentals 2
 - ⏳ Windows Fundamentals 3
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · 🚧 Windows Fundamentals (1 / 3)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · 🚧 Windows Fundamentals (2 / 3)
 
 **Overall Repository Status:** 🚀 Active Development
