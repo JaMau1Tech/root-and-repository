@@ -1,8 +1,8 @@
 # Windows Fundamentals
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Complete
 
-The Windows Fundamentals collection covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), the Settings and Control Panel interfaces, Task Manager, System Configuration, Computer Management, System Information, Resource Monitor, Command Prompt, and the Windows Registry. These rooms build the foundational Windows knowledge required before progressing into more advanced Windows and Active Directory administration and security work.
+The Windows Fundamentals collection covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), the Settings and Control Panel interfaces, Task Manager, System Configuration, Computer Management, System Information, Resource Monitor, Command Prompt, the Windows Registry, and the built-in Windows security stack (Windows Update, Windows Security/Defender, Firewall, SmartScreen, Device Security, BitLocker, and Volume Shadow Copy Service).
 
 ---
 
@@ -12,9 +12,9 @@ The Windows Fundamentals collection covers core Windows operating system concept
 |------|:------:|
 | Windows Fundamentals 1 | ✅ Complete |
 | Windows Fundamentals 2 | ✅ Complete |
-| Windows Fundamentals 3 | ⏳ Not Started |
+| Windows Fundamentals 3 | ✅ Complete |
 
-**Collection Progress:** **2 / 3 Rooms Completed (67%)**
+**Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
@@ -61,7 +61,6 @@ This room continued directly from Room 1, covering deeper Windows administrative
 - Disk Management
 - Services Administration (Startup Types)
 - System Information (`msinfo32`)
-- Environment Variables
 - Resource Monitor (`resmon`)
 - Command Prompt Diagnostics (`ipconfig`, `netstat`, `net`, `systeminfo`)
 - Windows Registry Structure and Root Keys
@@ -69,17 +68,33 @@ This room continued directly from Room 1, covering deeper Windows administrative
 
 ---
 
-## 🔜 Next Room
+## ✅ Windows Fundamentals 3
 
-**Windows Fundamentals 3**
+### Overview
 
-Continuing the Windows Fundamentals series to complete the foundational Windows administration track.
+This room concluded the series, covering the built-in Windows security feature stack in a Windows Server lab environment: Windows Update, the Windows Security app, Virus & Threat Protection (Defender), Firewall & Network Protection, App & Browser Control (SmartScreen), Device Security (Core Isolation, TPM), BitLocker, and the Volume Shadow Copy Service (VSS).
+
+### Skills Developed
+
+- Windows Update Management and Patch Tuesday
+- Windows Security Overview and Status Triage
+- Virus & Threat Protection (Windows Defender) Administration
+- Ransomware Protection Configuration
+- Firewall & Network Protection (Domain, Private, Public Profiles)
+- Windows Defender Firewall with Advanced Security (`WF.msc`)
+- App & Browser Control (Microsoft Defender SmartScreen)
+- Exploit Protection (CFG, DEP, ASLR)
+- Device Security and Core Isolation (Memory Integrity)
+- Trusted Platform Module (TPM) Fundamentals
+- BitLocker Drive Encryption
+- Volume Shadow Copy Service (VSS) and Ransomware Resilience
+- Living Off The Land (LOTL) Awareness
 
 ---
 
-## Long-Term Goal
+## Collection Outcome
 
-Complete the Windows Fundamentals collection to establish a strong foundation in Windows OS administration ahead of more advanced Windows security, hardening, and Active Directory-focused work.
+The completed Windows Fundamentals collection provides a full foundation in Windows OS administration — from desktop and file system basics, through advanced administrative tooling and the Registry, to the built-in security stack that protects a Windows machine by default. Together, these rooms build the practical Windows knowledge expected of entry-level IT support, system administration, and cybersecurity roles, and set up the deeper Windows security and Active Directory work elsewhere in this portfolio.
 
 ---
 

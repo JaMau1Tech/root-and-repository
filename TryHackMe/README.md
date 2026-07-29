@@ -27,7 +27,7 @@ The purpose of this repository is to:
 | Collection | Status |
 |------------|:------:|
 | Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
-| Windows Fundamentals | 🚧 2 / 3 Rooms Completed (67%) |
+| Windows Fundamentals | ✅ 3 / 3 Rooms Completed (100%) |
 
 ---
 
@@ -54,7 +54,7 @@ The purpose of this repository is to:
 | Collection | Progress |
 |------------|:--------:|
 | Active Directory | **3 / 3 Rooms Completed (100%)** |
-| Windows Fundamentals | **2 / 3 Rooms Completed (67%)** |
+| Windows Fundamentals | **3 / 3 Rooms Completed (100%)** |
 
 ---
 
@@ -95,7 +95,8 @@ TryHackMe/
         ├── README.md
         ├── images/
         ├── Windows-Fundamentals-1/
-        └── Windows-Fundamentals-2/
+        ├── Windows-Fundamentals-2/
+        └── Windows-Fundamentals-3/
 ```
 
 ---
@@ -463,9 +464,9 @@ The completed Active Directory collection provides foundational knowledge for Wi
 
 ## Windows Fundamentals
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Complete
 
-The Windows Fundamentals collection covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), Settings and Control Panel, and Task Manager. These rooms build the foundational Windows knowledge underpinning the more advanced Windows and Active Directory work in this repository.
+The Windows Fundamentals collection covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), Settings and Control Panel, Task Manager, System Configuration, Computer Management, System Information, Resource Monitor, Command Prompt, the Windows Registry, and the built-in Windows security stack (Windows Update, Windows Security/Defender, Firewall, SmartScreen, Device Security, BitLocker, VSS).
 
 ### Progress
 
@@ -473,9 +474,9 @@ The Windows Fundamentals collection covers core Windows operating system concept
 |------|:------:|
 | Windows Fundamentals 1 | ✅ Complete |
 | Windows Fundamentals 2 | ✅ Complete |
-| Windows Fundamentals 3 | ⏳ Not Started |
+| Windows Fundamentals 3 | ✅ Complete |
 
-**Collection Progress:** **2 / 3 Rooms Completed (67%)**
+**Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
@@ -529,15 +530,33 @@ This room continued directly from Room 1, covering deeper Windows administrative
 
 ---
 
-### 🔜 Next Room
+### ✅ Windows Fundamentals 3
 
-**Windows Fundamentals 3**
+#### Overview
 
-Continuing the Windows Fundamentals series to complete the foundational Windows administration track.
+This room concluded the series, covering the built-in Windows security feature stack in a Windows Server lab environment: Windows Update, the Windows Security app, Virus & Threat Protection (Defender), Firewall & Network Protection, App & Browser Control (SmartScreen), Device Security (Core Isolation, TPM), BitLocker, and the Volume Shadow Copy Service (VSS).
+
+#### Skills Developed
+
+- Windows Update Management and Patch Tuesday
+- Windows Security Overview and Status Triage
+- Virus & Threat Protection (Windows Defender) Administration
+- Ransomware Protection Configuration
+- Firewall & Network Protection (Domain, Private, Public Profiles)
+- Windows Defender Firewall with Advanced Security (`WF.msc`)
+- App & Browser Control (Microsoft Defender SmartScreen)
+- Exploit Protection (CFG, DEP, ASLR)
+- Device Security and Core Isolation (Memory Integrity)
+- Trusted Platform Module (TPM) Fundamentals
+- BitLocker Drive Encryption
+- Volume Shadow Copy Service (VSS) and Ransomware Resilience
+- Living Off The Land (LOTL) Awareness
 
 ---
 
-### Long-Term Goal
+### Collection Outcome
+
+The completed Windows Fundamentals collection provides a full foundation in Windows OS administration — from desktop and file system basics, through advanced administrative tooling and the Registry, to the built-in security stack that protects a Windows machine by default. Together, these rooms build the practical Windows knowledge expected of entry-level IT support, system administration, and cybersecurity roles.
 
 Complete the Windows Fundamentals collection to establish a strong foundation in Windows OS administration ahead of more advanced Windows security, hardening, and Active Directory-focused work.
 
@@ -683,6 +702,19 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Command Prompt Diagnostics
 - Windows Registry Structure and Root Keys
 - Registry Editing Methods and Best Practices
+- Windows Update Management and Patch Tuesday
+- Windows Security Overview and Status Triage
+- Virus & Threat Protection (Windows Defender)
+- Ransomware Protection Configuration
+- Firewall & Network Protection (Domain, Private, Public Profiles)
+- Windows Defender Firewall with Advanced Security (`WF.msc`)
+- App & Browser Control (Microsoft Defender SmartScreen)
+- Exploit Protection (CFG, DEP, ASLR)
+- Device Security and Core Isolation (Memory Integrity)
+- Trusted Platform Module (TPM) Fundamentals
+- BitLocker Drive Encryption
+- Volume Shadow Copy Service (VSS)
+- Living Off The Land (LOTL) Awareness
 
 ---
 
@@ -785,15 +817,15 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Statistic | Total |
 |-----------|------:|
 | Learning Paths Completed | 1 |
-| Standalone Collections Completed | 1 |
-| Standalone Collections In Progress | 1 |
+| Standalone Collections Completed | 2 |
+| Standalone Collections In Progress | 0 |
 | Modules Completed | 7 |
 | Standard Rooms Completed | 26 |
-| Standalone Rooms Completed | 5 |
+| Standalone Rooms Completed | 6 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
-| Documentation Files | 52+ |
+| Documentation Files | 55+ |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -832,14 +864,6 @@ Current learning goals include expanding into additional cybersecurity topics su
 - Azure Security
 - Cloud Security
 
-## 🚧 Windows Fundamentals
-
-Current standalone learning objectives include:
-
-- Windows Fundamentals 3
-- Core Windows Administration
-- Windows Security Fundamentals
-
 ---
 
 # Repository Status
@@ -872,21 +896,29 @@ Skills gained include:
 
 ---
 
-## 🚧 Windows Fundamentals Standalone Collection In Progress
+## ✅ Windows Fundamentals Standalone Collection Complete
 
 Completed:
 
 - ✅ Windows Fundamentals 1
 - ✅ Windows Fundamentals 2
+- ✅ Windows Fundamentals 3
 
-Upcoming:
+Skills gained include:
 
-- ⏳ Windows Fundamentals 3
+- Windows OS Administration Fundamentals
+- NTFS File System and Permissions
+- Advanced Windows Administrative Tooling (msconfig, Computer Management, Registry)
+- Windows Update and Patch Management
+- Windows Security and Defender Administration
+- Firewall and Network Protection
+- BitLocker and TPM-Backed Encryption
+- Volume Shadow Copy Service and Ransomware Resilience
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · 🚧 Windows Fundamentals (2 / 3)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete)
 
 **Overall Repository Status:** 🚀 Active Development

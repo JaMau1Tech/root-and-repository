@@ -9,7 +9,7 @@ This directory contains documentation for TryHackMe standalone rooms, organized 
 | Collection | Progress | Status |
 |------------|:--------:|:------:|
 | Active Directory | 3 / 3 Rooms | ✅ Complete |
-| Windows Fundamentals | 2 / 3 Rooms | 🚧 In Progress |
+| Windows Fundamentals | 3 / 3 Rooms | ✅ Complete |
 
 ---
 
@@ -27,13 +27,13 @@ Focuses on Microsoft's enterprise identity and access management platform — ad
 
 ## Windows Fundamentals
 
-Covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), Settings and Control Panel, Task Manager, System Configuration, Computer Management, System Information, Resource Monitor, Command Prompt, and the Windows Registry.
+Covers core Windows operating system concepts and administration — the Desktop GUI, the NTFS file system, user accounts and local permissions, User Account Control (UAC), Settings and Control Panel, Task Manager, System Configuration, Computer Management, System Information, Resource Monitor, Command Prompt, the Windows Registry, and the built-in Windows security stack (Windows Update, Windows Security/Defender, Firewall, SmartScreen, Device Security, BitLocker, VSS).
 
 - ✅ Windows Fundamentals 1
 - ✅ Windows Fundamentals 2
-- ⏳ Windows Fundamentals 3
+- ✅ Windows Fundamentals 3
 
-**Progress:** 2 / 3 Rooms Completed (67%)
+**Progress:** 3 / 3 Rooms Completed (100%)
 
 ---
 
@@ -55,7 +55,8 @@ Standalone-Rooms/
     ├── README.md
     ├── images/
     ├── Windows-Fundamentals-1/
-    └── Windows-Fundamentals-2/
+    ├── Windows-Fundamentals-2/
+    └── Windows-Fundamentals-3/
 ```
 
 ---

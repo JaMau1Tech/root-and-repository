@@ -2,8 +2,8 @@
 
 This folder contains screenshots documenting hands-on work completed across the Windows Fundamentals room collection.
 
-**Total Screenshots:** 46
-**Rooms Documented:** Windows Fundamentals 1, Windows Fundamentals 2
+**Total Screenshots:** 63
+**Rooms Documented:** Windows Fundamentals 1, Windows Fundamentals 2, Windows Fundamentals 3
 
 ---
 
@@ -98,6 +98,45 @@ None — no meaningful errors or troubleshooting occurred during this room.
 | Filename | Description |
 |---|---|
 | `windows-fundamentals-02-room-completed.png` | Windows Fundamentals 2 room completion screen — 9/9 tasks, 100% |
+
+---
+
+## Windows Fundamentals 3
+
+### Administrative Tasks
+
+| Filename | Description |
+|---|---|
+| `windows-fundamentals-03-task02-cmd-control-windowsupdate-command.png` | Command Prompt — `control /name Microsoft.WindowsUpdate` |
+| `windows-fundamentals-03-task02-windows-update-settings.png` | Windows Update settings — managed, no updates available |
+| `windows-fundamentals-03-task02-windows-update-history.png` | Update history — 2 driver updates, 2 Defender definition updates (installed 5/3/2021) |
+| `windows-fundamentals-03-task03-windows-security-protection-areas.png` | Windows Security home — Virus & threat protection flagged "Actions needed" |
+| `windows-fundamentals-03-task04-virus-threat-protection-overview.png` | Virus & Threat Protection overview — current threats, settings, ransomware protection |
+| `windows-fundamentals-03-task04-virus-threat-protection-settings.png` | Real-time/Cloud-delivered protection, Automatic sample submission — all off |
+| `windows-fundamentals-03-task04-virus-threat-protection-settings-continued.png` | Controlled folder access, Exclusions, Notifications |
+| `windows-fundamentals-03-task05-firewall-network-protection.png` | Firewall & Network Protection — Domain/Private/Public profiles |
+| `windows-fundamentals-03-task05-firewall-advanced-security-wfmsc.png` | Windows Defender Firewall with Advanced Security (`WF.msc`) overview |
+| `windows-fundamentals-03-task05-firewall-allowed-apps.png` | Windows Defender Firewall — Allowed apps and features |
+| `windows-fundamentals-03-task06-app-browser-control.png` | App & Browser Control — SmartScreen set to Warn |
+| `windows-fundamentals-03-task06-exploit-protection-system-settings.png` | Exploit Protection — System settings (CFG, DEP, ASLR) |
+| `windows-fundamentals-03-task07-device-security.png` | Device Security — Core isolation, standard hardware security not supported |
+| `windows-fundamentals-03-task07-core-isolation-memory-integrity.png` | Core Isolation — Memory integrity toggle (off) |
+| `windows-fundamentals-03-task09-configure-shadow-copies-menu.png` | Right-click Local Disk (C:) → Configure Shadow Copies |
+| `windows-fundamentals-03-task09-shadow-copies-dialog.png` | Shadow Copies dialog — volume selection, Enable/Create Now |
+
+### Hands-on Labs
+
+None beyond the administrative review tasks listed above — this room was primarily a guided walkthrough of built-in security tools rather than hands-on configuration changes.
+
+### Troubleshooting
+
+None — no meaningful errors or troubleshooting occurred during this room.
+
+### Room Completion
+
+| Filename | Description |
+|---|---|
+| `windows-fundamentals-03-room-completed.png` | Windows Fundamentals 3 room completion screen — 10/10 tasks, 56 points |
 
 ---
 
