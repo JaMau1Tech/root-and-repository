@@ -10,6 +10,7 @@ This directory contains documentation for TryHackMe standalone rooms, organized 
 |------------|:--------:|:------:|
 | Active Directory | 3 / 3 Rooms | ✅ Complete |
 | Windows Fundamentals | 3 / 3 Rooms | ✅ Complete |
+| Linux Fundamentals | 1 / 3 Rooms | 🚧 In Progress |
 
 ---
 
@@ -37,6 +38,18 @@ Covers core Windows operating system concepts and administration — the Desktop
 
 ---
 
+## Linux Fundamentals
+
+Covers core Linux operating system concepts through the terminal — command-line navigation, file and content searching, output redirection, and shell operators. Entirely terminal-driven, reflecting Linux's dominance in server, cloud, and embedded environments.
+
+- ✅ Linux Fundamentals (Pt1)
+- ⏳ Linux Fundamentals (Pt2)
+- ⏳ Linux Fundamentals (Pt3)
+
+**Progress:** 1 / 3 Rooms Completed (33%)
+
+---
+
 ## Repository Structure
 
 ```text
@@ -51,12 +64,17 @@ Standalone-Rooms/
 │   ├── Active-Directory-Hardening/
 │   └── Monitoring-Active-Directory/
 │
-└── Windows-Fundamentals/
+├── Windows-Fundamentals/
+│   ├── README.md
+│   ├── images/
+│   ├── Windows-Fundamentals-1/
+│   ├── Windows-Fundamentals-2/
+│   └── Windows-Fundamentals-3/
+│
+└── Linux-Fundamentals/
     ├── README.md
     ├── images/
-    ├── Windows-Fundamentals-1/
-    ├── Windows-Fundamentals-2/
-    └── Windows-Fundamentals-3/
+    └── Linux-Fundamentals-1/
 ```
 
 ---

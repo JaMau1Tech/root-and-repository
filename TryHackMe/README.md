@@ -28,6 +28,7 @@ The purpose of this repository is to:
 |------------|:------:|
 | Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
 | Windows Fundamentals | ✅ 3 / 3 Rooms Completed (100%) |
+| Linux Fundamentals | 🚧 1 / 3 Rooms Completed (33%) |
 
 ---
 
@@ -55,6 +56,7 @@ The purpose of this repository is to:
 |------------|:--------:|
 | Active Directory | **3 / 3 Rooms Completed (100%)** |
 | Windows Fundamentals | **3 / 3 Rooms Completed (100%)** |
+| Linux Fundamentals | **1 / 3 Rooms Completed (33%)** |
 
 ---
 
@@ -90,13 +92,19 @@ TryHackMe/
     │   ├── Active-Directory-Hardening/
     │   └── Monitoring-Active-Directory/
     │
-    └── Windows-Fundamentals/
+    ├── Windows-Fundamentals/
+    │   │
+    │   ├── README.md
+    │   ├── images/
+    │   ├── Windows-Fundamentals-1/
+    │   ├── Windows-Fundamentals-2/
+    │   └── Windows-Fundamentals-3/
+    │
+    └── Linux-Fundamentals/
         │
         ├── README.md
         ├── images/
-        ├── Windows-Fundamentals-1/
-        ├── Windows-Fundamentals-2/
-        └── Windows-Fundamentals-3/
+        └── Linux-Fundamentals-1/
 ```
 
 ---
@@ -562,6 +570,58 @@ Complete the Windows Fundamentals collection to establish a strong foundation in
 
 ---
 
+## Linux Fundamentals
+
+**Status:** 🚧 In Progress
+
+The Linux Fundamentals collection covers core Linux operating system concepts through the terminal — command-line navigation, file and content searching, output redirection, and shell operators. Entirely terminal-driven, reflecting Linux's dominance in server, cloud, and embedded environments.
+
+### Progress
+
+| Room | Status |
+|------|:------:|
+| Linux Fundamentals (Pt1) | ✅ Complete |
+| Linux Fundamentals (Pt2) | ⏳ Not Started |
+| Linux Fundamentals (Pt3) | ⏳ Not Started |
+
+**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+
+---
+
+### ✅ Linux Fundamentals (Pt1)
+
+#### Overview
+
+This room introduced the Linux terminal as the primary interface for interacting with the OS, using a browser-based Ubuntu lab machine. Covered identity (`whoami`), output (`echo`), navigation (`ls`, `cd`, `cat`, `pwd`), file/content searching (`find`, `grep`), and shell operators/redirection (`&`, `&&`, `>`, `>>`).
+
+#### Skills Developed
+
+- Linux Terminal Fundamentals
+- User Identity (`whoami`)
+- Command Output (`echo`)
+- Filesystem Navigation (`ls`, `cd`, `pwd`)
+- File Content Inspection (`cat`)
+- File Searching (`find`)
+- Content Searching (`grep`)
+- Shell Operators (Background Execution, Conditional Chaining)
+- Output Redirection (Overwrite vs. Append)
+
+---
+
+### 🔜 Next Room
+
+**Linux Fundamentals (Pt2)**
+
+Continuing the Linux Fundamentals series to build further terminal fluency and Linux administration fundamentals.
+
+---
+
+### Long-Term Goal
+
+Complete the Linux Fundamentals collection to establish a strong terminal-based foundation in Linux administration, ahead of more advanced Linux security, hardening, and server administration work.
+
+---
+
 # Skills Gained
 
 Throughout my TryHackMe learning journey, I have developed practical knowledge and hands-on experience across multiple cybersecurity domains.
@@ -718,6 +778,20 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 
 ---
 
+## Linux
+
+- Linux Terminal Fundamentals
+- User Identity (`whoami`)
+- Command Output (`echo`)
+- Filesystem Navigation (`ls`, `cd`, `pwd`)
+- File Content Inspection (`cat`)
+- File Searching (`find`)
+- Content Searching (`grep`)
+- Shell Operators (Background Execution, Conditional Chaining)
+- Output Redirection (Overwrite vs. Append)
+
+---
+
 ## Cybersecurity
 
 ### Security Foundations
@@ -818,14 +892,14 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 |-----------|------:|
 | Learning Paths Completed | 1 |
 | Standalone Collections Completed | 2 |
-| Standalone Collections In Progress | 0 |
+| Standalone Collections In Progress | 1 |
 | Modules Completed | 7 |
 | Standard Rooms Completed | 26 |
-| Standalone Rooms Completed | 6 |
+| Standalone Rooms Completed | 7 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
-| Documentation Files | 55+ |
+| Documentation Files | 58+ |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -863,6 +937,15 @@ Current learning goals include expanding into additional cybersecurity topics su
 - Microsoft Defender
 - Azure Security
 - Cloud Security
+
+## 🚧 Linux Fundamentals
+
+Current standalone learning objectives include:
+
+- Linux Fundamentals (Pt2)
+- Linux Fundamentals (Pt3)
+- Core Linux Administration
+- Linux Terminal Fluency
 
 ---
 
@@ -917,8 +1000,21 @@ Skills gained include:
 
 ---
 
+## 🚧 Linux Fundamentals Standalone Collection In Progress
+
+Completed:
+
+- ✅ Linux Fundamentals (Pt1)
+
+Upcoming:
+
+- ⏳ Linux Fundamentals (Pt2)
+- ⏳ Linux Fundamentals (Pt3)
+
+---
+
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete) · 🚧 Linux Fundamentals (1 / 3)
 
 **Overall Repository Status:** 🚀 Active Development
