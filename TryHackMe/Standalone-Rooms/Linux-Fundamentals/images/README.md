@@ -1,42 +1,55 @@
-# Linux Fundamentals — Screenshot Inventory
+# Images
 
-This folder contains screenshots documenting hands-on work completed across the Linux Fundamentals room collection.
-
-**Total Screenshots:** 7
-**Rooms Documented:** Linux Fundamentals (Pt1)
+This directory contains screenshots captured while completing the **Linux Fundamentals** collection on TryHackMe. Screenshots document task completion, hands-on activities, room completion, earned badges, and other significant milestones completed during each room.
 
 ---
+
+# Screenshot Organization
 
 ## Linux Fundamentals (Pt1)
 
-### Hands-on Labs
-
-| Filename | Description |
+| Screenshot | Description |
 |---|---|
-| `linux-fundamentals-01-task03-folder-navigation-passwords-txt.png` | Task 3 — `ls`, `cd folder1`, `cat passwords.txt`, `pwd` confirming location |
-| `linux-fundamentals-01-task04-grep-thm-flag-extraction.png` | Task 4 — full session through `grep "THM" access.log`, flag `THM{ACCESS}` extracted |
-| `linux-fundamentals-01-task05-redirection-operators-overwrite-append.png` | Task 5 — `>` and `>>` redirection testing, `cat thm` confirming append (not overwrite) behavior |
-
-### Troubleshooting
-
-None — no meaningful errors or troubleshooting occurred during this room.
-
-### Room Completion
-
-| Filename | Description |
-|---|---|
-| `linux-fundamentals-01-room-completed.png` | Linux Fundamentals (Pt1) completion screen — 5/5 tasks, 64 points |
-
-### Practice Session
-
-Additional screenshots from a separate self-directed practice session (distinct login timestamp from the main room run), covering extra `echo` and quoting exercises beyond the room's required tasks.
-
-| Filename | Description |
-|---|---|
-| `linux-fundamentals-01-practice-session-login-banner.png` | Practice session — fresh terminal login |
-| `linux-fundamentals-01-practice-session-whoami.png` | Practice session — `whoami` |
-| `linux-fundamentals-01-practice-session-echo-quoting.png` | Practice session — `echo` with and without quotes, comparing output behavior |
+| `linux-fundamentals-part-1-task02-whoami` | Verified current Linux user with `whoami` |
+| `linux-fundamentals-part-1-task03-terminal-navigation` | Navigated directories and listed contents |
+| `linux-fundamentals-part-1-task04-find-and-grep` | Located files and searched log contents |
+| `linux-fundamentals-part-1-task05-redirection-operators` | Demonstrated output redirection and shell operators |
+| `linux-fundamentals-part-1-room-complete` | Room completion page |
 
 ---
 
-**Documentation Standard:** Root & Repository Standalone TryHackMe Workflow v3.1
+## Linux Fundamentals (Pt2)
+
+| Screenshot | Description |
+|---|---|
+| `linux-fundamentals-part-2-task02-ssh-login` | Successfully established an SSH connection to the target machine |
+| `linux-fundamentals-part-2-task03-man-ls` | Viewed the `ls` manual page using `man` |
+| `linux-fundamentals-part-2-task04-filesystem-commands` | Completed filesystem management exercises and retrieved the room flag |
+| `linux-fundamentals-part-2-task04-filesystem-practice` | Additional hands-on practice creating, copying, moving, renaming, and deleting files |
+| `linux-fundamentals-part-2-task05-permissions-and-su` | Examined Linux permissions and switched users with `su` |
+| `linux-fundamentals-part-2-task06-common-directories` | Explored common Linux directories and observed `/root` permission restrictions |
+| `linux-fundamentals-part-2-room-complete` | Room completion page |
+| `linux-fundamentals-part-2-badge-cat-linux-txt` | Earned the **cat linux.txt** badge |
+| `tryhackme-29-day-streak` | Personal 29-day TryHackMe streak milestone |
+
+---
+
+# Screenshot Statistics
+
+| Category | Count |
+|---|---:|
+| Linux Fundamentals (Pt1) | 5 |
+| Linux Fundamentals (Pt2) | 9 |
+| **Total Screenshots** | **14** |
+
+---
+
+# Documentation Standard
+
+Screenshots are captured following the **Root & Repository Standalone TryHackMe Workflow v3.1** and are intended to:
+
+- Document room completion
+- Demonstrate hands-on technical work
+- Provide visual evidence of practical exercises
+- Support accompanying technical documentation
+- Showcase progress throughout the Linux Fundamentals collection

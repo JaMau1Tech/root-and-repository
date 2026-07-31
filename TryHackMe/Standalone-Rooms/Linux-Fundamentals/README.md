@@ -1,55 +1,164 @@
 # Linux Fundamentals
 
-**Status:** 🚧 In Progress
-
-The Linux Fundamentals collection covers core Linux operating system concepts through the terminal — command-line navigation, file searching, output redirection, and shell operators. Unlike the Windows Fundamentals collection, this series is entirely terminal-driven rather than GUI-based, reflecting Linux's dominance in server, cloud, and embedded environments.
+Master the fundamentals of Linux through hands-on labs covering terminal navigation, remote administration, filesystem management, permissions, scripting, and core operating system concepts.
 
 ---
 
-## Progress
+## Collection Overview
+
+The Linux Fundamentals collection introduces the core skills required to confidently work with Linux systems. Beginning with terminal navigation and progressing through remote administration, filesystem interaction, permissions, and automation, these rooms provide a practical foundation for Linux administration and cybersecurity.
+
+Throughout this collection, each room is documented with detailed technical notes, screenshots, engineering challenges, lessons learned, and interview talking points following the Root & Repository documentation workflow.
+
+---
+
+## Collection Progress
 
 | Room | Status |
-|------|:------:|
+|------|--------|
 | Linux Fundamentals (Pt1) | ✅ Complete |
-| Linux Fundamentals (Pt2) | ⏳ Not Started |
-| Linux Fundamentals (Pt3) | ⏳ Not Started |
+| Linux Fundamentals (Pt2) | ✅ Complete |
+| Linux Fundamentals (Pt3) | ⬜ Not Started |
 
-**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+**Progress:** **2 / 3 Rooms Completed (67%)**
 
 ---
 
-## ✅ Linux Fundamentals (Pt1)
+# Completed Rooms
 
-### Overview
-
-This room introduced the Linux terminal as the primary interface for interacting with the OS, using a browser-based Ubuntu lab machine. Covered identity (`whoami`), output (`echo`), navigation (`ls`, `cd`, `cat`, `pwd`), file/content searching (`find`, `grep`), and shell operators/redirection (`&`, `&&`, `>`, `>>`).
+## Linux Fundamentals (Pt1)
 
 ### Skills Developed
 
-- Linux Terminal Fundamentals
-- User Identity (`whoami`)
-- Command Output (`echo`)
-- Filesystem Navigation (`ls`, `cd`, `pwd`)
-- File Content Inspection (`cat`)
-- File Searching (`find`)
-- Content Searching (`grep`)
-- Shell Operators (Background Execution, Conditional Chaining)
-- Output Redirection (Overwrite vs. Append)
+- Linux terminal fundamentals
+- User identification
+- Filesystem navigation
+- File searching
+- Text searching with `grep`
+- Shell operators
+- Output redirection
+- Linux command-line workflow
 
 ---
 
-## 🔜 Next Room
+## Linux Fundamentals (Pt2)
 
-**Linux Fundamentals (Pt2)**
+### Skills Developed
 
-Continuing the Linux Fundamentals series to build further terminal fluency and Linux administration fundamentals.
+- Secure Shell (SSH)
+- Remote Linux administration
+- Command flags & switches
+- Linux manual pages (`man`)
+- Built-in command documentation (`--help`)
+- Filesystem management
+- File creation and deletion
+- File copying and moving
+- File identification
+- Linux permissions
+- Numeric permissions
+- User switching
+- Linux directory structure
 
 ---
 
-## Long-Term Goal
+# Skills Gained
 
-Complete the Linux Fundamentals collection to establish a strong terminal-based foundation in Linux administration, ahead of more advanced Linux security, hardening, and server administration work.
+### Linux Administration
+
+- Terminal navigation
+- Remote administration
+- Filesystem management
+- User management
+- Permission management
+- Linux documentation
+
+### Security
+
+- Secure remote access using SSH
+- Principle of Least Privilege
+- File ownership
+- Permission analysis
+- File verification
+- Secure filesystem practices
+
+### Troubleshooting
+
+- Reading Linux error messages
+- Using built-in documentation
+- Verifying file types
+- Identifying permission issues
+- Working with Linux directory structures
 
 ---
 
-**Documentation Standard:** Root & Repository Standalone TryHackMe Workflow v3.1
+# Repository Structure
+
+```text
+Linux-Fundamentals/
+├── README.md
+├── images/
+│   ├── README.md
+│   ├── linux-fundamentals-part-1-*
+│   ├── linux-fundamentals-part-2-*
+│   └── ...
+├── Linux-Fundamentals-Part-1/
+│   └── task-notes.md
+├── Linux-Fundamentals-Part-2/
+│   └── task-notes.md
+└── Linux-Fundamentals-Part-3/
+    └── task-notes.md
+```
+
+---
+
+# Learning Outcomes
+
+After completing this collection, I will be able to:
+
+- Navigate Linux systems confidently.
+- Connect securely to remote Linux machines using SSH.
+- Read and interpret Linux documentation.
+- Create, copy, move, rename, and delete files.
+- Manage Linux permissions.
+- Understand file ownership.
+- Navigate important Linux directories.
+- Troubleshoot common Linux command-line issues.
+- Apply Linux administration concepts in home lab and cybersecurity environments.
+
+---
+
+# Current Focus
+
+➡️ **Linux Fundamentals (Pt3)**
+
+Topics to be covered include:
+
+- Linux process management
+- Package management
+- Automation
+- Additional Linux administration concepts
+
+---
+
+# Related Collections
+
+- ✅ Pre Security
+- ✅ Windows Fundamentals
+- ✅ Active Directory Basics
+- 🚧 Linux Fundamentals
+- ⏳ Networking Basics
+- ⏳ Web Fundamentals
+
+---
+
+# Documentation Standard
+
+All rooms are documented using the **Root & Repository Standalone TryHackMe Workflow v3.1**, including:
+
+- Technical notes
+- Screenshot documentation
+- Engineering challenges
+- Lessons learned
+- Security concepts
+- Interview talking points
+- Repository consistency review

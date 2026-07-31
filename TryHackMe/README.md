@@ -28,7 +28,7 @@ The purpose of this repository is to:
 |------------|:------:|
 | Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
 | Windows Fundamentals | ✅ 3 / 3 Rooms Completed (100%) |
-| Linux Fundamentals | 🚧 1 / 3 Rooms Completed (33%) |
+| Linux Fundamentals | 🚧 2 / 3 Rooms Completed (67%) |
 
 ---
 
@@ -56,7 +56,7 @@ The purpose of this repository is to:
 |------------|:--------:|
 | Active Directory | **3 / 3 Rooms Completed (100%)** |
 | Windows Fundamentals | **3 / 3 Rooms Completed (100%)** |
-| Linux Fundamentals | **1 / 3 Rooms Completed (33%)** |
+| Linux Fundamentals | **2 / 3 Rooms Completed (67%)** |
 
 ---
 
@@ -581,10 +581,10 @@ The Linux Fundamentals collection covers core Linux operating system concepts th
 | Room | Status |
 |------|:------:|
 | Linux Fundamentals (Pt1) | ✅ Complete |
-| Linux Fundamentals (Pt2) | ⏳ Not Started |
+| Linux Fundamentals (Pt2) | ✅ Complete |
 | Linux Fundamentals (Pt3) | ⏳ Not Started |
 
-**Collection Progress:** **1 / 3 Rooms Completed (33%)**
+**Collection Progress:** **2 / 3 Rooms Completed (67%)**
 
 ---
 
@@ -789,6 +789,16 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Content Searching (`grep`)
 - Shell Operators (Background Execution, Conditional Chaining)
 - Output Redirection (Overwrite vs. Append)
+- SSH
+- Remote Linux Administration
+- Linux Permissions
+- File Ownership
+- User Switching (`su`)
+- Linux Manual Pages (`man`)
+- Command Documentation (`--help`)
+- Filesystem Management (`cp`, `mv`, `rm`, `touch`, `mkdir`)
+- File Type Identification (`file`)
+- Linux Directory Structure (`/etc`, `/var`, `/root`, `/tmp`)
 
 ---
 
@@ -893,9 +903,9 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Learning Paths Completed | 1 |
 | Standalone Collections Completed | 2 |
 | Standalone Collections In Progress | 1 |
-| Modules Completed | 7 |
+| Modules Completed | 8 |
 | Standard Rooms Completed | 26 |
-| Standalone Rooms Completed | 7 |
+| Standalone Rooms Completed | 8 |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
@@ -942,7 +952,6 @@ Current learning goals include expanding into additional cybersecurity topics su
 
 Current standalone learning objectives include:
 
-- Linux Fundamentals (Pt2)
 - Linux Fundamentals (Pt3)
 - Core Linux Administration
 - Linux Terminal Fluency
@@ -1005,16 +1014,16 @@ Skills gained include:
 Completed:
 
 - ✅ Linux Fundamentals (Pt1)
+- ✅ Linux Fundamentals (Pt2)
 
 Upcoming:
 
-- ⏳ Linux Fundamentals (Pt2)
 - ⏳ Linux Fundamentals (Pt3)
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete) · 🚧 Linux Fundamentals (1 / 3)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete) · 🚧 Linux Fundamentals (2 / 3)
 
 **Overall Repository Status:** 🚀 Active Development
