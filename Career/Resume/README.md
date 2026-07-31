@@ -2,17 +2,29 @@
 
 This folder contains all resume versions used throughout my Information Technology and Cybersecurity career.
 
+## Current Format Standard
+
+As of the latest update, all resumes follow a one-page, ATS-friendly, black-and-white format:
+
+- No graphics, tables, columns, icons, or color.
+- Section order: **Education → Technical Skills → Technical Projects → Professional Experience**.
+- No Professional Summary section.
+- TryHackMe Pre Security (SEC0) is listed under Education rather than in a separate Certifications section.
+- Technical Projects are limited to work that was actually built, configured, deployed, or documented (no "completed labs" language).
+- Professional Experience bullets are accomplishment-focused, not restated job descriptions.
+
 ## Resume Workflow
 
+```
 Resume-Master.md
-↓
+      ↓
 Resume-Master.docx
-↓
-Resume.pdf
-↓
-Resume-IT.docx
-↓
-Resume-Cybersecurity.docx
+      ↓
+Resume-ATS-OnePage.md / Resume-ATS-OnePage.docx
+      ↓
+Resume-IT.md / Resume-IT.docx
+Resume-Cybersecurity.md / Resume-Cybersecurity.docx
+```
 
 ---
 
@@ -34,17 +46,17 @@ Examples:
 
 ### Resume-Master.docx
 
-The professionally formatted Microsoft Word version generated from the Master Resume.
+The professionally formatted Microsoft Word version generated from the Master Resume. Kept as a full-detail reference copy — not trimmed to one page.
 
 ---
 
-### Resume.pdf
+### Resume-ATS-OnePage.md / Resume-ATS-OnePage.docx
 
-The PDF version submitted with job applications.
+The general-purpose one-page resume in the current format standard. Used as the base template for role-specific tailoring.
 
 ---
 
-### Resume-IT.docx
+### Resume-IT.md / Resume-IT.docx
 
 Tailored specifically for:
 
@@ -53,12 +65,12 @@ Tailored specifically for:
 - Desktop Support
 - Technical Support
 
-Derived from the Master Resume.
+Derived from Resume-ATS-OnePage, with an "IT Support" skills category in place of "Security Fundamentals."
 
 ---
 
-### Resume-Cybersecurity.docx
+### Resume-Cybersecurity.md / Resume-Cybersecurity.docx
 
 Tailored specifically for cybersecurity internships and entry-level cybersecurity roles.
 
-Derived from the Master Resume.
+Derived from Resume-ATS-OnePage, with a "Security Fundamentals" skills category in place of "IT Support."

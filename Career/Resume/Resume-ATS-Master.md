@@ -7,7 +7,7 @@ Winter Haven, FL | 727-422-4441 | jamaurwrk12@gmail.com | github.com/JaMau1Tech 
 ## Education
 
 **Traviss Technical College — Computer Systems & Information Technology Program**
-*Starting August 2026*
+*Freshman — Currently Attending*
 
 **Brandon High School — High School Diploma (Honors), Brandon, FL**
 *Graduated with Honors — 4.8 GPA*
@@ -21,7 +21,6 @@ Winter Haven, FL | 727-422-4441 | jamaurwrk12@gmail.com | github.com/JaMau1Tech 
 - **Operating Systems:** Windows, Windows Server, Linux (Ubuntu)
 - **Systems Administration:** Active Directory Domain Services, Domain Controllers, User & Group Management
 - **Networking:** Networking Fundamentals, IP Addressing, MAC Addresses, ICMP, Basic Network Troubleshooting
-- **Security Fundamentals:** Cybersecurity Fundamentals, Security Best Practices, Authentication Concepts, Defensive Security Concepts
 - **Programming:** Python (Beginner), JavaScript (Beginner), SQL (Beginner)
 - **Version Control:** Git, GitHub
 - **Documentation:** Markdown, Technical Documentation
@@ -36,8 +35,8 @@ Winter Haven, FL | 727-422-4441 | jamaurwrk12@gmail.com | github.com/JaMau1Tech 
 - Deployed and configured a Linux (Ubuntu) server, establishing baseline system administration and command-line proficiency.
 - Documented each build step-by-step and version-controlled all configuration notes through Git and GitHub.
 
-**Root & Repository — GitHub Cybersecurity Portfolio**
-- Created and maintain a structured GitHub repository documenting cybersecurity labs, technical investigations, and security concepts.
+**Root & Repository — GitHub Technical Portfolio**
+- Created and maintain a structured GitHub repository documenting IT and cybersecurity projects, configurations, and troubleshooting notes.
 - Implemented consistent documentation standards across all projects to support long-term readability and professional presentation.
 
 ---
@@ -55,3 +54,4 @@ Winter Haven, FL | 727-422-4441 | jamaurwrk12@gmail.com | github.com/JaMau1Tech 
 - I operated production equipment while performing quality and safety inspections that supported continuous, safe production output.
 - I Identified and addressed equipment issues during shifts, helping maintain consistent production flow.
 - I always maintained an organized, safety-compliant work area while collaborating with a team under physically demanding conditions.
+
