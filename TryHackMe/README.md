@@ -28,7 +28,7 @@ The purpose of this repository is to:
 |------------|:------:|
 | Active Directory | ✅ 3 / 3 Rooms Completed (100%) |
 | Windows Fundamentals | ✅ 3 / 3 Rooms Completed (100%) |
-| Linux Fundamentals | 🚧 2 / 3 Rooms Completed (67%) |
+| Linux Fundamentals | ✅ 3 / 3 Rooms Completed (100%) |
 
 ---
 
@@ -56,7 +56,7 @@ The purpose of this repository is to:
 |------------|:--------:|
 | Active Directory | **3 / 3 Rooms Completed (100%)** |
 | Windows Fundamentals | **3 / 3 Rooms Completed (100%)** |
-| Linux Fundamentals | **2 / 3 Rooms Completed (67%)** |
+| Linux Fundamentals | **3 / 3 Rooms Completed (100%)** |
 
 ---
 
@@ -104,7 +104,9 @@ TryHackMe/
         │
         ├── README.md
         ├── images/
-        └── Linux-Fundamentals-1/
+        ├── Linux-Fundamentals-1/
+        ├── Linux-Fundamentals-2/
+        └── Linux-Fundamentals-3/
 ```
 
 ---
@@ -209,8 +211,6 @@ The Pre Security Learning Path provided a comprehensive introduction to cybersec
 - Python Fundamentals
 - JavaScript Fundamentals
 - SQL Fundamentals
-
----
 
 ## ✅ Module 05 – Network Fundamentals
 
@@ -486,15 +486,13 @@ The Windows Fundamentals collection covers core Windows operating system concept
 
 **Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
----
+## ✅ Windows Fundamentals 1
 
-### ✅ Windows Fundamentals 1
-
-#### Overview
+### Overview
 
 This room introduced core Windows operating system concepts through hands-on work in a Windows Server 2019 Standard lab environment: version history and end-of-life risk, the Desktop GUI, the NTFS file system (permissions and Alternate Data Streams), local user accounts and groups, User Account Control, Settings vs. Control Panel, and Task Manager.
 
-#### Skills Developed
+### Skills Developed
 
 - Windows Version History and End-of-Life Risk
 - Desktop GUI Navigation and Configuration
@@ -513,13 +511,13 @@ This room introduced core Windows operating system concepts through hands-on wor
 
 ---
 
-### ✅ Windows Fundamentals 2
+## ✅ Windows Fundamentals 2
 
-#### Overview
+### Overview
 
 This room continued directly from Room 1, covering deeper Windows administrative tooling in a Windows Server 2019 Standard lab environment: System Configuration (msconfig) and Advanced System Settings, UAC settings configuration, Computer Management, System Information, Resource Monitor, Command Prompt, and the Windows Registry.
 
-#### Skills Developed
+### Skills Developed
 
 - System Configuration (`msconfig`) Administration
 - Advanced System Settings (Page File, Crash Dump Configuration)
@@ -538,13 +536,13 @@ This room continued directly from Room 1, covering deeper Windows administrative
 
 ---
 
-### ✅ Windows Fundamentals 3
+## ✅ Windows Fundamentals 3
 
-#### Overview
+### Overview
 
 This room concluded the series, covering the built-in Windows security feature stack in a Windows Server lab environment: Windows Update, the Windows Security app, Virus & Threat Protection (Defender), Firewall & Network Protection, App & Browser Control (SmartScreen), Device Security (Core Isolation, TPM), BitLocker, and the Volume Shadow Copy Service (VSS).
 
-#### Skills Developed
+### Skills Developed
 
 - Windows Update Management and Patch Tuesday
 - Windows Security Overview and Status Triage
@@ -564,17 +562,15 @@ This room concluded the series, covering the built-in Windows security feature s
 
 ### Collection Outcome
 
-The completed Windows Fundamentals collection provides a full foundation in Windows OS administration — from desktop and file system basics, through advanced administrative tooling and the Registry, to the built-in security stack that protects a Windows machine by default. Together, these rooms build the practical Windows knowledge expected of entry-level IT support, system administration, and cybersecurity roles.
-
-Complete the Windows Fundamentals collection to establish a strong foundation in Windows OS administration ahead of more advanced Windows security, hardening, and Active Directory-focused work.
+The completed Windows Fundamentals collection provides a full foundation in Windows OS administration—from desktop and file system basics, through advanced administrative tooling and the Registry, to the built-in security stack that protects a Windows machine by default. Together, these rooms build the practical Windows knowledge expected of entry-level IT support, system administration, and cybersecurity roles.
 
 ---
 
 ## Linux Fundamentals
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Complete
 
-The Linux Fundamentals collection covers core Linux operating system concepts through the terminal — command-line navigation, file and content searching, output redirection, and shell operators. Entirely terminal-driven, reflecting Linux's dominance in server, cloud, and embedded environments.
+The Linux Fundamentals collection provides a comprehensive introduction to Linux system administration through hands-on terminal exercises. Across the three rooms, the collection progresses from Linux navigation and command-line basics to filesystem management, permissions, remote administration, process management, automation, package management, and system log analysis.
 
 ### Progress
 
@@ -582,9 +578,9 @@ The Linux Fundamentals collection covers core Linux operating system concepts th
 |------|:------:|
 | Linux Fundamentals (Pt1) | ✅ Complete |
 | Linux Fundamentals (Pt2) | ✅ Complete |
-| Linux Fundamentals (Pt3) | ⏳ Not Started |
+| Linux Fundamentals (Pt3) | ✅ Complete |
 
-**Collection Progress:** **2 / 3 Rooms Completed (67%)**
+**Collection Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
@@ -592,7 +588,7 @@ The Linux Fundamentals collection covers core Linux operating system concepts th
 
 #### Overview
 
-This room introduced the Linux terminal as the primary interface for interacting with the OS, using a browser-based Ubuntu lab machine. Covered identity (`whoami`), output (`echo`), navigation (`ls`, `cd`, `cat`, `pwd`), file/content searching (`find`, `grep`), and shell operators/redirection (`&`, `&&`, `>`, `>>`).
+Introduced the Linux terminal as the primary interface for interacting with the operating system using a browser-based Ubuntu lab machine. Covered user identification, command output, filesystem navigation, searching for files and content, shell operators, and output redirection.
 
 #### Skills Developed
 
@@ -603,22 +599,66 @@ This room introduced the Linux terminal as the primary interface for interacting
 - File Content Inspection (`cat`)
 - File Searching (`find`)
 - Content Searching (`grep`)
-- Shell Operators (Background Execution, Conditional Chaining)
-- Output Redirection (Overwrite vs. Append)
+- Shell Operators
+- Output Redirection
 
 ---
 
-### 🔜 Next Room
+### ✅ Linux Fundamentals (Pt2)
 
-**Linux Fundamentals (Pt2)**
+#### Overview
 
-Continuing the Linux Fundamentals series to build further terminal fluency and Linux administration fundamentals.
+Expanded Linux administration skills by introducing remote administration with SSH, command documentation, filesystem management, Linux permissions, user switching, and the Linux directory structure.
+
+#### Skills Developed
+
+- Secure Shell (SSH)
+- Remote Linux Administration
+- Linux Manual Pages (`man`)
+- Command Documentation (`--help`)
+- Filesystem Management
+- File Creation
+- File Copying
+- File Moving
+- File Deletion
+- File Type Identification (`file`)
+- Linux Permissions
+- Numeric Permissions
+- File Ownership
+- User Switching (`su`)
+- Linux Directory Structure
 
 ---
 
-### Long-Term Goal
+### ✅ Linux Fundamentals (Pt3)
 
-Complete the Linux Fundamentals collection to establish a strong terminal-based foundation in Linux administration, ahead of more advanced Linux security, hardening, and server administration work.
+#### Overview
+
+Completed the Linux Fundamentals series by focusing on practical Linux administration. Learned terminal text editors, secure file transfers, process management, service management, task automation, package management, and Linux log analysis through hands-on exercises.
+
+#### Skills Developed
+
+- Nano Text Editor
+- Vim Overview
+- Secure Copy (`scp`)
+- File Downloads (`wget`)
+- Python HTTP Server
+- Process Management (`ps`, `top`)
+- Process Signals (`kill`, SIGTERM, SIGKILL, SIGSTOP)
+- Service Management (`systemctl`)
+- Background & Foreground Jobs
+- Cron Automation (`cron`, `crontab`)
+- Ubuntu Package Management (APT)
+- Software Repositories
+- GPG Key Verification
+- Linux Log Analysis
+- Apache Access Log Investigation
+
+---
+
+### Collection Outcome
+
+The completed Linux Fundamentals collection establishes a strong foundation in Linux administration, combining command-line proficiency, remote administration, process management, automation, software management, and log analysis. These skills provide a practical base for Linux system administration, penetration testing, blue team operations, cloud environments, and future Linux security and hardening topics.
 
 ---
 
@@ -679,8 +719,6 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Load Balancers
 - Content Delivery Networks (CDNs)
 - Web Application Firewalls (WAFs)
-
----
 
 ## Windows & Active Directory
 
@@ -750,31 +788,27 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Task Manager Administration
 - Remote Desktop Protocol (RDP)
 - System Configuration (`msconfig`)
-- Advanced System Settings (Page File, Crash Dump Configuration)
+- Advanced System Settings
 - Computer Management (`compmgmt.msc`)
 - Task Scheduler
-- Event Viewer and Windows Event Logs
-- Shared Folders and Default Administrative Shares
+- Event Viewer
+- Shared Folders
 - Disk Management
-- Services Administration (Startup Types)
+- Services Administration
 - System Information (`msinfo32`)
 - Resource Monitor (`resmon`)
 - Command Prompt Diagnostics
-- Windows Registry Structure and Root Keys
-- Registry Editing Methods and Best Practices
-- Windows Update Management and Patch Tuesday
-- Windows Security Overview and Status Triage
-- Virus & Threat Protection (Windows Defender)
-- Ransomware Protection Configuration
-- Firewall & Network Protection (Domain, Private, Public Profiles)
-- Windows Defender Firewall with Advanced Security (`WF.msc`)
-- App & Browser Control (Microsoft Defender SmartScreen)
-- Exploit Protection (CFG, DEP, ASLR)
-- Device Security and Core Isolation (Memory Integrity)
-- Trusted Platform Module (TPM) Fundamentals
-- BitLocker Drive Encryption
+- Windows Registry
+- Windows Update
+- Windows Security
+- Windows Defender
+- Firewall Administration
+- Microsoft Defender SmartScreen
+- Exploit Protection
+- TPM Fundamentals
+- BitLocker
 - Volume Shadow Copy Service (VSS)
-- Living Off The Land (LOTL) Awareness
+- Living Off The Land (LOTL)
 
 ---
 
@@ -787,8 +821,8 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - File Content Inspection (`cat`)
 - File Searching (`find`)
 - Content Searching (`grep`)
-- Shell Operators (Background Execution, Conditional Chaining)
-- Output Redirection (Overwrite vs. Append)
+- Shell Operators
+- Output Redirection
 - SSH
 - Remote Linux Administration
 - Linux Permissions
@@ -799,6 +833,22 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 - Filesystem Management (`cp`, `mv`, `rm`, `touch`, `mkdir`)
 - File Type Identification (`file`)
 - Linux Directory Structure (`/etc`, `/var`, `/root`, `/tmp`)
+- Nano Text Editor
+- Vim Fundamentals
+- Secure Copy (`scp`)
+- File Downloads (`wget`)
+- Python HTTP Server
+- Process Management (`ps`, `ps aux`, `top`)
+- Linux Signals (`SIGTERM`, `SIGKILL`, `SIGSTOP`)
+- Service Management (`systemctl`)
+- Background & Foreground Jobs
+- Cron Automation
+- Crontab Scheduling
+- Ubuntu Package Management (APT)
+- Software Repositories
+- GPG Key Verification
+- Linux Log Analysis
+- Apache Access Log Investigation
 
 ---
 
@@ -901,15 +951,15 @@ Throughout my TryHackMe learning journey, I have developed practical knowledge a
 | Statistic | Total |
 |-----------|------:|
 | Learning Paths Completed | 1 |
-| Standalone Collections Completed | 2 |
-| Standalone Collections In Progress | 1 |
+| Standalone Collections Completed | **3** |
+| Standalone Collections In Progress | **0** |
 | Modules Completed | 8 |
-| Standard Rooms Completed | 26 |
-| Standalone Rooms Completed | 8 |
+| Standard Rooms Completed | **27** |
+| Standalone Rooms Completed | **9** |
 | Topic Recaps Completed | 4 |
 | Hands-on Labs Completed | 20+ |
 | Security Tools Learned | Gobuster, Hydra, PowerShell, Splunk |
-| Documentation Files | 58+ |
+| Documentation Files | **64+** |
 | Screenshot Library | Professionally Organized |
 
 ---
@@ -938,6 +988,8 @@ My documentation emphasizes understanding concepts, performing hands-on investig
 
 Current learning goals include expanding into additional cybersecurity topics such as:
 
+- Networking Basics
+- Web Fundamentals
 - Windows Security
 - SOC Operations
 - Threat Hunting
@@ -947,14 +999,6 @@ Current learning goals include expanding into additional cybersecurity topics su
 - Microsoft Defender
 - Azure Security
 - Cloud Security
-
-## 🚧 Linux Fundamentals
-
-Current standalone learning objectives include:
-
-- Linux Fundamentals (Pt3)
-- Core Linux Administration
-- Linux Terminal Fluency
 
 ---
 
@@ -1000,30 +1044,42 @@ Skills gained include:
 
 - Windows OS Administration Fundamentals
 - NTFS File System and Permissions
-- Advanced Windows Administrative Tooling (msconfig, Computer Management, Registry)
+- Advanced Windows Administrative Tooling
 - Windows Update and Patch Management
-- Windows Security and Defender Administration
-- Firewall and Network Protection
-- BitLocker and TPM-Backed Encryption
-- Volume Shadow Copy Service and Ransomware Resilience
+- Windows Security Administration
+- Firewall Administration
+- BitLocker and TPM
+- Volume Shadow Copy Service (VSS)
 
 ---
 
-## 🚧 Linux Fundamentals Standalone Collection In Progress
+## ✅ Linux Fundamentals Standalone Collection Complete
 
 Completed:
 
 - ✅ Linux Fundamentals (Pt1)
 - ✅ Linux Fundamentals (Pt2)
+- ✅ Linux Fundamentals (Pt3)
 
-Upcoming:
+Skills gained include:
 
-- ⏳ Linux Fundamentals (Pt3)
+- Linux Command-Line Administration
+- SSH & Secure File Transfer
+- Filesystem Management
+- Linux Permissions & Ownership
+- Process Management
+- Linux Services (`systemctl`)
+- Cron Automation
+- Ubuntu Package Management
+- Software Repository Management
+- GPG Package Verification
+- Apache Log Analysis
+- Linux Troubleshooting
 
 ---
 
 **Learning Path Status:** ✅ Pre Security Complete
 
-**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete) · 🚧 Linux Fundamentals (2 / 3)
+**Standalone Collections:** ✅ Active Directory (3 / 3 Complete) · ✅ Windows Fundamentals (3 / 3 Complete) · ✅ Linux Fundamentals (3 / 3 Complete)
 
 **Overall Repository Status:** 🚀 Active Development

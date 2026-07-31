@@ -16,8 +16,9 @@ This repository contains standalone rooms that reinforce practical cybersecurity
 |------|----------|--------|
 | Linux Fundamentals (Pt1) | Linux Fundamentals | ✅ Complete |
 | Linux Fundamentals (Pt2) | Linux Fundamentals | ✅ Complete |
+| Linux Fundamentals (Pt3) | Linux Fundamentals | ✅ Complete |
 
-**Overall Progress:** **2 Rooms Completed**
+**Overall Progress:** **3 Rooms Completed**
 
 ---
 
@@ -29,7 +30,9 @@ This repository contains standalone rooms that reinforce practical cybersecurity
 |------|--------|
 | Linux Fundamentals (Pt1) | ✅ Complete |
 | Linux Fundamentals (Pt2) | ✅ Complete |
-| Linux Fundamentals (Pt3) | ⬜ Not Started |
+| Linux Fundamentals (Pt3) | ✅ Complete |
+
+**Collection Status:** **✅ 3 / 3 Rooms Complete (100%)**
 
 ---
 
@@ -45,14 +48,31 @@ This repository contains standalone rooms that reinforce practical cybersecurity
 - Linux directory structure
 - Command-line documentation
 - Linux troubleshooting
+- Terminal text editors (Nano & Vim)
+- Secure file transfers (SCP)
+- File downloads using `wget`
+- Python HTTP Server
+- Linux process management
+- Process monitoring
+- Linux service management (`systemctl`)
+- Background and foreground processes
+- Cron automation
+- Ubuntu package management (APT)
+- Software repositories
+- GPG key verification
+- Linux log analysis
 
 ### Security
 
 - Secure remote administration
+- Secure file transfers
 - Principle of Least Privilege
 - File verification
 - Permission analysis
 - Secure filesystem practices
+- Package integrity verification
+- Apache access log investigation
+- Basic Linux forensic analysis
 
 ### Professional Skills
 
@@ -60,6 +80,10 @@ This repository contains standalone rooms that reinforce practical cybersecurity
 - Troubleshooting methodology
 - Independent research using Linux documentation
 - Hands-on laboratory practice
+- Linux system administration
+- Process analysis
+- Log investigation
+- Automation fundamentals
 
 ---
 
@@ -73,7 +97,9 @@ Standalone/
 │   ├── images/
 │   │   ├── README.md
 │   │   ├── linux-fundamentals-part-1-*
-│   │   └── linux-fundamentals-part-2-*
+│   │   ├── linux-fundamentals-part-2-*
+│   │   ├── linux-fundamentals-part-3-*
+│   │   └── ...
 │   ├── Linux-Fundamentals-Part-1/
 │   │   └── task-notes.md
 │   ├── Linux-Fundamentals-Part-2/
@@ -104,4 +130,12 @@ All documentation follows the **Root & Repository Standalone TryHackMe Workflow 
 
 ## Current Focus
 
-➡️ Continue the **Linux Fundamentals** collection by completing **Linux Fundamentals (Pt3)**.
+✅ **Linux Fundamentals Collection Complete**
+
+Next planned standalone learning areas include:
+
+- Networking Basics
+- Web Fundamentals
+- Linux Security
+- Linux Privilege Escalation
+- Additional Linux Administration

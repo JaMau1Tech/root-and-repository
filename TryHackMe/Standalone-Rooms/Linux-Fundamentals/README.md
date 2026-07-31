@@ -1,12 +1,12 @@
 # Linux Fundamentals
 
-Master the fundamentals of Linux through hands-on labs covering terminal navigation, remote administration, filesystem management, permissions, scripting, and core operating system concepts.
+Master the fundamentals of Linux through hands-on labs covering terminal navigation, remote administration, filesystem management, permissions, process management, automation, package management, logging, and core operating system concepts.
 
 ---
 
 ## Collection Overview
 
-The Linux Fundamentals collection introduces the core skills required to confidently work with Linux systems. Beginning with terminal navigation and progressing through remote administration, filesystem interaction, permissions, and automation, these rooms provide a practical foundation for Linux administration and cybersecurity.
+The Linux Fundamentals collection introduces the core skills required to confidently work with Linux systems. Beginning with terminal navigation and progressing through remote administration, filesystem interaction, permissions, automation, process management, package management, and log analysis, these rooms provide a practical foundation for Linux administration and cybersecurity.
 
 Throughout this collection, each room is documented with detailed technical notes, screenshots, engineering challenges, lessons learned, and interview talking points following the Root & Repository documentation workflow.
 
@@ -18,9 +18,9 @@ Throughout this collection, each room is documented with detailed technical note
 |------|--------|
 | Linux Fundamentals (Pt1) | ✅ Complete |
 | Linux Fundamentals (Pt2) | ✅ Complete |
-| Linux Fundamentals (Pt3) | ⬜ Not Started |
+| Linux Fundamentals (Pt3) | ✅ Complete |
 
-**Progress:** **2 / 3 Rooms Completed (67%)**
+**Progress:** **3 / 3 Rooms Completed (100%)**
 
 ---
 
@@ -61,6 +61,30 @@ Throughout this collection, each room is documented with detailed technical note
 
 ---
 
+## Linux Fundamentals (Pt3)
+
+### Skills Developed
+
+- Terminal text editors (Nano & Vim)
+- Secure file transfers (`scp`)
+- File downloads using `wget`
+- Python HTTP Server
+- Linux process management
+- Process monitoring (`ps`, `top`)
+- Process termination (`kill`)
+- Linux signals (SIGTERM, SIGKILL, SIGSTOP)
+- Service management (`systemctl`)
+- Background and foreground processes
+- Cron automation
+- Crontab scheduling
+- Ubuntu package management (APT)
+- Software repositories
+- GPG key verification
+- Linux log analysis
+- Apache access log investigation
+
+---
+
 # Skills Gained
 
 ### Linux Administration
@@ -71,15 +95,24 @@ Throughout this collection, each room is documented with detailed technical note
 - User management
 - Permission management
 - Linux documentation
+- Process management
+- Service management
+- Automation with cron
+- Package management
+- Software installation
+- Log analysis
 
 ### Security
 
 - Secure remote access using SSH
+- Secure file transfers using SCP
 - Principle of Least Privilege
 - File ownership
 - Permission analysis
 - File verification
 - Secure filesystem practices
+- Package integrity verification using GPG keys
+- Apache log investigation
 
 ### Troubleshooting
 
@@ -88,6 +121,10 @@ Throughout this collection, each room is documented with detailed technical note
 - Verifying file types
 - Identifying permission issues
 - Working with Linux directory structures
+- Monitoring running processes
+- Managing Linux services
+- Investigating web server logs
+- Interpreting cron schedules
 
 ---
 
@@ -100,6 +137,7 @@ Linux-Fundamentals/
 │   ├── README.md
 │   ├── linux-fundamentals-part-1-*
 │   ├── linux-fundamentals-part-2-*
+│   ├── linux-fundamentals-part-3-*
 │   └── ...
 ├── Linux-Fundamentals-Part-1/
 │   └── task-notes.md
@@ -113,30 +151,38 @@ Linux-Fundamentals/
 
 # Learning Outcomes
 
-After completing this collection, I will be able to:
+After completing this collection, I am able to:
 
 - Navigate Linux systems confidently.
 - Connect securely to remote Linux machines using SSH.
 - Read and interpret Linux documentation.
 - Create, copy, move, rename, and delete files.
-- Manage Linux permissions.
-- Understand file ownership.
+- Manage Linux permissions and ownership.
 - Navigate important Linux directories.
-- Troubleshoot common Linux command-line issues.
+- Edit files using terminal-based text editors.
+- Transfer files securely using SCP and HTTP.
+- Host files using Python's built-in HTTP server.
+- Monitor and manage Linux processes.
+- Control Linux services with `systemctl`.
+- Automate recurring administrative tasks using cron.
+- Install, update, and remove software using APT.
+- Understand Linux software repositories and GPG verification.
+- Investigate Apache access logs.
 - Apply Linux administration concepts in home lab and cybersecurity environments.
 
 ---
 
 # Current Focus
 
-➡️ **Linux Fundamentals (Pt3)**
+✅ **Linux Fundamentals Collection Complete**
 
-Topics to be covered include:
+Next planned areas of study include:
 
-- Linux process management
-- Package management
-- Automation
-- Additional Linux administration concepts
+- Networking Basics
+- Web Fundamentals
+- Additional Linux Administration
+- Linux Security
+- Linux Hardening
 
 ---
 
@@ -145,7 +191,7 @@ Topics to be covered include:
 - ✅ Pre Security
 - ✅ Windows Fundamentals
 - ✅ Active Directory Basics
-- 🚧 Linux Fundamentals
+- ✅ Linux Fundamentals
 - ⏳ Networking Basics
 - ⏳ Web Fundamentals
 

@@ -34,13 +34,28 @@ This directory contains screenshots captured while completing the **Linux Fundam
 
 ---
 
+## Linux Fundamentals (Pt3)
+
+| Screenshot | Description |
+|---|---|
+| `linux-fundamentals-part-3-task02-ssh-login` | Successfully connected to the deployed Linux machine using SSH |
+| `linux-fundamentals-part-3-task03-nano-text-editor` | Edited the provided file using Nano and recovered the room flag |
+| `linux-fundamentals-part-3-task04-python-http-server-and-wget` | Hosted files with Python HTTP Server and downloaded them using `wget` |
+| `linux-fundamentals-part-3-task05-processes-and-systemctl` | Identified the running process containing the room flag and reviewed Linux process management |
+| `linux-fundamentals-part-3-task06-crontab-automation` | Examined scheduled cron jobs and interpreted the `@reboot` automation entry |
+| `linux-fundamentals-part-3-task08-apache-log-analysis` | Investigated Apache access logs to identify the client's IP address and requested resource |
+| `linux-fundamentals-part-3-room-complete` | Room completion page |
+
+---
+
 # Screenshot Statistics
 
 | Category | Count |
 |---|---:|
 | Linux Fundamentals (Pt1) | 5 |
 | Linux Fundamentals (Pt2) | 9 |
-| **Total Screenshots** | **14** |
+| Linux Fundamentals (Pt3) | 7 |
+| **Total Screenshots** | **21** |
 
 ---
 
