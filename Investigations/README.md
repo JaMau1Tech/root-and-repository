@@ -49,6 +49,12 @@ Every investigation follows the locked Root & Repository investigation workflow:
 ```text
 Investigations/
 ├── Windows/
+│   ├── Investigation-01-System-Recon/
+│   ├── Investigation-02-Process-Analysis/
+│   ├── Investigation-03-Network-Connections/
+│   ├── Investigation-04-Malware-Incident-Response/
+│   └── README.md
 ├── Wireshark/
 │   └── Investigation-01-Website-Traffic/
 └── README.md
+```
