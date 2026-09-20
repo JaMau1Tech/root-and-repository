@@ -8,11 +8,11 @@
 
 # Overview
 
-This project focused on deploying and administering an enterprise Active Directory environment using Windows Server 2022.
+This project focused on deploying and administering an enterprise Active Directory environment on SRV-DC01, the Windows Server 2022 VM rebuilt in Project 02 on VirtualBox.
 
-The project began with installing the Active Directory Domain Services (AD DS) role and promoting the Windows Server into a Domain Controller. Once the domain was established, enterprise identity management concepts were implemented, including Organizational Units (OUs), user administration, security groups, Group Policy, and Active Directory best practices.
+The project began with installing the Active Directory Domain Services (AD DS) role and promoting the server into a Domain Controller. Once the domain was established, enterprise identity management concepts were implemented: Organizational Units (OUs), user administration, security groups, DNS integration, and Group Policy.
 
-The completed environment simulates the identity infrastructure commonly found in enterprise Windows networks.
+This is a rebuild of the same domain from an earlier iteration of the lab (VMware Workstation Pro), which was lost when that host was reinstalled. The domain name, OU structure, and test accounts are unchanged; the underlying hypervisor and host are not.
 
 ---
 
@@ -20,7 +20,7 @@ The completed environment simulates the identity infrastructure commonly found i
 
 - Install Active Directory Domain Services (AD DS)
 - Configure DNS for Active Directory
-- Promote Windows Server to a Domain Controller
+- Promote SRV-DC01 to a Domain Controller
 - Create a new Active Directory forest
 - Configure the `jamaursec.lab` domain
 - Create Organizational Units (OUs)
@@ -35,12 +35,15 @@ The completed environment simulates the identity infrastructure commonly found i
 
 ## Hardware
 
-- Windows 11 Host
-- VMware Workstation Pro
+- Dell Latitude 5320 host
+
+## Hypervisor
+
+- VirtualBox 7.2.6 (see [[Project 01 – Virtualization Foundation]])
 
 ## Virtual Machines
 
-- Windows Server 2022
+- SRV-DC01 — Windows Server 2022 (see [[Project 02 – Windows Server Foundation]])
 
 ## Software
 
@@ -71,9 +74,29 @@ The completed environment simulates the identity infrastructure commonly found i
 jamaursec.lab
 ```
 
+- NetBIOS name: `JAMAURSEC`
+- Domain/forest functional level: Windows2016Domain (default for a Windows Server 2022 forest)
+- DSRM password set during promotion and recorded outside the repository (never documented here)
 - Promoted the server to a Domain Controller
 - Restarted the server
 - Verified Active Directory functionality
+
+Post-promotion verification (PowerShell):
+
+```powershell
+whoami
+Get-ADDomain | Select-Object DNSRoot, NetBIOSName, DomainMode
+```
+
+Result:
+
+```
+jamaursec\administrator
+
+DNSRoot         NetBIOSName    DomainMode
+-------         -----------    ----------
+jamaursec.lab   JAMAURSEC      Windows2016Domain
+```
 
 ---
 
@@ -86,6 +109,7 @@ Configured:
 - Forward Lookup Zone
 - Active Directory integrated DNS
 - Domain name resolution
+- SRV-DC01's own Preferred DNS server repointed from a temporary public resolver to itself (192.168.45.129), so the domain controller resolves the domain through itself rather than an external server
 
 ---
 
@@ -134,13 +158,21 @@ Configured:
 
 ## Group Policy
 
-Practiced configuring Group Policy Objects.
+Created a Group Policy Object named **Restrict Control Panel**, linked to the `IT` OU, with **Prohibit access to Control Panel and PC settings** set to Enabled under User Configuration > Administrative Templates > Control Panel.
 
 Verified policy application using:
 
 ```powershell
-gpresult /R
+gpupdate /force
+gpresult /R /SCOPE COMPUTER
+gpresult /R /SCOPE USER
 ```
+
+### Lab-Only Deviation: DC Local Logon
+
+By default, domain users cannot log on locally to a domain controller, which blocked testing the user-scope Group Policy result directly on SRV-DC01 (no domain-joined client exists yet — that's Project 04). To test it, the `IT` group was temporarily granted **Allow log on locally** on SRV-DC01 through the Default Domain Controllers Policy (Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment).
+
+This is a lab-only shortcut and is not a production practice — domain controllers should not have their local-logon rights extended to ordinary domain users. It exists here solely to verify Group Policy processing before Project 04 provides a proper domain-joined client to test against.
 
 ---
 
@@ -148,7 +180,7 @@ gpresult /R
 
 Verified:
 
-- Domain Controller promotion
+- Domain Controller promotion (`whoami`, `Get-ADDomain`)
 - DNS functionality
 - Active Directory Users and Computers
 - User creation
@@ -156,62 +188,80 @@ Verified:
 - Password reset
 - Disabled user account
 - Enabled user account
-- Group Policy processing
-- gpresult output
+- Group Policy processing (John Doe successfully logged on after the temporary local-logon grant)
 
 ---
 
 # Commands
 
+## Verify Domain Controller Promotion
+
+```powershell
+whoami
+Get-ADDomain | Select-Object DNSRoot, NetBIOSName, DomainMode
+Get-ADDomainController | Select-Object Name, Domain, IPv4Address
+```
+
+## Verify DNS
+
+```powershell
+nslookup jamaursec.lab
+```
+
+## Verify Core Services
+
+```powershell
+Get-Service NTDS, DNS, Netlogon
+```
+
 ## Verify Group Policy
 
 ```powershell
-gpresult /R
+gpupdate /force
+gpresult /R /SCOPE COMPUTER
+gpresult /R /SCOPE USER
 ```
 
 ---
 
 # Troubleshooting
 
-## Password Administration
+## Domain User Blocked From Logging On to the DC
 
-Performed:
+Issue:
 
-- Password reset
-- User enable
-- User disable
+John Doe's first sign-in attempt on SRV-DC01 failed with "The sign-in method you're trying to use isn't allowed." Domain users cannot log on locally to a domain controller by default.
 
-Verified successful administration through Active Directory Users and Computers.
+Investigation:
 
----
+Confirmed John Doe's group membership in Active Directory Users and Computers, then checked the Default Domain Controllers Policy's **Allow log on locally** user right, which did not include the `IT` group.
 
-## Group Membership
+Resolution:
 
-Validated:
-
-- Security group creation
-- User membership assignment
+Added the `IT` group to **Allow log on locally** in the Default Domain Controllers Policy, ran `gpupdate /force`, and confirmed John Doe could then sign in. Documented as a lab-only deviation above.
 
 ---
 
-## Domain Services
+## Command Continuation Swallowing Output
 
-Verified:
+Issue:
 
-- Active Directory service
-- DNS integration
-- Domain functionality
+Running `Get-ADDomainController | Select-Object ...` immediately after another multi-line paste caused PowerShell to treat it as a line continuation (`>>`), and no output was returned.
+
+Resolution:
+
+Re-ran the command on its own line.
 
 ---
 
 # Lessons Learned
 
 - Active Directory centralizes identity management.
-- DNS is a required component of Active Directory.
+- DNS is a required component of Active Directory, and a domain controller's own DNS setting must point at itself (or another domain DNS server) after promotion — not an external resolver.
 - Organizational Units improve administration and Group Policy targeting.
 - Security Groups simplify permission management.
-- Group Policy centralizes Windows configuration.
-- User lifecycle management is a core responsibility of system administrators.
+- Domain controllers block local logon for ordinary domain users by default — a real and useful security boundary, but one that has to be temporarily relaxed to test user-scope Group Policy without a domain-joined client available yet.
+- Pasting multiple PowerShell commands together can cause line-continuation issues — run verification commands individually when in doubt.
 - Documentation and planning are critical for enterprise environments.
 
 ---
@@ -258,6 +308,6 @@ Verified:
 
 # Project Outcome
 
-Successfully deployed a functional Active Directory environment capable of centralized identity and access management.
+Successfully rebuilt a functional Active Directory environment on the VirtualBox platform, capable of centralized identity and access management.
 
 The completed infrastructure provides the foundation for future Home Lab projects, including Windows client domain joins, enterprise file services, Group Policy expansion, Help Desk simulations, and enterprise system administration.

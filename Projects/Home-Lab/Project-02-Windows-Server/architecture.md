@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the architecture, configuration, and purpose of the Windows Server virtual machine built during Project 02.
+This document describes the architecture, configuration, and purpose of the Windows Server virtual machine built during Project 02, on the VirtualBox platform established in Project 01.
 
 The server serves as the enterprise infrastructure foundation for the Home Lab and will later be promoted to an Active Directory Domain Controller.
 
@@ -12,11 +12,11 @@ The server serves as the enterprise infrastructure foundation for the Home Lab a
 
 ## Hypervisor
 
-VMware Workstation Pro
+VirtualBox 7.2.6
 
 ## Host Operating System
 
-Windows 11
+Ubuntu 26.04.1 LTS
 
 ## Guest Operating System
 
@@ -31,13 +31,13 @@ Windows Server 2022 Standard Evaluation (Desktop Experience)
 | VM Name | Windows Server 2022 |
 | Hostname | SRV-DC01 |
 | Computer Description | Primary Domain Controller |
-| Firmware | UEFI |
-| Memory | 4 GB |
+| Firmware | EFI (enabled) |
+| Memory | 4096 MB |
 | CPU | 2 vCPUs |
 | Disk Size | 60 GB |
-| Disk Controller | SCSI |
-| Network Adapter | NAT |
-| VMware Tools | Installed |
+| Disk Controller | SATA |
+| Network Adapter | Intel PRO/1000 MT Desktop, NAT Network `jamaursec-nat` |
+| Guest Additions | Installed (7.2.6) |
 | Snapshot | Windows Server Baseline |
 
 ---
@@ -50,8 +50,8 @@ Windows Server 2022 Standard Evaluation (Desktop Experience)
 |---------|-------|
 | IP Address | 192.168.45.129 |
 | Subnet Mask | 255.255.255.0 |
-| Default Gateway | 192.168.45.2 |
-| Network Type | NAT |
+| Default Gateway | 192.168.45.1 |
+| Network Type | VirtualBox NAT Network (`jamaursec-nat`) |
 
 ---
 
@@ -61,11 +61,14 @@ Windows Server 2022 Standard Evaluation (Desktop Experience)
                 Internet
                     │
                     │
-         Windows Host Computer
+         Ubuntu 26.04.1 LTS Host
+              (Dell Latitude 5320)
                     │
-         VMware Workstation Pro
+            VirtualBox 7.2.6
                     │
-          VMware NAT Network
+        NAT Network: jamaursec-nat
+           192.168.45.0/24
+           Gateway: 192.168.45.1
                     │
           ┌──────────────────┐
           │                  │
@@ -106,7 +109,7 @@ Future Responsibilities
 
 ## Virtualization Components
 
-- VMware Tools
+- VirtualBox Guest Additions 7.2.6
 
 ## Windows Components
 
@@ -121,7 +124,7 @@ Future Responsibilities
 Completed
 
 - Windows fully updated
-- VMware Tools installed
+- VirtualBox Guest Additions installed
 - Enterprise hostname configured
 - Static IPv4 address assigned
 - Baseline snapshot created
@@ -142,7 +145,7 @@ Future Configuration
 
 ## Operating System
 
-- Successful installation
+- Successful installation (Desktop Experience, selected manually — see project-notes.md)
 - Successful login
 - GUI verified
 
@@ -155,7 +158,7 @@ Future Configuration
 
 ## Virtual Machine
 
-- VMware Tools verified
+- Guest Additions verified
 - Snapshot created
 - Stable boot confirmed
 
@@ -163,7 +166,7 @@ Future Configuration
 
 # Recovery
 
-## VMware Snapshot
+## VirtualBox Snapshot
 
 Snapshot Name
 
@@ -175,17 +178,34 @@ Provides a rollback point before deploying enterprise infrastructure services.
 
 ---
 
+# Platform Differences From the Original Build
+
+This server previously existed in an earlier iteration of the lab (VMware Workstation Pro, Windows 11 host), which was lost when that host was reinstalled. The rebuild targets the same role, hostname, and IP — the platform underneath it changed:
+
+| Item | Original | Current |
+|---|---|---|
+| Hypervisor | VMware Workstation Pro | VirtualBox 7.2.6 |
+| Host OS | Windows 11 | Ubuntu 26.04.1 LTS |
+| Disk controller | SCSI | SATA |
+| Guest integration | VMware Tools | VirtualBox Guest Additions |
+| Network | VMware NAT | VirtualBox NAT Network (`jamaursec-nat`) |
+| Default gateway | 192.168.45.2 | 192.168.45.1 |
+
+Hostname (`SRV-DC01`), description, static IP (`192.168.45.129`), memory (4 GB), CPU count (2), and disk size (60 GB) are unchanged.
+
+---
+
 # Project Dependencies
 
 ## Previous Project
 
 Project 01
 
-Ubuntu Foundation
+Virtualization Foundation
 
 Purpose
 
-Linux administration practice and virtualization fundamentals.
+Hardened Ubuntu host, VirtualBox hypervisor, and lab NAT Network.
 
 ---
 
@@ -212,21 +232,26 @@ Objectives
 ```text
                           Home Lab
 
-                    VMware Workstation
-                           │
-        ┌──────────────────┼──────────────────┐
-        │                  │                  │
-        │                  │                  │
-   Ubuntu 24.04        Windows Server     Windows 11
-      Project 01          Project 02       Project 04
-                            │
-                            │
-                  Active Directory
-                        Project 03
-                            │
+                  Ubuntu 26.04.1 LTS Host
+                    (Dell Latitude 5320)
+                             │
+                     VirtualBox 7.2.6
+                             │
+                  NAT Network: jamaursec-nat
+                             │
+                       Windows Server
+                         Project 02
+                             │
+                             │
+                   Active Directory
+                         Project 03
+                             │
              ┌──────────────┴──────────────┐
              │                             │
         Domain Users                 Domain Computers
+                             │
+                       Windows 11
+                        Project 04
 
                  Future Infrastructure
 
@@ -239,7 +264,7 @@ Objectives
 
 # Architecture Summary
 
-This Windows Server virtual machine serves as the core infrastructure server for the Home Lab.
+This Windows Server virtual machine serves as the core infrastructure server for the Home Lab, now rebuilt on VirtualBox after the platform migration in Project 01.
 
 All future Windows-based enterprise services—including Active Directory, DNS, authentication, Group Policy, and domain management—will be deployed from this system.
 

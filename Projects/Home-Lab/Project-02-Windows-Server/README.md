@@ -2,24 +2,24 @@
 
 ## Overview
 
-Project 02 focuses on deploying and configuring a Windows Server 2022 virtual machine that serves as the core infrastructure server for the Home Lab.
+Project 02 deploys and configures the Windows Server 2022 virtual machine that serves as the core infrastructure server for the Home Lab, built on the VirtualBox platform established in Project 01.
 
-The server was manually installed in VMware Workstation Pro, configured using enterprise best practices, updated, optimized with VMware Tools, assigned a static IP address, and prepared for future Active Directory deployment.
+The server was manually installed in VirtualBox, configured using enterprise best practices, updated, integrated with VirtualBox Guest Additions, assigned a static IP address, and prepared for Active Directory deployment.
 
-This project establishes the foundation for the Windows-based enterprise environment that will be expanded throughout the remaining Home Lab projects.
+This is a rebuild of the same server role from an earlier iteration of the lab (VMware Workstation Pro on a Windows 11 host), which was lost when that host was reinstalled. See `project-notes.md` for the platform differences.
 
 ---
 
 ## Objectives
 
-- Deploy Windows Server 2022
+- Deploy Windows Server 2022 in VirtualBox
 - Configure enterprise virtual hardware
 - Install Windows Server manually
 - Configure a static IP address
-- Install VMware Tools
+- Install VirtualBox Guest Additions
 - Apply Windows Updates
 - Configure enterprise hostname
-- Create a VMware baseline snapshot
+- Create a VirtualBox baseline snapshot
 - Prepare for Active Directory
 
 ---
@@ -28,7 +28,7 @@ This project establishes the foundation for the Windows-based enterprise environ
 
 ### Virtualization
 
-- VMware Workstation Pro
+- VirtualBox 7.2.6
 
 ### Operating System
 
@@ -38,7 +38,7 @@ This project establishes the foundation for the Windows-based enterprise environ
 ### Networking
 
 - IPv4
-- NAT Networking
+- VirtualBox NAT Network (`jamaursec-nat`)
 - Static IP Configuration
 
 ### Administration
@@ -53,14 +53,14 @@ This project establishes the foundation for the Windows-based enterprise environ
 
 | Component | Configuration |
 |-----------|---------------|
-| Hypervisor | VMware Workstation Pro |
-| Firmware | UEFI |
-| Memory | 4 GB |
+| Hypervisor | VirtualBox 7.2.6 |
+| Firmware | EFI (enabled) |
+| Memory | 4096 MB |
 | CPU | 2 vCPUs |
 | Disk | 60 GB |
-| Disk Controller | SCSI |
-| Network | NAT |
-| VMware Tools | Installed |
+| Disk Controller | SATA |
+| Network | NAT Network — `jamaursec-nat` |
+| Guest Additions | Installed |
 
 ---
 
@@ -72,16 +72,16 @@ This project establishes the foundation for the Windows-based enterprise environ
 | Description | Primary Domain Controller |
 | IPv4 Address | 192.168.45.129 |
 | Subnet Mask | 255.255.255.0 |
-| Default Gateway | 192.168.45.2 |
+| Default Gateway | 192.168.45.1 |
 
 ---
 
 ## Project Workflow
 
-- Create virtual machine
-- Install Windows Server
+- Create virtual machine (Skip Unattended Installation)
+- Install Windows Server (Desktop Experience)
 - Configure enterprise settings
-- Install VMware Tools
+- Install VirtualBox Guest Additions
 - Apply Windows Updates
 - Configure static networking
 - Verify connectivity
@@ -93,15 +93,15 @@ This project establishes the foundation for the Windows-based enterprise environ
 
 ### Windows Server
 
-- Windows Server installation
+- Windows Server installation and edition selection
 - Server Manager administration
 - Windows Updates
 - Enterprise configuration
 
 ### Virtualization
 
-- VMware virtual machine deployment
-- VMware Tools installation
+- VirtualBox virtual machine deployment
+- Guest Additions installation
 - Snapshot management
 
 ### Networking
@@ -124,62 +124,62 @@ This project establishes the foundation for the Windows-based enterprise environ
 | Screenshot | Description |
 |------------|-------------|
 | project-02-windows-server-vm-created | Virtual machine created |
-| project-02-windows-server-installation | Windows installation |
+| project-02-windows-server-installation | Server Manager > Local Server, confirming Desktop Experience |
 | project-02-windows-server-first-login | First successful login |
 | project-02-windows-server-server-manager | Server Manager dashboard |
 | project-02-windows-server-terminal-verification | PowerShell verification |
 | project-02-windows-server-renamed | Enterprise hostname configured |
-| project-02-vmware-tools-installed | VMware Tools installation |
+| project-02-vmware-tools-installed | VirtualBox Guest Additions installation |
 | project-02-windows-server-static-ip | Static IP configuration |
-| project-02-windows-server-baseline-snapshot | VMware baseline snapshot |
+| project-02-windows-server-baseline-snapshot | VirtualBox baseline snapshot |
 
 ---
 
 ## Challenges Encountered
 
-### VMware Easy Install
+### Server Core Highlighted by Default
 
-VMware Easy Install failed during deployment due to Windows licensing issues.
+The Windows Server setup wizard highlights the no-GUI "Standard Evaluation" (Server Core) option by default.
 
 **Resolution**
 
-The virtual machine was recreated and Windows Server was installed manually using the installation ISO.
+Manually selected "Windows Server 2022 Standard Evaluation (Desktop Experience)" before proceeding with installation.
 
 ---
 
-### VMware Tools Restart
+### Static IP Typo
 
-The server remained on the **Getting Windows ready** screen after installing VMware Tools.
+The static IP was initially entered as 195.168.45.129 instead of the intended 192.168.45.129.
 
 **Resolution**
 
-After verifying that VMware activity had stopped, the virtual machine was safely reset and booted normally.
+Corrected the address and re-verified with `ipconfig` and `ping google.com`.
 
 ---
 
 ## Lessons Learned
 
-- Manual Windows Server installation provides greater reliability than VMware Easy Install.
+- Deliberately skipping the unattended-install wizard avoids the licensing failures the previous hypervisor's quick-install path produced.
+- A successful `ping` doesn't confirm a static IP was typed correctly — verify the actual `ipconfig` output.
 - Enterprise naming conventions improve server administration.
-- Static IP addresses should be configured before Active Directory deployment.
-- VMware Tools significantly improve virtual machine usability.
+- VirtualBox Guest Additions should be installed immediately after OS installation.
 - Baseline snapshots simplify recovery and future experimentation.
 
 ---
 
 ## Project Outcome
 
-Successfully deployed and configured a production-style Windows Server virtual machine.
+Successfully deployed and configured a production-style Windows Server virtual machine on VirtualBox.
 
 Completed tasks include:
 
 - Windows Server installation
 - Enterprise hostname configuration
 - Static IP configuration
-- VMware Tools installation
+- VirtualBox Guest Additions installation
 - Windows Updates
 - Network verification
-- Baseline VMware snapshot
+- Baseline VirtualBox snapshot
 
 The server is now fully prepared for Active Directory deployment.
 
@@ -225,7 +225,7 @@ Upcoming objectives:
 
 ## Author
 
-**J Wi**
+**Ja'Maurian Williams**
 
 Home Lab Series
 

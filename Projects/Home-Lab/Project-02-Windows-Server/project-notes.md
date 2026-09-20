@@ -8,22 +8,22 @@
 
 # Overview
 
-This project focused on building the Windows Server foundation for the Home Lab. A Windows Server 2022 virtual machine was deployed in VMware Workstation Pro, configured using enterprise best practices, updated, optimized with VMware Tools, assigned a static IP address, and prepared as the future Active Directory Domain Controller.
+This project focused on building the Windows Server foundation for the Home Lab on VirtualBox, the hypervisor established in Project 01. A Windows Server 2022 virtual machine was deployed, configured using enterprise best practices, updated, integrated with VirtualBox Guest Additions, assigned a static IP address, and prepared as the future Active Directory Domain Controller.
 
-This project establishes the baseline server that will be used throughout the remaining Home Lab projects.
+This is a rebuild of the same server that existed in the lab's earlier VMware-based iteration, which was lost when that host was reinstalled. The target configuration (hostname, IP, role) is unchanged; the hypervisor and a handful of platform-specific details are not.
 
 ---
 
 # Objectives
 
-- Deploy Windows Server 2022
-- Configure VMware virtual hardware
+- Deploy Windows Server 2022 in VirtualBox
+- Configure enterprise virtual hardware
 - Perform a manual operating system installation
 - Configure enterprise server settings
-- Install VMware Tools
+- Install VirtualBox Guest Additions
 - Apply Windows Updates
 - Configure a static IP address
-- Create a VMware recovery snapshot
+- Create a VirtualBox recovery snapshot
 - Prepare the server for Active Directory
 
 ---
@@ -32,8 +32,9 @@ This project establishes the baseline server that will be used throughout the re
 
 ## Host System
 
-- Windows 11
-- VMware Workstation Pro
+- Ubuntu 26.04.1 LTS
+- VirtualBox 7.2.6
+- (See [[Project 01 – Virtualization Foundation]])
 
 ## Guest Operating System
 
@@ -46,14 +47,15 @@ This project establishes the baseline server that will be used throughout the re
 
 | Component | Configuration |
 |-----------|---------------|
-| Hypervisor | VMware Workstation Pro |
-| Firmware | UEFI |
-| Memory | 4 GB |
+| Hypervisor | VirtualBox 7.2.6 |
+| Firmware | EFI (enabled) |
+| Memory | 4096 MB |
 | Processors | 2 vCPUs |
 | Hard Disk | 60 GB |
-| Disk Controller | SCSI |
-| Network | NAT |
-| VMware Tools | Installed |
+| Disk Controller | SATA |
+| Network | NAT Network — `jamaursec-nat` |
+| Network Adapter | Intel PRO/1000 MT Desktop |
+| Guest Additions | Installed (7.2.6) |
 
 ---
 
@@ -61,22 +63,24 @@ This project establishes the baseline server that will be used throughout the re
 
 ## VM Creation
 
-A Windows Server 2022 virtual machine was created manually instead of using VMware Easy Install due to installation issues encountered during initial deployment.
+The virtual machine was created with **Skip Unattended Installation** enabled. The lab's earlier VMware build had failed when using its equivalent quick-install path (VMware Easy Install produced licensing errors), so the unattended path was skipped from the start here rather than troubleshooted after a failure.
 
 ### Configuration
 
-- UEFI firmware
-- SCSI virtual disk
-- 60 GB virtual disk
-- 4 GB RAM
+- EFI firmware
+- SATA virtual disk
+- 60 GB virtual disk (dynamically allocated)
+- 4096 MB RAM
 - 2 vCPUs
-- NAT networking
+- NAT Network (`jamaursec-nat`)
 
 ---
 
 ## Operating System Installation
 
-Windows Server 2022 Standard Evaluation (Desktop Experience) was installed successfully using the ISO image.
+Windows Server 2022 Standard Evaluation (Desktop Experience) was installed using the ISO image.
+
+**Note:** the setup wizard's edition list highlights **Windows Server 2022 Standard Evaluation** (Server Core, no GUI) by default. Desktop Experience has to be selected manually — it's easy to click Next past it. This was caught before installing.
 
 The Desktop Experience edition was selected to provide a graphical user interface suitable for learning Windows Server administration.
 
@@ -109,9 +113,9 @@ Performed:
 
 ---
 
-## VMware Tools
+## VirtualBox Guest Additions
 
-VMware Tools was installed successfully.
+VirtualBox Guest Additions 7.2.6 was installed successfully via the Guest Additions CD image (`VBoxWindowsAdditions.exe`).
 
 Benefits:
 
@@ -132,9 +136,10 @@ Benefits:
 |---------|-------|
 | IPv4 Address | 192.168.45.129 |
 | Subnet Mask | 255.255.255.0 |
-| Default Gateway | 192.168.45.2 |
+| Default Gateway | 192.168.45.1 |
+| DNS (temporary) | 8.8.8.8 |
 
-Internet connectivity was verified after assigning the static IP address.
+Internet connectivity was verified after assigning the static IP address. DNS is repointed to the server itself (192.168.45.129) once Active Directory DNS is installed in Project 03.
 
 ---
 
@@ -148,7 +153,7 @@ hostname
 
 Verified:
 
-- Hostname changed successfully
+- Hostname changed successfully (SRV-DC01)
 
 ---
 
@@ -158,7 +163,7 @@ whoami
 
 Verified:
 
-- Administrator account
+- Administrator account (srv-dc01\administrator)
 
 ---
 
@@ -168,9 +173,9 @@ ipconfig
 
 Verified:
 
-- Static IP configuration
-- Gateway
-- Subnet mask
+- Static IP configuration (192.168.45.129)
+- Gateway (192.168.45.1)
+- Subnet mask (255.255.255.0)
 
 ---
 
@@ -182,11 +187,11 @@ Verified:
 
 - Internet connectivity
 - DNS resolution
-- Network functionality
+- 0% packet loss
 
 ---
 
-# VMware Snapshot
+# VirtualBox Snapshot
 
 Snapshot Name:
 
@@ -200,37 +205,37 @@ Provides a recovery point after completing the initial server configuration and 
 
 # Challenges Encountered
 
-## VMware Easy Install Failure
+## Server Core Highlighted by Default
 
 Issue:
 
-VMware Easy Install generated Windows licensing errors during deployment.
+The Windows Server setup wizard's edition picker highlights the no-GUI "Standard Evaluation" (Server Core) option by default.
 
 Resolution:
 
-The operating system was installed manually using the Windows Server ISO.
+Manually selected "Windows Server 2022 Standard Evaluation (Desktop Experience)" before proceeding.
 
 ---
 
-## VMware Tools Restart
+## Static IP Typo
 
 Issue:
 
-The server remained on the "Getting Windows ready" screen for an extended period after installing VMware Tools.
+The static IP was initially entered as 195.168.45.129 instead of 192.168.45.129. `ping google.com` still succeeded despite the incorrect subnet, which could have masked the error.
 
 Resolution:
 
-After confirming VMware activity had stopped, the virtual machine was reset. Windows booted successfully and VMware Tools functioned correctly.
+Corrected the address to 192.168.45.129 and re-verified with `ipconfig` and `ping` before proceeding.
 
 ---
 
 ## Lessons Learned
 
-- Manual Windows Server installation provides greater reliability than VMware Easy Install.
-- VMware Tools should be installed immediately after operating system installation.
-- Static IP addresses are required before deploying Active Directory.
-- Enterprise hostnames improve administration and documentation.
-- Creating recovery snapshots before major changes greatly simplifies troubleshooting.
+- Manual, deliberate installation choices (skip unattended install, verify the edition before proceeding) avoid repeating the licensing failure hit on the previous hypervisor.
+- A successful `ping` does not confirm a static IP was typed correctly — always re-check the actual `ipconfig` output against the intended value.
+- VirtualBox's NAT Network gateway defaults to `.1`, not the `.2` used by the previous VMware NAT network — worth confirming per-platform rather than assuming.
+- Guest Additions should be installed immediately after OS installation, before further configuration.
+- Creating a recovery snapshot before major changes (Active Directory) simplifies troubleshooting.
 
 ---
 
@@ -238,13 +243,13 @@ After confirming VMware activity had stopped, the virtual machine was reset. Win
 
 ## Virtualization
 
-- VMware Workstation Pro
-- Virtual machine creation
+- VirtualBox VM creation
+- Guest Additions installation
 - Snapshot management
 
 ## Windows Server
 
-- Windows Server installation
+- Windows Server installation and edition selection
 - Server Manager
 - Windows administration
 
@@ -257,14 +262,13 @@ After confirming VMware activity had stopped, the virtual machine was reset. Win
 ## System Administration
 
 - Windows Update
-- VMware Tools
 - PowerShell verification
 
 ---
 
 # Project Outcome
 
-Successfully deployed and configured a Windows Server 2022 virtual machine using enterprise best practices.
+Successfully deployed and configured a Windows Server 2022 virtual machine on VirtualBox using enterprise best practices.
 
 The server now serves as the foundation for future Home Lab projects including:
 

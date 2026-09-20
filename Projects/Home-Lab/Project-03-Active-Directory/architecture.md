@@ -2,7 +2,7 @@
 
 ## Overview
 
-Project 03 expanded the Windows Server 2022 virtual machine into an enterprise identity infrastructure by deploying Active Directory Domain Services (AD DS), DNS, Organizational Units, Security Groups, and Group Policy.
+Project 03 expanded the Windows Server 2022 virtual machine (SRV-DC01, Project 02) into an enterprise identity infrastructure by deploying Active Directory Domain Services (AD DS), DNS, Organizational Units, Security Groups, and Group Policy — on the VirtualBox platform established in Project 01.
 
 The environment simulates a small enterprise domain where centralized authentication, authorization, and administration are performed from a single Domain Controller.
 
@@ -12,8 +12,8 @@ The environment simulates a small enterprise domain where centralized authentica
 
 ## Host System
 
-- Windows 11
-- VMware Workstation Pro
+- Ubuntu 26.04.1 LTS
+- VirtualBox 7.2.6
 
 ---
 
@@ -27,8 +27,11 @@ The environment simulates a small enterprise domain where centralized authentica
 | Operating System | Windows Server 2022 |
 | Role | Primary Domain Controller |
 | Domain | jamaursec.lab |
+| NetBIOS Name | JAMAURSEC |
+| Domain Functional Level | Windows2016Domain |
 | Directory Service | Active Directory Domain Services |
 | DNS | Active Directory Integrated DNS |
+| IPv4 Address | 192.168.45.129 |
 
 ---
 
@@ -52,7 +55,7 @@ jamaursec.lab
 # Logical Architecture
 
 ```text
-                    VMware Workstation Pro
+                 VirtualBox 7.2.6 (Ubuntu Host)
                              │
                              │
                     Windows Server 2022
@@ -138,9 +141,13 @@ Configured and verified:
 - Policy processing
 - gpresult validation
 
-Example policy:
+Policy deployed:
 
-- Restrict Control Panel access
+- **Restrict Control Panel** — linked to the `IT` OU, prohibits access to Control Panel and PC settings for users in that OU
+
+### Verification Constraint
+
+No domain-joined client exists yet (Project 04), so user-scope policy testing was performed by temporarily granting the `IT` group **Allow log on locally** on the domain controller itself, through the Default Domain Controllers Policy. This is a documented lab-only deviation — see project-notes.md — not a production configuration.
 
 ---
 
@@ -152,6 +159,7 @@ Configured:
 
 - Forward Lookup Zone
 - Active Directory Integrated Zone
+- The domain controller's own DNS client setting points at itself (192.168.45.129)
 
 Domain:
 
@@ -165,7 +173,7 @@ jamaursec.lab
 
 Verified:
 
-- Domain Controller promotion
+- Domain Controller promotion (`whoami`, `Get-ADDomain`)
 - DNS functionality
 - Active Directory accessibility
 - Organizational Unit creation
@@ -175,7 +183,6 @@ Verified:
 - Password reset
 - User disable/enable
 - Group Policy processing
-- gpresult output
 
 ---
 
@@ -192,6 +199,10 @@ Key decisions included:
 - Group Policy for centralized configuration
 - Identity management through Active Directory
 
+## Platform Differences From the Original Build
+
+This domain previously existed in an earlier iteration of the lab (VMware Workstation Pro), which was lost when that host was reinstalled. The domain name, OU structure, and test objects were rebuilt unchanged; only the underlying hypervisor and host (see Project 01 and Project 02) differ.
+
 ---
 
 # Future Expansion
@@ -200,7 +211,7 @@ This Active Directory infrastructure serves as the foundation for future Home La
 
 Planned integrations include:
 
-- Windows 11 domain-joined client
+- Windows 11 domain-joined client (removes the need for the lab-only DC local-logon deviation)
 - Enterprise File Services
 - NTFS & Share Permissions
 - DHCP

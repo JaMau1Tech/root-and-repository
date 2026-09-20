@@ -2,21 +2,19 @@
 
 ## Overview
 
-This project establishes the virtualization foundation for my Home Lab using VMware Workstation Pro and Ubuntu 24.04.4 LTS. The goal was to create a stable, repeatable environment that will support future infrastructure projects, including Windows Server, Active Directory, pfSense, osTicket, and SIEM deployments.
+This project establishes the virtualization foundation for the Home Lab: a hardened Ubuntu LTS host running VirtualBox as the hypervisor, with a dedicated virtual network for lab VMs.
 
-This project serves as the baseline for the entire Home Lab environment.
+Unlike the lab's earlier iteration, Ubuntu is not run as a guest VM here — it is the host operating system itself, on a Dell Latitude 5320. VirtualBox, installed on top of it, is the hypervisor every later Home Lab project (Windows Server, Active Directory, and beyond) builds its VMs in.
 
 ---
 
 ## Objectives
 
-- Install VMware Workstation Pro
-- Deploy Ubuntu 24.04.4 LTS
-- Configure a virtual machine
-- Verify network connectivity
-- Update the operating system
-- Create a baseline recovery snapshot
-- Prepare the environment for future projects
+- Install Ubuntu LTS as the host operating system
+- Apply a security baseline: firewall, disk encryption, automatic updates, Secure Boot
+- Install VirtualBox and resolve Secure Boot's kernel module signing requirement
+- Create the isolated NAT Network used by all lab VMs
+- Verify the platform is ready for Windows Server deployment
 
 ---
 
@@ -24,138 +22,148 @@ This project serves as the baseline for the entire Home Lab environment.
 
 ### Host
 
-- Windows 11 Home
-- VMware Workstation Pro 26H1
+- Ubuntu 26.04.1 LTS
+- Dell Latitude 5320 (Intel Core i5-1145G7, 16 GB RAM, 512 GB disk)
 
-### Guest
+### Hypervisor
 
-- Ubuntu 24.04.4 LTS
+- VirtualBox 7.2.6
+
+### Security
+
+- ufw (firewall)
+- LUKS (disk encryption)
+- unattended-upgrades (automatic security updates)
+- Secure Boot with MOK (Machine Owner Key) enrollment
 
 ---
 
-## Virtual Machine Configuration
+## Host & Hypervisor Configuration
 
 | Setting | Value |
 |---------|-------|
-| Memory | 2 GB |
-| CPUs | 2 vCPUs |
-| Storage | 30 GB |
-| Network | NAT |
+| Host OS | Ubuntu 26.04.1 LTS |
+| Partitioning | GPT / UEFI |
+| Disk Encryption | LUKS |
+| Firewall | ufw, default deny incoming |
+| Automatic Updates | Enabled |
+| Secure Boot | Enabled |
+| Hypervisor | VirtualBox 7.2.6 |
+| Lab Network | NAT Network `jamaursec-nat`, 192.168.45.0/24, gateway 192.168.45.1 |
 
 ---
 
 ## Project Walkthrough
 
-### 1. Installed VMware Workstation Pro
+### 1. Installed Ubuntu 26.04.1 LTS
 
-Configured VMware Workstation Pro as the primary virtualization platform after evaluating virtualization options.
-
----
-
-### 2. Created Ubuntu Virtual Machine
-
-Configured a virtual machine with appropriate hardware resources and attached the Ubuntu installation media.
+Clean install (erase disk), GPT partitioning, UEFI boot, disk encryption enabled at install time.
 
 ---
 
-### 3. Installed Ubuntu
+### 2. Applied the Security Baseline
 
-Completed the Ubuntu 24.04.4 LTS installation, including user account creation, hostname configuration, and timezone selection.
+Verified and enabled:
 
----
-
-### 4. Verified System Functionality
-
-Confirmed:
-
-- User authentication
-- Hostname
-- Network connectivity
-- Internet access
+- Firewall (`ufw`)
+- Disk encryption (LUKS)
+- Automatic security updates (`unattended-upgrades`)
+- Secure Boot
 
 ---
 
-### 5. Updated the Operating System
+### 3. Installed VirtualBox
 
-Executed:
-
-```bash
-sudo apt update
-sudo apt upgrade -y
-```
-
-Installed all available updates before proceeding with future projects.
+Installed via `apt`. Resolved a Secure Boot kernel-module signing issue by completing the MOK enrollment flow, after which VirtualBox's kernel modules loaded successfully.
 
 ---
 
-### 6. Created Baseline Snapshot
+### 4. Created the Lab Network
 
-Created the VMware snapshot:
+Built a dedicated VirtualBox NAT Network (`jamaursec-nat`, 192.168.45.0/24) so every Home Lab VM can reach each other and the internet on a consistent, isolated segment.
 
-**Fresh Ubuntu Install**
+---
 
-This snapshot serves as a recovery point before additional software or services are installed.
+### 5. Verified the Platform
+
+Confirmed CPU virtualization support, firewall status, disk encryption, automatic updates, Secure Boot state, and that VirtualBox's kernel modules were loaded.
 
 ---
 
 ## Screenshots
 
-| Screenshot | Description |
-|------------|-------------|
-| `project-01-ubuntu-installer-welcome` | Ubuntu installation started |
-| `project-01-virtualization-foundation-first-successful-boot` | First successful boot |
-| `project-01-virtualization-foundation-first-desktop` | Ubuntu desktop after installation |
-| `project-01-virtualization-foundation-desktop-ready` | Desktop environment ready for use |
-| `project-01-virtualization-foundation-terminal-verification` | Verification commands executed successfully |
-| `project-01-virtualization-foundation-system-updated` | System updates completed |
-| `project-01-virtualization-foundation-post-update-desktop` | Desktop after reboot following updates |
-| `project-01-virtualization-foundation-first-snapshot` | VMware baseline snapshot created |
+No screenshots were captured for this project. The host setup, security baseline, and hypervisor installation were carried out and verified via the command-line output documented in `project-notes.md`.
 
 ---
 
-## Skills Demonstrated
+## Challenges Encountered
 
-- Virtualization
-- VMware Workstation Pro
-- Ubuntu Linux
-- Linux Administration
-- Virtual Networking
-- Operating System Deployment
-- System Updates
-- Snapshot Management
-- Troubleshooting
-- Technical Documentation
+### Secure Boot Blocking VirtualBox
 
----
+VirtualBox installed successfully via `apt`, but its kernel modules didn't load because Secure Boot rejects unsigned modules by default.
 
-## Key Outcomes
+**Resolution**
 
-- Successfully deployed Ubuntu in VMware Workstation Pro
-- Verified network and Internet connectivity
-- Updated the operating system
-- Established a clean baseline snapshot
-- Prepared the environment for future enterprise infrastructure projects
+Completed the MOK (Machine Owner Key) enrollment flow: set a one-time password during install, then enrolled it on the blue MOK management screen at the next reboot. VirtualBox started normally afterward.
 
 ---
 
 ## Lessons Learned
 
-- Selecting the appropriate virtualization platform is critical for system stability.
-- Verifying connectivity immediately after installation helps identify issues early.
-- Creating a baseline snapshot provides a reliable rollback point.
-- Completing system updates before additional configuration reduces future maintenance issues.
+- A hypervisor can install without error and still not actually work under Secure Boot — verify the kernel modules loaded, don't just verify the package installed.
+- Security defaults (firewall, disk encryption, automatic updates) are not all on by default on a fresh Ubuntu install and are worth checking immediately, before any lab work begins.
+- Running the hypervisor on bare metal, rather than nesting the Linux host inside another hypervisor, removes one layer that a wiped machine would otherwise take down with it.
+- A dedicated, named virtual network (NAT Network) keeps lab VM addressing consistent and documented, rather than relying on default per-VM NAT.
+
+---
+
+## Project Outcome
+
+Established a hardened Ubuntu 26.04.1 LTS host running VirtualBox 7.2.6, with a dedicated isolated network (`jamaursec-nat`) ready for guest VMs.
+
+Completed tasks include:
+
+- Ubuntu LTS installation
+- Security baseline (firewall, encryption, updates, Secure Boot)
+- VirtualBox installation and Secure Boot resolution
+- Lab NAT Network creation
+- Full platform verification
+
+The platform is now ready for Windows Server deployment.
+
+---
+
+## Project Structure
+
+```text
+Project-01-Virtualization-Foundation/
+├── README.md
+├── architecture.md
+├── project-notes.md
+└── images/            (empty — no screenshots for this project)
+```
 
 ---
 
 ## Related Documentation
 
 - `project-notes.md` – Detailed build notes, commands, verification, and troubleshooting
-- `architecture.md` – Virtual machine architecture and design decisions
+- `architecture.md` – Host, hypervisor, and network architecture and design decisions
 
 ---
 
 ## Next Project
 
-**Project 02 – Windows Server**
+**Project 02 – Windows Server Foundation**
 
-The next phase of the Home Lab will introduce Windows Server, laying the foundation for Active Directory and other enterprise services.
+The next phase deploys Windows Server 2022 in VirtualBox, laying the foundation for Active Directory.
+
+---
+
+## Author
+
+**Ja'Maurian Williams**
+
+Home Lab Series
+
+Project 01 – Virtualization Foundation

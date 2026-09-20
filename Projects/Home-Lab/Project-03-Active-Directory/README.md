@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project focused on deploying and administering an enterprise Active Directory environment using Windows Server 2022.
+This project focused on deploying and administering an enterprise Active Directory environment using Windows Server 2022, on SRV-DC01 (Project 02), running on the VirtualBox platform established in Project 01.
 
 The project began by installing the Active Directory Domain Services (AD DS) role and promoting the server into a Domain Controller. Once the domain was established, enterprise identity management concepts were implemented through Organizational Units (OUs), user administration, security groups, DNS integration, and Group Policy.
 
-This project represents the foundation of a Windows enterprise infrastructure and provides the identity services required for future Home Lab projects.
+This is a rebuild of the same domain from an earlier iteration of the lab, which was lost when its original host was reinstalled. The domain name and structure are unchanged; the underlying platform is not — see `project-notes.md` for details.
 
 ---
 
@@ -33,7 +33,7 @@ This project represents the foundation of a Windows enterprise infrastructure an
 
 ## Virtualization
 
-- VMware Workstation Pro
+- VirtualBox 7.2.6
 
 ## Windows Roles & Features
 
@@ -108,7 +108,7 @@ This project represents the foundation of a Windows enterprise infrastructure an
 
 - Created a new forest
 - Promoted the server to a Domain Controller
-- Verified successful promotion
+- Verified successful promotion via PowerShell (`whoami`, `Get-ADDomain`)
 
 Domain:
 
@@ -125,6 +125,7 @@ Configured:
 - Active Directory Integrated DNS
 - Forward Lookup Zones
 - Domain name resolution
+- Repointed the domain controller's own DNS client setting to itself
 
 ---
 
@@ -169,7 +170,7 @@ Example:
 
 ## 7. Group Policy
 
-Configured and verified Group Policy.
+Created and linked the **Restrict Control Panel** GPO to the `IT` OU.
 
 Validation performed using:
 
@@ -177,9 +178,7 @@ Validation performed using:
 gpresult /R
 ```
 
-Example policy:
-
-- Restrict Control Panel access
+**Note:** since no domain-joined client exists yet (Project 04), user-scope policy verification required temporarily granting the `IT` group local-logon rights on the domain controller itself — a documented lab-only deviation, not a production practice. See `project-notes.md`.
 
 ---
 
@@ -187,7 +186,7 @@ Example policy:
 
 | Screenshot | Description |
 |------------|-------------|
-| `project03-active-directory-domain-controller-promoted` | Successful Domain Controller promotion |
+| `project03-active-directory-domain-controller-promoted` | Domain Controller promotion verification |
 | `project03-active-directory-users-and-computers` | Active Directory Users and Computers console |
 | `project03-dns-manager-forward-lookup-zones` | DNS configuration |
 | `project03-active-directory-first-organizational-unit` | First Organizational Unit |
@@ -208,7 +207,7 @@ Example policy:
 
 # Results
 
-Successfully deployed an enterprise Active Directory environment capable of:
+Successfully rebuilt an enterprise Active Directory environment capable of:
 
 - Centralized authentication
 - Centralized user management
@@ -222,15 +221,15 @@ Successfully deployed an enterprise Active Directory environment capable of:
 
 # Lessons Learned
 
-This project reinforced the importance of proper Active Directory planning before deploying enterprise infrastructure.
+This project reinforced the importance of proper Active Directory planning before deploying enterprise infrastructure, and of understanding a domain controller's own security defaults.
 
 Key takeaways include:
 
-- DNS is a critical dependency for Active Directory.
+- DNS is a critical dependency for Active Directory, including for the domain controller's own resolver setting.
 - Organizational Units simplify administration and Group Policy targeting.
 - Security Groups should manage permissions instead of assigning permissions directly to users.
 - Group Policy enables centralized Windows configuration.
-- Identity management is the foundation of enterprise Windows environments.
+- Domain controllers block local logon for ordinary users by default — a real security boundary that a lab has to consciously (and temporarily) work around when no domain-joined client is available yet.
 - Documentation and validation are essential administrative practices.
 
 ---
@@ -239,7 +238,7 @@ Key takeaways include:
 
 The Active Directory environment created in this project will support future Home Lab projects, including:
 
-- Windows 11 Domain Join
+- Windows 11 Domain Join (Project 04) — removes the need for the DC local-logon lab deviation
 - DHCP
 - Enterprise File Services
 - NTFS & Share Permissions
@@ -256,3 +255,13 @@ The Active Directory environment created in this project will support future Hom
 **Status:** ✅ Complete
 
 This project establishes the identity infrastructure that future Home Lab projects will build upon.
+
+---
+
+## Author
+
+**Ja'Maurian Williams**
+
+Home Lab Series
+
+Project 03 – Active Directory

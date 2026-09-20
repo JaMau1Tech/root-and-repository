@@ -4,7 +4,9 @@
 
 This repository documents the development of a hands-on enterprise Home Lab built to strengthen practical IT and cybersecurity skills through real-world infrastructure projects.
 
-The environment is hosted in VMware Workstation Pro and simulates a small enterprise network. Each project builds upon the previous one, progressing from virtualization and operating system deployment into enterprise identity management, Windows administration, networking, security, and IT operations.
+The environment is hosted on a dedicated Ubuntu LTS machine running VirtualBox, and simulates a small enterprise network. Each project builds upon the previous one, progressing from virtualization and operating system deployment into enterprise identity management, Windows administration, networking, security, and IT operations.
+
+The lab was rebuilt on this platform after its original host (Windows 11 Home, VMware Workstation Pro) was reinstalled. The domain, server roles, and project objectives are unchanged from the original build; the underlying host and hypervisor are not. See each project's `project-notes.md` for platform-specific details.
 
 ---
 
@@ -25,15 +27,16 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 
 ## Host Platform
 
-- Windows 11
-- VMware Workstation Pro
+- Dell Latitude 5320 (Intel Core i5-1145G7, 16 GB RAM, 512 GB disk)
+- Ubuntu 26.04.1 LTS
+- VirtualBox 7.2.6
 
 ## Virtual Machines
 
 | Virtual Machine | Status | Purpose |
 |-----------------|:------:|---------|
-| Ubuntu 24.04 LTS | ✅ Complete | Linux administration and virtualization foundation |
-| Windows Server 2022 | ✅ Complete | Enterprise infrastructure server |
+| Ubuntu 26.04.1 LTS (host) | ✅ Complete | Hypervisor host and Linux administration foundation — not a guest VM |
+| Windows Server 2022 (SRV-DC01) | ✅ Complete | Enterprise infrastructure server / Domain Controller |
 | Windows 11 Client | ⏳ Next Project | Domain-joined workstation |
 | pfSense Firewall | ⏳ Planned | Firewall, routing, and network segmentation |
 | Additional Security Systems | ⏳ Planned | Future security and monitoring projects |
@@ -42,16 +45,14 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 
 # Completed Projects
 
-## ✅ Project 01 – Ubuntu Foundation
+## ✅ Project 01 – Virtualization Foundation
 
 ### Skills Developed
 
-- VMware Workstation
-- Ubuntu Server
-- Linux CLI
-- Package Management
-- SSH
-- System Administration
+- Ubuntu LTS installation and hardening
+- Firewall, disk encryption, automatic updates, Secure Boot
+- VirtualBox installation and Secure Boot module signing (MOK enrollment)
+- Virtual networking (NAT Network design)
 
 ---
 
@@ -102,7 +103,7 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 
 | Project | Status |
 |---------|:------:|
-| Project 01 – Ubuntu Foundation | ✅ Complete |
+| Project 01 – Virtualization Foundation | ✅ Complete |
 | Project 02 – Windows Server Foundation | ✅ Complete |
 | Project 03 – Active Directory | ✅ Complete |
 | Project 04 – Windows 11 Client | ⏳ Next |
@@ -118,23 +119,26 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 # Current Lab Architecture
 
 ```text
-                    VMware Workstation Pro
+                    Ubuntu 26.04.1 LTS Host
+                     (Dell Latitude 5320)
                              │
-         ┌───────────────────┴───────────────────┐
-         │                                       │
-  Ubuntu 24.04                          Windows Server 2022
-   Project 01                                SRV-DC01
-                                                  │
-                                        Active Directory
-                                           jamaursec.lab
-                                                  │
-                      ┌──────────────┬──────────────┬──────────────┐
-                      │              │              │
-                     DNS            OUs        Security Groups
-                      │
-               Group Policy
-                      │
-          Windows 11 Client (Next)
+                     VirtualBox 7.2.6
+                             │
+                  NAT Network: jamaursec-nat
+                             │
+                    Windows Server 2022
+                         SRV-DC01
+                             │
+                   Active Directory
+                      jamaursec.lab
+                             │
+        ┌──────────────┬──────────────┬──────────────┐
+        │              │              │
+       DNS            OUs        Security Groups
+        │
+ Group Policy
+        │
+Windows 11 Client (Next)
 ```
 
 ---
@@ -143,15 +147,17 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 
 ## Virtualization
 
-- VMware Workstation Pro
+- VirtualBox
 - Virtual Machine Deployment
 - Virtual Hardware Configuration
+- Secure Boot Module Signing (MOK)
 - Snapshot Management
 
 ## Linux
 
 - Ubuntu Administration
 - Linux Command Line
+- System Hardening (firewall, disk encryption, automatic updates)
 - Package Management
 - System Configuration
 
@@ -177,7 +183,7 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 - IPv4 Configuration
 - DNS
 - Active Directory Integrated DNS
-- NAT Networking
+- NAT Network Design
 
 ---
 
@@ -186,7 +192,7 @@ The environment is hosted in VMware Workstation Pro and simulates a small enterp
 ```text
 Home-Lab/
 ├── README.md
-├── Project-01-Ubuntu-Foundation/
+├── Project-01-Virtualization-Foundation/
 ├── Project-02-Windows-Server/
 ├── Project-03-Active-Directory/
 ├── Project-04-Windows-11-Client/
@@ -224,6 +230,8 @@ Home-Lab/
 - Test centralized administration
 - Validate communication with the Domain Controller
 
+Joining a real domain client will also retire the lab-only deviation used in Project 03 (temporarily allowing local logon on the domain controller to test Group Policy).
+
 ---
 
 # Future Projects
@@ -243,6 +251,6 @@ Following the Windows 11 domain join, the Home Lab will continue expanding into 
 
 # Author
 
-**J Wi**
+**Ja'Maurian Williams**
 
 Enterprise Home Lab Portfolio
