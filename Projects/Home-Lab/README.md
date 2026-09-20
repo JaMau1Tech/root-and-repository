@@ -37,7 +37,7 @@ The lab was rebuilt on this platform after its original host (Windows 11 Home, V
 |-----------------|:------:|---------|
 | Ubuntu 26.04.1 LTS (host) | ✅ Complete | Hypervisor host and Linux administration foundation — not a guest VM |
 | Windows Server 2022 (SRV-DC01) | ✅ Complete | Enterprise infrastructure server / Domain Controller |
-| Windows 11 Client | ⏳ Next Project | Domain-joined workstation |
+| Windows 11 Client (WKS-W11-01) | ✅ Complete | Domain-joined workstation |
 | pfSense Firewall | ⏳ Planned | Firewall, routing, and network segmentation |
 | Additional Security Systems | ⏳ Planned | Future security and monitoring projects |
 
@@ -99,6 +99,32 @@ The lab was rebuilt on this platform after its original host (Windows 11 Home, V
 
 ---
 
+## ✅ Project 04 – Windows 11 Client
+
+### Objectives
+
+- Deploy a Windows 11 Enterprise Evaluation client
+- Configure EFI, TPM 2.0, and Secure Boot
+- Configure static DNS
+- Join the client to the `jamaursec.lab` domain
+- Verify domain authentication
+- Verify Group Policy from a real domain-joined client
+- Confirm the client's computer object in Active Directory
+- Retire the Project 03 DC local-logon lab deviation
+
+### Skills Developed
+
+- Windows 11 Client Deployment
+- EFI / TPM 2.0 / Secure Boot Configuration
+- Static DNS Configuration
+- Domain Join Administration
+- Computer Rename Workflows
+- Group Policy Verification (Client-Side)
+- Active Directory Computer Object Administration
+- Security Posture Restoration
+
+---
+
 # Project Roadmap
 
 | Project | Status |
@@ -106,8 +132,8 @@ The lab was rebuilt on this platform after its original host (Windows 11 Home, V
 | Project 01 – Virtualization Foundation | ✅ Complete |
 | Project 02 – Windows Server Foundation | ✅ Complete |
 | Project 03 – Active Directory | ✅ Complete |
-| Project 04 – Windows 11 Client | ⏳ Next |
-| Project 05 – File Services | ⏳ Planned |
+| Project 04 – Windows 11 Client | ✅ Complete |
+| Project 05 – File Services | ⏳ Next |
 | Project 06 – Security Hardening | ⏳ Planned |
 | Project 07 – Monitoring & Logging | ⏳ Planned |
 | Project 08 – osTicket Help Desk | ⏳ Planned |
@@ -138,7 +164,9 @@ The lab was rebuilt on this platform after its original host (Windows 11 Home, V
         │
  Group Policy
         │
-Windows 11 Client (Next)
+Windows 11 Client (WKS-W11-01)
+        │
+ Domain-Joined, Policy Verified
 ```
 
 ---
@@ -210,33 +238,31 @@ Home-Lab/
 
 | Metric | Status |
 |--------|--------|
-| Projects Completed | **3 / 10** |
-| Current Project | **Project 04 – Windows 11 Client** |
-| Infrastructure Status | **Enterprise Active Directory Operational** |
+| Projects Completed | **4 / 10** |
+| Current Project | **Project 05 – File Services** |
+| Infrastructure Status | **Enterprise Active Directory Operational, Domain-Joined Client Verified** |
 
 ---
 
 # Next Project
 
-## Project 04 – Windows 11 Client
+## Project 05 – File Services
 
 ### Objectives
 
-- Install Windows 11
-- Configure networking
-- Join the `jamaursec.lab` domain
-- Verify domain authentication
-- Apply Group Policy
-- Test centralized administration
-- Validate communication with the Domain Controller
+- Deploy enterprise file shares on `SRV-DC01`
+- Configure NTFS and share-level permissions
+- Apply permissions through the `IT` security group
+- Map network drives from `WKS-W11-01`
+- Validate access control from the domain-joined client
 
-Joining a real domain client will also retire the lab-only deviation used in Project 03 (temporarily allowing local logon on the domain controller to test Group Policy).
+Project 04 closed the loop between Active Directory's policy layer and a real client, retiring the Project 03 lab-only DC local-logon deviation. Project 05 builds on that same client to validate file-level access control the same way — from a genuine domain-joined machine rather than the server console.
 
 ---
 
 # Future Projects
 
-Following the Windows 11 domain join, the Home Lab will continue expanding into enterprise administration with:
+With a domain-joined client now validating Active Directory end-to-end, the Home Lab will continue expanding into enterprise administration with:
 
 - Enterprise File Services
 - NTFS & Share Permissions
