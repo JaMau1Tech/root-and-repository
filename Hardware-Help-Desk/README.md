@@ -12,6 +12,7 @@ Running index of hands-on hardware repair and help-desk tickets documented in th
 |---|---|---|---|---|---|
 | HWD-2026-001 | Sept 17, 2026 | ASUS Vivobook 15 (F1502ZA/X1502ZA) | No display output on lid open; keyboard powers on | 🟡 In Progress — Pending Parts | [TICKET-asus-vivobook-display-repair.md](./TICKET-asus-vivobook-display-repair.md) |
 | HWD-2026-002 | Aug 24, 2026 | Lenovo 300e 2nd Gen (82GK) | Touchpad non-functional after fresh Linux Mint install | 🟢 Closed — Workaround Applied | [TICKET-lenovo-300e-touchpad-repair.md](./TICKET-lenovo-300e-touchpad-repair.md) |
+| HWD-2026-003 | Sept 20, 2026 | HP Laptop 15-dy2xxx (446R4UA#ABA) | New NVMe drive not detected in Windows Setup (Intel VMD driver missing) | 🟢 Closed — Resolved | [TICKET-hp-15-nvme-vmd-driver.md](./TICKET-hp-15-nvme-vmd-driver.md) |
  
 ---
  
