@@ -16,11 +16,12 @@ My certification path is designed to support an entry-level IT Support or Help D
 
 ### Current Learning
 
+- CompTIA A+ Core 1 (220-1201) — Modules 1-7 complete, Module 8 in progress
 - Cisco Networking Academy – Networking Basics
 
 ### Planned Certifications
 
-1. CompTIA A+
+1. CompTIA A+ (in progress)
 2. CompTIA Network+
 3. CompTIA Security+
 4. CompTIA CySA+
@@ -47,7 +48,7 @@ Resources should prioritize:
 | Certification | Provider | Status | Primary Purpose |
 |---|---|---|---|
 | Networking Basics | Cisco Networking Academy | In Progress | Networking foundation |
-| CompTIA A+ | CompTIA | Planned | Entry-level IT support |
+| CompTIA A+ | CompTIA | In Progress (Modules 1-7 complete, Module 8 started) | Entry-level IT support |
 | CompTIA Network+ | CompTIA | Planned | Networking knowledge |
 | CompTIA Security+ | CompTIA | Planned | Security fundamentals |
 | CompTIA CySA+ | CompTIA | Long-Term | Defensive security analysis |
@@ -55,13 +56,17 @@ Resources should prioritize:
 
 ---
 
-## Recommended Folder Structure
+## Folder Structure
 
 ```text
 Certifications/
 ├── Cisco-Networking-Basics/
 ├── CompTIA-A-Plus/
+│   ├── README.md
+│   ├── Module-01/ ... Module-07/   (study notes, objectives, practice questions, .docx copies)
+│   └── Module-08/                  (in progress)
 ├── CompTIA-Network-Plus/
 ├── CompTIA-Security-Plus/
 ├── CompTIA-CySA-Plus/
 └── README.md
+```
